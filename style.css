@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    
+}
+
+.fondo{
+    background: linear-gradient(rgb(0, 0, 0, 0.5),rgb(0, 0, 0, 0.5)), url(imagenes/sunflower-3292932_960_720.jpg);
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;  
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.texto h1{
+    color: rgb(221, 222, 222, 0.8);
+    font-size: 60px;
+    font-family: 'Qwitcher Grypen';
+    margin: 0;    
+ }
+ h1:hover{
+    text-shadow: 0px 0px 8px rgb(250, 250, 250);
+ }
+.texto p{
+    color: rgb(221, 222, 222);
+    font-size: 25px;
+    font-family: 'Combo', cursive;
+    /* font-family: 'Dancing Script'; */
+    /* max-width: 200px; */
+    
+}
+.texto a{
+    color: rgb(221, 222, 222);
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Qwitcher Grypen';
+    margin: 10px;
+}
+.texto button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255, 0.3);
+    /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgb(255, 255, 255, 0.5)); */
+    border-radius: 18px;
+    border-color: rgb(255, 255, 255, 0.3);
+    max-width: 130px;
+    
+    
+}
+a:hover{
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+    color: rgb(101, 105, 111);
+}
+
+button:hover{
+    background-color: rgb(213, 237, 229, 0.5);
+}
+.texto{
+    margin: 0 15px 0 15px;
+}
+.card{
+    background-color: rgb(0, 0, 0, 0.5);
+    border: solid rgb(218, 223, 228);
+    border-radius: 30px;
+    max-width: 700px;
+    max-height: 400px;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: left;
+}
+.card img{
+    display: block;
+    width: 500px;
+    overflow: hidden;
+}
+
+@media only screen and (min-width:600px){
+    .card img{
+        width: 400px;
+    }
+    .texto h1{
+        font-size: 70px;
+        padding-bottom: 15px;
+    }
+}
