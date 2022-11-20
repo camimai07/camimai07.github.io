@@ -181,9 +181,9 @@ nav .items li a:hover{
 }.animate__animated.animate__fadeIn:nth-child(3){
     animation-delay: 1.5s;
 }
-.animate__animated.animate__fadeIn:nth-child(4){
+/* .animate__animated.animate__fadeIn:nth-child(4){
     animation-delay: 1.9s;
-}
+} */
 .quienessomos{
     width: 100%;
     margin: auto;
@@ -948,6 +948,11 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
     }
 }
 @media (max-width: 456px) {
+    
+    .container-img{
+        width: 120px;
+        height: 110px;
+    }
     .texto-principal span{
         font-size: 42px;
 
@@ -972,9 +977,9 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
         height: 40px;
         padding: 14px;
     }
-    nav .items{
+    /* nav .items{
         top: 91px;
-    }
+    } */
     
     .logo{
         width: 70px;
