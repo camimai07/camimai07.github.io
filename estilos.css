@@ -984,9 +984,9 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
     }
    
     nav.abajo .logo{
-        width: 90px;
-        margin-top: 10px;  
-        margin-bottom: 10px;  
+        width: 80px;
+        margin-top: 20px;  
+        margin-bottom: 20px;  
     }
     .imagen-servicios img{
         width: 40%;
