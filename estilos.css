@@ -911,9 +911,7 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
         height: 50px;
         
     }
-    /* nav .items{
-        top: 102px;   
-    } */
+
 
     nav .items ul li a{
         font-size: 15px;
@@ -979,12 +977,16 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
         height: 40px;
         padding: 14px;
     }
-    /* nav .items{
-        top: 91px;
-    } */
+    
     
     .logo{
         width: 70px;
+    }
+   
+    nav.abajo .logo{
+        width: 90px;
+        margin-top: 10px;  
+        margin-bottom: 10px;  
     }
     .imagen-servicios img{
         width: 40%;
