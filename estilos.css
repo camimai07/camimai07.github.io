@@ -767,6 +767,7 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
     .logo{
         width: 120px;
     }
+    
     .logo, .texto-principal{
         margin-left: 60px;
     }
@@ -894,7 +895,10 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
         width: 100px;
         
     }
-    
+    nav.abajo .logo{
+        margin-top: 10px;  
+        margin-bottom: 10px;  
+    }
     .texto-principal span{
         font-size: 45px;
 
