@@ -800,11 +800,11 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
         position:absolute;
         left: 0;
         margin: 0;
-        padding-top: 20px;
-        top: 121px;
+        padding-top: 100px;
+        top: 0;
         justify-content: center;
         background-color:rgba(27, 169, 176, 0.8);
-        /* overflow-y:scroll;  */
+        overflow-y:scroll; 
         height: 100vh; 
         width: 55%;
         /* border-right: solid 1px #14e6f1; */
@@ -883,9 +883,7 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
 }  
 
 @media (max-width: 795px) {
-    /* nav .items{
-        height: 100vh;
-    } */
+    
     .logo, .texto-principal{
         margin-left: 25px;
     }
@@ -911,9 +909,9 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
         height: 50px;
         
     }
-    nav .items{
+    /* nav .items{
         top: 102px;   
-    }
+    } */
 
     nav .items ul li a{
         font-size: 15px;
