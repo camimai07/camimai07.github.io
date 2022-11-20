@@ -5,15 +5,19 @@
     box-sizing: border-box;
 
 }
+/* :root{
+    --sonrisa: url("imagenes/BLANQ2.jpg");
+    
+} */
 body{
     width: 100%;
-    background: linear-gradient(to left, #FFFFFF, #FFFFFF, #b2e7fd, #55C5F6) no-repeat;
+    /* background: linear-gradient(to left, #FFFFFF, #FFFFFF, #b2e7fd, #55C5F6) no-repeat; */
+    background-color: #ddf9f9;
 }
 
 h2{
     color: #0b097c;
-    
-    
+   
 }
 
 p{
@@ -51,90 +55,108 @@ p{
 }
 
 nav {
-    /* background: linear-gradient(rgb(62, 62, 63, 0.4), rgb(62, 62, 63, 0.4)) ; */
-    /* rgb(255, 255, 255,0.5) */
+    background:rgba(39, 195, 203, 0.8);
+    box-shadow: 0px 4px 10px rgba(1, 1, 1, 0.3);
     width: 100%;
     display: flex;
     justify-content: space-between; /*ubica las cajas del nav separadas de punta a punta!!!!*/
     align-items: center;
+    position: fixed;
+    z-index: 50;
     /* box-shadow: 0 0 5px; */
 }
+nav.abajo .logo{
+    width: 120px;
+    transition: linear 0.3s;
 
-nav .menu, .nav_input{
+}
+nav .menu{
+    display: none;
+    margin: 30px 60px 30px 30px;
+    width: 60px;
+    height: 60px; 
+    padding: 22px;
+    border-radius: 15px;
+    /* background-color:rgb(85, 197, 246, 0.8);    */
+    background-color: rgba(27, 169, 176, 0.6);
+    /* box-shadow: 0px 0px 4px black;     */
+}
+.nav_input{
     display: none;
     
 }
 .logo {
-    width: 200px;
+    width: 165px;
     margin-left: 50px;
     
 }
 
-nav .items {    
-    /* margin: 0 30px 0 0; */
-    background:rgb(10, 186, 128, 0.5);
-
-
-}
-
 nav .items ul {
     margin: 0; 
+    align-items: center;
 }
 nav .items ul li {
     display: inline-block;
-    /* margin-right: 5px; */
-    padding-top: 140px;
-    
-}
+    position: relative;
 
-nav .items ul li a {
+}
+nav .items ul li::before{
+    content: "";
+    width: 0%;
+    height: 1.5px;
+    background-color:#0b097c;
+    border-radius: 2px;
+    position: absolute;
+    bottom: -10px;
+    transition: 0.5s linear;
+
+}
+nav .items ul li:hover::before{
+    width: 100% ;
+}
+nav .items ul li a{
     border-radius: 10px;
     font-weight: bold;
     color: #ebf7f7e2;
     text-transform: uppercase;
     font-family: ralereg;
-    font-size:small;
+    font-size:15px;
     /* text-shadow: 0px 0px 5px #cbcfcf; */
     padding: 20px;
     text-align: center;
     align-items: center;
+    transition: linear 0.5s;
+
 }
 
 nav .items li a:hover{
     color: white;
-    
     text-decoration:none;
-
 }
 
 .container-fondo {
-    background:  url("imagenes/dentist-with-smile.jpg") no-repeat;
+    background:  url("imagenes/probando.png") no-repeat;
     background-size: cover;
     background-position: center;
     overflow: hidden;
     width: 100%;
     box-shadow: 0px 0px 5px;
-    height: 100vh;  
+    height: 100vh;
+    transition: 0.5s;
 }
-.imagen2{
-    width: 100%;
-    height: 600px;
-    background: url("imagenes/probando.png") no-repeat;
-    background-size: cover;
-    position: absolute;
-    background-position: center;
-}
+
 .texto-principal {
     width: 90%; 
-    margin: 70px 0 50px 50px;
-    padding-top: 50px;
-
+    margin-left: 50px ;
+    /* padding-top: 50px; */
+    margin-top: 280px;
 }
 .texto-principal span{ 
     font-size: 60px;
     font-family: nunitoreg;
     color: rgb(234, 243, 242);
-    background:rgb(10, 186, 128, 0.6);
+    background:rgba(27, 169, 176, 0.6);
+    /* background:rgb(10, 186, 128, 0.6); */
     font-weight: 600;
     padding: 0 10px 0 10px;
 }
@@ -147,31 +169,49 @@ nav .items li a:hover{
 
 }
 
-
-.animate__animated.animate__slideInLeft{
-    --animate-duration: 5s;
-    --animate-delay: 0.9s;
+.animate__animated.animate__fadeIn{
+    animation-duration: 1.5s;
 }
+.animate__animated.animate__fadeIn:nth-child(1){
+    animation-delay: 0.3s;
+}
+.animate__animated.animate__fadeIn:nth-child(2){
+    animation-delay: 0.7s;
 
+}.animate__animated.animate__fadeIn:nth-child(3){
+    animation-delay: 1.5s;
+}
+.animate__animated.animate__fadeIn:nth-child(4){
+    animation-delay: 1.9s;
+}
 .quienessomos{
     width: 100%;
     margin: auto;
     text-align: center;
+    /* position: relative; */
     /* padding-top: 20px; */
 }
 
 
-.quienessomos a img{
-    overflow: hidden;
-    border-radius: 50%;
-    box-shadow: 0 0 10px #9a9e9f;
+.sticky {
+    background: url("imagenes/flecha2.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #a2e2e2;
+    border-radius: 3px;
+    box-shadow: 0 0 3px #07d6f6;
     margin-left: 85%;
     position: fixed;
     margin: 40px;
     bottom: 0;
     right: 0;
-    width: 70px;
-    background-color: #e5fbfb;
+    width: 40px;
+    height: 40px;
+    z-index: 60;
+}
+.sticky:hover{
+    box-shadow: 0 0 3px #000000;
+
 }
 
 .somosDentalCare h2 {
@@ -187,18 +227,41 @@ nav .items li a:hover{
 
 .img-equipo {
     align-items: center;
-    justify-content: center;
     display: flex;
-    align-content: center;
-    margin: 2% 10%;
-    box-shadow: 0px 0px 5px;    
-   
+    /* align-content: center; */
+    margin-top: 2% 0%;
+    /* margin-bottom: 2%; */
+    /* box-shadow: 0px 0px 5px;     */
+    background:rgba(27, 169, 176, 0.3);
+
+    /* border: rgba(27, 169, 176); */
+    
 }
+.img-equipo:nth-child(odd){
+    margin-right: 15%;
+    background: linear-gradient(to right, rgba(27, 169, 176, 0.5), transparent);
+
+}
+.img-equipo:nth-child(even){
+    margin-left: 15%;
+    background: linear-gradient(to left, rgba(27, 169, 176, 0.5), transparent);
+
+}
+/* .img-equipo:nth-child(3){
+    margin-right: 15%;
+    background: linear-gradient(to right, rgba(27, 169, 176, 0.5), transparent);
+
+} */
+/* .img-equipo:nth-child(4){
+    margin-left: 15%;
+    background: linear-gradient(to left, rgba(27, 169, 176, 0.5), transparent);
+
+} */
 
 .img-equipo img {
     width: 35%;
     box-shadow: 0px 0px 10px ;  
-    margin: 20px; 
+    margin: 30px; 
 }
 
 .texto {
@@ -265,14 +328,110 @@ nav .items li a:hover{
     width: 250px;
     height: 220px;
     padding-top:10px ;
-
 }
-
-.imagen-servicios img{
-    width: 60%;
+.container-img{
+    margin: auto;
+    width: 150px;
+    height: 140px;
     border-radius: 10%;
     box-shadow: 0 0 15px#165dc9;
+    transition: linear 0.5s;
+    position: relative;
+    overflow: hidden;
 }
+.container-img::before{ 
+    content: "";
+    height: 0;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.6);
+    bottom: 0;
+    left: 0;
+    transition: linear 0.5s;
+}
+.container-img:hover::before{
+    height: 40%;
+    content: "+info";
+    padding-top: 10px;
+    font-weight: 600;
+    overflow: hidden;
+
+}
+
+/* SERVICIOS FILA 1 */
+
+.fila1 .imagen-servicios:nth-child(1) .container-img{
+    background: url("iconos_servicios/sonrisa.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.fila1 .imagen-servicios:nth-child(1) .container-img:hover{
+    background: url("imagenes/BLANQ2.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.fila1 .imagen-servicios:nth-child(2) .container-img{
+    background: url("iconos_servicios/implantologia.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.fila1 .imagen-servicios:nth-child(2) .container-img:hover{
+    background: url("imagenes/implantes.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.fila1 .imagen-servicios:nth-child(3) .container-img{
+    background: url("iconos_servicios/ortodoncia.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.fila1 .imagen-servicios:nth-child(3) .container-img:hover{
+    background: url("imagenes/ortodoncia2.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+/* SERVICIOS FILA 2 */
+
+.fila2 .imagen-servicios:nth-child(1) .container-img{
+    background: url("iconos_servicios/blanqueamiento.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.fila2 .imagen-servicios:nth-child(1) .container-img:hover{
+    background: url("imagenes/antesdespues.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.fila2 .imagen-servicios:nth-child(2) .container-img{
+    background: url("iconos_servicios/endodoncia.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.fila2 .imagen-servicios:nth-child(2) .container-img:hover{
+    background: url("imagenes/endodoncia1.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.fila2 .imagen-servicios:nth-child(3) .container-img{
+    background: url("iconos_servicios/ortopantomografia.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.fila2 .imagen-servicios:nth-child(3) .container-img:hover{
+    background: url("imagenes/radiografia-dental.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
 
 .imagen-servicios p{
 font-family: latoreg;
@@ -313,7 +472,144 @@ padding-top: 5px;
     font-weight: 600;
 }
 
-.slider-frame {
+.container-all{
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+    margin: auto;
+
+}
+.container-all img{
+    max-width: 100%;
+
+}
+.slide{
+    display: flex;
+    transform: translate3d(0,0,0);
+    transition: all 600ms;
+    animation-name: autoplay;
+    animation-duration: 10s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.item-slide{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 100%;
+
+}
+
+.pagination{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+
+}
+
+.pagination-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid white;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 0 10px;
+    text-align: center;
+    transition: all 300ms;
+
+}
+
+.pagination-item:hover{
+    transform: scale(2);
+}
+.pagination-item img{
+    display: inline-block;
+    max-width: none;
+    height: 100%;
+    transform: scale(1);
+    opacity: 0;
+    transition: all 300ms;
+
+}
+.pagination-item:hover img{
+    opacity: 1;
+    transform: scale(1);
+}
+
+input[id="1"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(0, 0, 0);
+
+}
+input[id="1"]:checked ~ .pagination .pagination-item[for="1"]{
+    background: #fff;
+}
+
+input[id="2"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 1), 0, 0);
+
+}
+input[id="2"]:checked ~ .pagination .pagination-item[for="2"]{
+    background: #fff;
+}
+
+input[id="3"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 2), 0, 0);
+
+}
+input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
+    background: #fff;
+}
+
+input[id="4"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 3), 0, 0);
+
+}
+input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
+    background: #fff;
+}
+
+
+@keyframes autoplay {
+    25%{
+        transform: translate3d(calc(-100% * 0), 0, 0);
+    }
+
+    50%{
+        transform: translate3d(calc(-100% * 1), 0, 0);
+    }
+    
+    75%{
+        transform: translate3d(calc(-100% * 2), 0, 0);
+    
+    }
+
+    100%{
+        transform: translate3d(calc(-100% * 3), 0, 0);
+
+    }
+}
+/* .slider-frame {
     width: 80%;
     margin: auto;
     overflow: hidden;
@@ -362,7 +658,7 @@ padding-top: 5px;
     100% {
         margin-left: -300%;
     }
-}
+} */
 
 .mapa {
     width: 100%;
@@ -382,7 +678,7 @@ padding-top: 5px;
 }
 .mapa iframe {
     width: 100%;
-    padding: 80px;
+    padding: 40px 0;
 
 }
 
@@ -455,6 +751,9 @@ padding-top: 5px;
     .logo, .texto-principal{
         margin-left: 20px;
     }
+    .logo{
+        width: 140px;
+    }
     nav ul{
         margin-right: 10px;
     }
@@ -463,19 +762,28 @@ padding-top: 5px;
     }
 }
 
-@media (max-width: 1128px) {
+@media (max-width: 1050px) {
+    .logo{
+        width: 120px;
+    }
     .logo, .texto-principal{
         margin-left: 60px;
     }
-    .sucursales{
-        display: none;
-    }
+   
     .container{
         z-index: 1;
     }
     .texto-principal{
         margin-top: 300px;
         
+    }
+    .texto-principal span{
+        font-size: 47px;
+
+    }
+    .texto-principal p{
+        font-size: 17px;
+
     }
     nav{
         position: fixed;
@@ -485,32 +793,52 @@ padding-top: 5px;
         z-index: 2;
     }
     nav .menu{
-        margin: 30px 60px 30px 30px;
-        width: 70px;
-        height: 70px; 
         display: flex;
-        padding: 22px;
-        border-radius: 15px;
-        background-color:rgb(85, 197, 246, 0.8);   
-        box-shadow: 0px 0px 4px black;    
-           
     }
     nav .items{
         display: none;
         position:absolute;
-        right: 0;
+        left: 0;
         margin: 0;
-        top: 139px;
+        padding-top: 20px;
+        top: 121px;
         justify-content: center;
-        width: 50%;
-        background-color:rgb(85, 197, 246);
-        overflow-y:scroll; 
-        
+        background-color:rgba(27, 169, 176, 0.8);
+        /* overflow-y:scroll;  */
+        height: 100vh; 
+        width: 55%;
+        /* border-right: solid 1px #14e6f1; */
+        animation-name: moveIn;
+        -webkit-animation-name: moveIn;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 0.5s;
+        animation-duration: 0.5s;
+    }
+
+    @keyframes moveIn {
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+        }
+        to {
+            opacity: 1;
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    } 
+
+     
+    .nav_input:checked + .items{
+        display: flex;
         
     }
-    nav .items ul{
-        height: 100vh;
+    
 
+
+    nav .items ul{
+        margin: 0;
     }
     
     nav .items ul li {
@@ -520,8 +848,8 @@ padding-top: 5px;
     }
     
     nav .items ul li a{
-        padding: 40px;
-        
+        padding: 20px;
+        font-size: 20px;
     }
 
     nav .items ul li a:hover{
@@ -531,14 +859,23 @@ padding-top: 5px;
     nav .items ul li a:active {
         z-index: 0;
     }
-    .nav_input:checked + .items{
-        display: flex;
-    }
+    
     nav .menu:hover{
         cursor: pointer;
         box-shadow: 0px 0px 5px rgb(46, 255, 255);   
     }
-   
+    .texto p{
+        font-size: 17px;
+        padding: 2px;
+        margin-top: 20px;
+    }
+    #contacto h2, #sucursales h2,#servicios h2,#quienessomos h2{
+        font-size: 24px
+    }
+    .parrafo-protesis h3 {
+        font-size: 18px;
+
+    }
     .quienessomos a{
         display: none;
     }
@@ -546,7 +883,9 @@ padding-top: 5px;
 }  
 
 @media (max-width: 795px) {
-
+    /* nav .items{
+        height: 100vh;
+    } */
     .logo, .texto-principal{
         margin-left: 25px;
     }
@@ -556,12 +895,12 @@ padding-top: 5px;
         
     }
     
-    .texto-principal h1{
+    .texto-principal span{
         font-size: 45px;
 
     }
     .texto-principal p{
-        font-size: 25px;
+        font-size: 15px;
 
     }
     nav .menu{
@@ -592,28 +931,44 @@ padding-top: 5px;
     }
     .img-equipo img{
         width: 60%;
+        
     }
     .texto p{
         font-size: 15px;
         padding: 2px;
+        margin-top: 20px;
     }
     .quienessomos a img{
         width: 60px;
     }
+    #contacto h2, #sucursales h2,#servicios h2,#quienessomos h2{
+        font-size: 22px
+    }
+    .parrafo-protesis h3 {
+        font-size: 17px;
+
+    }
 }
 @media (max-width: 456px) {
-    .texto-principal h1{
+    .texto-principal span{
         font-size: 42px;
 
     }
     .texto-principal p{
-        font-size: 22px;
+        font-size: 15px;
     
     }
     #contacto h2, #sucursales h2,#servicios h2,#quienessomos h2{
-        font-size: 23px
+        font-size: 20px
     }
-   
+    .parrafo-protesis h3 {
+        font-size: 16px;
+
+    }
+    .parrafo-protesis p {
+        font-size: 13px;
+
+    }
     nav .menu {
         width: 40px;
         height: 40px;
@@ -631,43 +986,3 @@ padding-top: 5px;
     }
 }
 
-
-
-    /* .checkbtn {
-        flex-direction: column;
-
-    }
-    
-    ul {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: rgb(113,205,247,1);
-        top: 200px;
-        left: -100%;
-        transition: all 1.5s;
-    }
-
-    nav ul li {
-        display: block;
-        line-height: 30px;
-        text-align: center;
-        align-items: center;
-    }
-
-    nav ul li a {
-        font-size: 25px;
-        margin: 0;
-
-    }
-
-    li a:hover,
-    li a.active {
-        background: none;
-        color: white;
-    }
-
-    #check:checked~ul {
-        left: 0;
-        
-    } */

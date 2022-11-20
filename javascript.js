@@ -1,3 +1,15 @@
+
+window.addEventListener("scroll", function(){
+  var navbar = document.querySelector("nav");
+  navbar.classList.toggle("abajo", this.window.scrollY>0);
+  
+  var flecha = document.getElementById("stick");
+  flecha.classList.toggle("sticky", this.window.scrollY>0);
+  // flecha.classList.toggle("sticky", this.window.scrollY>0);
+})
+
+
+
 function slide(){
     let slideValue = document.getElementsByClassName("slider").value;
     document.getElementsByClassName(".container .my-img").style.clipPath = "polygon(0 0," + slideValue + "% 0," + slideValue + "% 100%, 0 100%)";
