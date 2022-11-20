@@ -762,15 +762,15 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
     nav ul{
         margin-right: 10px;
     }
-    .container-fondo{
-        height: 100%;
-    }
+    /* .container-fondo{
+        height: 100vh;
+    } */
 }
 
 @media (max-width: 1050px) {
     .container-fondo {
         background-position: right;
-        height: 100vh;
+        /* height: 100vh; */
     }
     .logo{
         width: 120px;
