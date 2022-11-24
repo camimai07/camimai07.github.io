@@ -23,17 +23,19 @@ body{
     background-color:rgba(131, 218, 219, 0.5);
     width: 200px;
     height: 40px;
+    margin: auto;
     cursor: pointer;
     border: 1px solid rgb(19, 216, 219);
     border-radius: 20px;
     justify-content: center;
-    padding-top: 4px;
+    padding: 6px;
+    display: flex;
     font-family: 'Times New Roman', Times, serif;
     box-shadow: 3px 4px 0px rgb(73, 73, 73);
 }
 
 .oka:hover {
-    /* background-color: #d8eef1; */
+    background-color: #d8eef1;
     font-style: italic;
     box-shadow: 0 0 0;
 
@@ -1037,9 +1039,13 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
     .quienessomos a{
         display: none;
     }
-    .container-img{
+    /* .container-img{
         width: 150px;
         height: 140px;
+    } */
+    .container-img{
+        width: 180px;
+        height: 160px;
     }
 }  
 
@@ -1092,11 +1098,10 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
     }
     .img-equipo{
         flex-direction: column;
-
     }
-    .img-equipo img{
-        width: 60%;
-        
+    .container-img{
+        width: 180px;
+        height: 160px;
     }
     .texto p{
         font-size: 15px;
@@ -1120,14 +1125,16 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
         content: " ";
     }
     form, .form_control{
-        width: 300px;
+        width: 400px;
     }
 }
 @media (max-width: 456px) {
-    
+    form, .form_control{
+        width: 350px;
+    }
     .container-img{
-        width: 120px;
-        height: 110px;
+        width: 140px;
+        height: 130px;
     }
     .texto-principal span{
         font-size: 42px;
@@ -1140,12 +1147,16 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
     #contacto h2, #sucursales h2,#servicios h2,#quienessomos h2{
         font-size: 20px
     }
+    .parrafo-protesis{
+        padding-top: 0;
+        padding-bottom: 80px;
+    }
     .parrafo-protesis h3 {
-        font-size: 16px;
+        font-size: 17px;
 
     }
     .parrafo-protesis p {
-        font-size: 13px;
+        font-size: 14px;
 
     }
     nav .menu {
@@ -1161,18 +1172,22 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
    
     nav.abajo .logo{
         width: 80px;
-        /* margin-top: 20px;  
-        margin-bottom: 20px;   */
+        
     }
-    .imagen-servicios img{
+    /* .imagen-servicios img{
         width: 40%;
-    }
+    } */
 }
 
 @media (max-width: 400px) {
     form, .form_control{
+        width: 300px;
+        
+    }
+}
+@media (max-width: 300px) {
+    form, .form_control{
         width: 250px;
         
     }
-    
 }
