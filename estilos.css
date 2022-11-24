@@ -1045,7 +1045,7 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
 
 @media (max-width: 795px) {
     form, .form_control{
-        max-width: 400px;
+        width: 400px;
     }
     
     .logo, .texto-principal{
@@ -1119,6 +1119,9 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
     span:nth-child(2)::after{
         content: " ";
     }
+    form, .form_control{
+        width: 300px;
+    }
 }
 @media (max-width: 456px) {
     
@@ -1166,3 +1169,10 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
     }
 }
 
+@media (max-width: 400px) {
+    form, .form_control{
+        width: 250px;
+        
+    }
+    
+}
