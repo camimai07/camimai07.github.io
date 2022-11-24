@@ -5,10 +5,20 @@ window.addEventListener("scroll", function(){
   
   var flecha = document.getElementById("stick");
   flecha.classList.toggle("sticky", this.window.scrollY>0);
-  // flecha.classList.toggle("sticky", this.window.scrollY>0);
+
+  
 })
+setTimeout(()=>{
+  var elemento= document.getElementById("div");
+  elemento.classList.toggle("message1");
+}, 2500);
 
 
+var ventana = document.getElementById("oka");
+ventana.addEventListener("click", clicked)
+function clicked(){
+  document.getElementById("div").classList.remove("message1")
+}
 
 function slide(){
     let slideValue = document.getElementsByClassName("slider").value;

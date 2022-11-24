@@ -13,8 +13,91 @@ body{
     width: 100%;
     /* background: linear-gradient(to left, #FFFFFF, #FFFFFF, #b2e7fd, #55C5F6) no-repeat; */
     background-color: #ddf9f9;
+    
+}
+/* .message_input{
+    
+    position: relative;
+} */
+.oka{
+    background-color:rgba(131, 218, 219, 0.5);
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    border: 1px solid rgb(19, 216, 219);
+    border-radius: 20px;
+    justify-content: center;
+    padding-top: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 3px 4px 0px rgb(73, 73, 73);
 }
 
+.oka:hover {
+    /* background-color: #d8eef1; */
+    font-style: italic;
+    box-shadow: 0 0 0;
+
+}
+.message1_input {
+    display: none;
+}
+.message_content{  
+    padding-top: 20px;
+    width: 400px;
+    height: 320px;
+    border: solid 2px rgba(255, 255, 255, 0.5);
+    /* box-shadow: 0px 0px 10px rgb(255, 255, 255); */
+    background-color: rgba(255, 255, 255, 0.8);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* letter-spacing: 1px;   */
+}
+/* .message_content p{
+    padding-top: 30px;
+} */
+
+.message{
+    display: none;
+}
+.message1{
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    /* border: 1px solid black; */
+    /* border-radius: 10px; */
+}
+.message_content img{
+    width: 80px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px;
+    transition: linear 0.5s;
+
+}
+.message_content img:hover:nth-of-type(1){
+    box-shadow: 0px 0px 10px rgb(220, 122, 25);
+}
+.message_content img:hover:nth-of-type(2){
+    box-shadow: 0px 0px 10px rgb(57, 190, 211);
+}
+.message_content img:hover:nth-of-type(3){
+    box-shadow: 0px 0px 10px rgb(226, 233, 25);
+}
+.message_content img:nth-of-type(1){
+    background-color: rgb(220, 122, 25);
+}
+.message_content img:nth-of-type(2){
+    background-color: rgb(57, 190, 211);
+}
+.message_content img:nth-of-type(3){
+    background-color: rgb(226, 233, 25);
+}
 h2{
     color: #0b097c;
    
@@ -93,8 +176,9 @@ nav .menu{
 
 
 nav .items ul {
-    margin: 0; 
+    margin: 0 6px 0 0;
     align-items: center;
+    
 }
 nav .items ul li {
     display: inline-block;
@@ -127,16 +211,17 @@ nav .items ul li a{
     text-align: center;
     align-items: center;
     transition: linear 0.5s;
-
+    text-decoration: none;
 }
 
 nav .items li a:hover{
     color: white;
-    text-decoration:none;
+    transform: scale(1.1);
 }
 
 .container-fondo {
     background:  url("imagenes/ezgif.com-gif-maker.jpg") no-repeat;
+    /* background: url("imagenes/1x/Recurso\ 1-100.jpg") no-repeat; */
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -168,25 +253,24 @@ nav .items li a:hover{
 
 }
 
-/* .animate__animated.animate__fadeIn{
-    animation-duration: 1.5s;
-} */
-.animate__animated.animate__fadeIn:nth-child(1){
+
+.animate__animated.animate__fadeIn{
+    animation-delay: 2s;
+}
+span.animate__animated.animate__fadeIn:nth-child(1){
     animation-delay: 0.3s;
-}
-.animate__animated.animate__fadeIn:nth-child(2){
-    animation-delay: 0.7s;
-
-}.animate__animated.animate__fadeIn:nth-child(3){
-    animation-delay: 0.7s;
 
 }
-.animate__animated.animate__fadeIn:nth-child(4){
-    animation-delay: 0.9s;
+span.animate__animated.animate__fadeIn:nth-child(2){
+    animation-delay: 0.7s;
+
 }
-/* .animate__animated.animate__fadeIn:nth-child(4){
-    animation-delay: 1.9s;
-} */
+span.animate__animated.animate__fadeIn:nth-child(3){
+    animation-delay: 0.7s;
+}
+p.animate__animated.animate__fadeIn:nth-child(4){
+    animation-delay: 1s;
+}
 .quienessomos{
     width: 100%;
     margin: auto;
@@ -293,7 +377,7 @@ nav .items li a:hover{
     padding-top: 2%;
     align-items: center;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     margin-top: 30px;
 
 }
@@ -325,17 +409,27 @@ nav .items li a:hover{
 .fila1, .fila2{
     justify-content: space-around; 
     display: flex;    
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .imagen-servicios{
     width: 250px;
     height: 220px;
-    padding-top:10px ;
+    margin: 10px;
+}
+
+.imagen-servicios p{
+    font-family: latoreg;
+    color: #0b097c;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 5px;
+    margin: 0;
 }
 .container-img{
     margin: auto;
-    width: 150px;
-    height: 140px;
+    width: 180px;
+    height: 170px;
     border-radius: 10%;
     box-shadow: 0 0 15px#165dc9;
     transition: linear 0.5s;
@@ -358,8 +452,12 @@ nav .items li a:hover{
     padding-top: 10px;
     font-weight: 600;
     overflow: hidden;
-
 }
+.container-img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    margin-bottom: 10px;
+} 
 
 /* SERVICIOS FILA 1 */
 
@@ -374,7 +472,6 @@ nav .items li a:hover{
     background: url("imagenes/BLANQ2.jpg") no-repeat;
     background-size: cover;
     background-position: center;
-    cursor: pointer;
 }
 .fila1 .imagen-servicios:nth-child(2) .container-img{
     background: url("iconos_servicios/implantologia.png") no-repeat;
@@ -435,16 +532,6 @@ nav .items li a:hover{
     cursor: pointer;
 }
 
-
-.imagen-servicios p{
-font-family: latoreg;
-color: #0b097c;
-font-size: 15px;
-text-align: center;
-font-weight: 600;
-padding-top: 5px;
-
-}
 .formulario {
     width: 100%;
 }
@@ -518,7 +605,6 @@ padding-top: 5px;
     align-items: center;
     justify-content: center;
     width: 100%;
-
 
 }
 
@@ -712,8 +798,71 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
     text-align: center;
     padding-bottom: 10px;
 }
+ /* --------FORMULARIO-------- */
+ form{
+    width: 450px;
+    border-top: #246d8c solid 5px;
+    padding-top: 40px;
+ }
+ 
+.formulario H2{
+    margin-bottom: 50px;
+}
+.form_container{
+    justify-content: center;
+    display: flex;
+    margin: auto;
+}
+
+.form_container .p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 21px;
+}
+
+.form_container .p:nth-of-type(2),.casillas .p {
+    color: red;
+    font-size: smaller;
+}
+.casillas .p{
+    padding-left: 20px;
+}
+.form_label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.form_control{
+    height: 50px;
+    width: 450px;
+    border: solid 1px black;
+    border-radius: 5px;
+    margin: 10px 0 25px 0;
+    padding-left: 10px;
+}
+.form_control:nth-of-type(3){
+    height: 110px;
+    
+}
+
+.input_check{
+    width: 20px;
+}
+.check_form{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.btn_form{
+    padding: 13px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: #33b0ac solid 1px;
+    background-color: #33b0ac;
+    cursor: pointer;
+}
 
 
+
+/* --------FIN FORMULARIO------- */
 .redes {
     font-weight: 600;
     padding: 5%;
@@ -823,6 +972,7 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
         animation-fill-mode: both;
         -webkit-animation-duration: 0.5s;
         animation-duration: 0.5s;
+        
     }
 
     @keyframes moveIn {
@@ -837,14 +987,13 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
             transform: translate3d(0, 0, 0);
         }
     } 
-
+    
      
     .nav_input:checked + .items{
         display: flex;
         
     }
     
-
 
     nav .items ul{
         margin: 0;
@@ -888,10 +1037,16 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
     .quienessomos a{
         display: none;
     }
-    
+    .container-img{
+        width: 150px;
+        height: 140px;
+    }
 }  
 
 @media (max-width: 795px) {
+    form, .form_control{
+        max-width: 400px;
+    }
     
     .logo, .texto-principal{
         margin-left: 25px;
@@ -966,7 +1121,7 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
     }
 }
 @media (max-width: 456px) {
-
+    
     .container-img{
         width: 120px;
         height: 110px;
