@@ -1,24 +1,61 @@
 
+//----MOVIMIENTO AL SCROLLEAR
 window.addEventListener("scroll", function(){
   var navbar = document.querySelector("nav");
   navbar.classList.toggle("abajo", this.window.scrollY>0);
   
   var flecha = document.getElementById("stick");
   flecha.classList.toggle("sticky", this.window.scrollY>0);
-
   
+  
+  var animacion = document.getElementById("caja-2");
+  animacion.classList.toggle("animate__fadeInLeft", this.window.scrollY>400);
+  var animacion = document.getElementById("caja-3");
+  animacion.classList.toggle("animate__fadeInRight", this.window.scrollY>700);
+  var animacion = document.getElementById("caja-4");
+  animacion.classList.toggle("animate__fadeInLeft", this.window.scrollY>1000);
 })
+var animacion = document.getElementById("caja-1");
+  animacion.classList.toggle("animate__fadeInRight");
+
+//----ACTIVO CLASE MESSAGE1
 setTimeout(()=>{
-  var elemento= document.getElementById("div");
-  elemento.classList.toggle("message1");
-}, 2500);
+var elemento= document.getElementById("div");
+elemento.classList.toggle("message1");
+}, 3000);
 
-
+//----REMUEVO CLASE MESSAGE1 CON CLICK
 var ventana = document.getElementById("oka");
 ventana.addEventListener("click", clicked)
 function clicked(){
   document.getElementById("div").classList.remove("message1")
 }
+
+//----ANIMACION CON CLICK EN NAV
+
+var quienessomos = document.getElementById("service");
+quienessomos.addEventListener("click", click);
+function click(){
+  document.getElementById("a").classList.toggle("animate__flipInY");
+  document.getElementById("b").classList.toggle("animate__flipInY");
+  document.getElementById("c").classList.toggle("animate__flipInY");
+  document.getElementById("d").classList.toggle("animate__flipInY");
+  document.getElementById("e").classList.toggle("animate__flipInY");
+  document.getElementById("f").classList.toggle("animate__flipInY");
+}
+
+//------media-querys-----
+
+// const mediumBp = matchMedia("(max-width: 1050px)");
+// const changeSize = mql => {
+//   mql.matches
+//   ? document.getElementById("caja-1").classList.toggle("animate__fadeInRight", this.window.scrollY>300)
+//   : document.getElementById("caja-1").classList.toggle("animate__fadeInRight", this.window.scrollY>500)
+  
+// }
+
+// mediumBp.addEventListener(changeSize);
+// changeSize(mediumBp);
 
 function slide(){
     let slideValue = document.getElementsByClassName("slider").value;

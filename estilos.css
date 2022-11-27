@@ -5,20 +5,14 @@
     box-sizing: border-box;
 
 }
-/* :root{
-    --sonrisa: url("imagenes/BLANQ2.jpg");
-    
-} */
+
 body{
     width: 100%;
-    /* background: linear-gradient(to left, #FFFFFF, #FFFFFF, #b2e7fd, #55C5F6) no-repeat; */
-    background-color: #ddf9f9;
+    /* background-color: #f6f6f6; */
+    background-color: #ccecec;
     
 }
-/* .message_input{
-    
-    position: relative;
-} */
+
 .oka{
     background-color:rgba(131, 218, 219, 0.5);
     width: 200px;
@@ -53,9 +47,7 @@ body{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     /* letter-spacing: 1px;   */
 }
-/* .message_content p{
-    padding-top: 30px;
-} */
+
 
 .message{
     display: none;
@@ -101,6 +93,8 @@ body{
     background-color: rgb(226, 233, 25);
 }
 h2{
+    /* color: #ffffff; */
+    /* color: #200400; */
     color: #0b097c;
    
 }
@@ -140,7 +134,8 @@ p{
 }
 
 nav {
-    background:rgba(39, 195, 203, 0.8);
+    /* background:rgba(39, 195, 203,0.8); */
+    background:rgba(255, 255, 255, 0.6);
     box-shadow: 0px 4px 10px rgba(1, 1, 1, 0.3);
     width: 100%;
     display: flex;
@@ -151,8 +146,12 @@ nav {
     /* box-shadow: 0 0 5px; */
 }
 nav.abajo .logo{
-    width: 120px;
+    width: 108px;
     transition: linear 0.3s;
+
+}
+nav.abajo{
+    background:rgba(255, 255, 255, 0.9);
 
 }
 nav .menu{
@@ -163,7 +162,7 @@ nav .menu{
     padding: 22px;
     border-radius: 15px;
     /* background-color:rgb(85, 197, 246, 0.8);    */
-    background-color: rgba(27, 169, 176, 0.6);
+    background-color: rgba(166, 209, 209, 0.6);
     /* box-shadow: 0px 0px 4px black;     */
 }
 .nav_input{
@@ -171,11 +170,10 @@ nav .menu{
     
 }
 .logo {
-    width: 165px;
+    width: 120px;
     margin-left: 50px;
     
 }
-
 
 nav .items ul {
     margin: 0 6px 0 0;
@@ -204,9 +202,12 @@ nav .items ul li:hover::before{
 nav .items ul li a{
     border-radius: 10px;
     font-weight: bold;
-    color: #ebf7f7e2;
+    color: #200400;
+    /* color: #0b097c; */
+
+    /* color: #ebf7f7e2; */
     text-transform: uppercase;
-    font-family: ralereg;
+    font-family: nunitoreg;
     font-size:15px;
     /* text-shadow: 0px 0px 5px #cbcfcf; */
     padding: 20px;
@@ -217,62 +218,73 @@ nav .items ul li a{
 }
 
 nav .items li a:hover{
-    color: white;
+    /* color: rgb(68, 213, 220); */
+    
+    color: rgb(200, 239, 238);
     transform: scale(1.1);
 }
-
+.imagen-fondo{
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url("imagenes/smile2-min.jpg") no-repeat;
+    /* background: url("imagenes/smile2.png") no-repeat; */
+    background-size:cover;
+    background-position: calc(70%);
+    float: right;
+    height: 700px;
+    width:100%;
+    
+}
 .container-fondo {
-    background:  url("imagenes/ezgif.com-gif-maker.jpg") no-repeat;
-    /* background: url("imagenes/1x/Recurso\ 1-100.jpg") no-repeat; */
-    background-size: cover;
-    background-position: center;
+    /* background: url("imagenes/dentist-with-smile.jpg") no-repeat; */
     overflow: hidden;
-    width: 100%;
-    height: 100%;
-    box-shadow: 0px 0px 5px;
+    height: 500px;
+    box-shadow: 0px 0px 15px rgb(164, 170, 170);
     transition: 0.5s;
+    background-color: white;
+    margin:0;
+    padding: 0;
+    
 }
 
 .texto-principal {
-    margin: 20% 5%;
+    margin: 20% 1% 10% 1% ;
+  
 }
 .texto-principal span{ 
-    font-size: 60px;
+    font-size: 57px;
     font-family: nunitoreg;
-    color: rgb(234, 243, 242);
-    background:rgba(27, 169, 176, 0.6);
-    /* background:rgb(10, 186, 128, 0.6); */
+    /* color: #0b097c; */
+    color: #200400;
     font-weight: 600;
-    padding: 0 10px 0 10px;
+    
 }
 
-.texto-principal p {
-    /* margin-top: 20px; */
+/* .texto-principal p {
+    width: 700px;
     font-size: 20px;
     font-family: monsereg;  
+    font-weight: bold;
     padding-top: 30px;
     margin: 0;
 
-}
+} */
 
 
-.animate__animated.animate__fadeIn{
+/* .animate__animated.animate__fadeIn{
     animation-delay: 2s;
-}
+} */
 span.animate__animated.animate__fadeIn:nth-child(1){
-    animation-delay: 0.3s;
-
+    animation-delay: 0.5s;
+    margin-right: 490px;
 }
 span.animate__animated.animate__fadeIn:nth-child(2){
-    animation-delay: 0.7s;
-
+    animation-delay: 1.3s;
 }
 span.animate__animated.animate__fadeIn:nth-child(3){
-    animation-delay: 0.7s;
+    animation-delay: 1.3s;
 }
-p.animate__animated.animate__fadeIn:nth-child(4){
+/* p.animate__animated.animate__fadeIn:nth-child(4){
     animation-delay: 1s;
-}
+} */
 .quienessomos{
     width: 100%;
     margin: auto;
@@ -304,36 +316,36 @@ p.animate__animated.animate__fadeIn:nth-child(4){
 }
 
 .somosDentalCare h2 {
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
+    /* background: linear-gradient(rgba(11, 229, 185, 0.3), rgba(11, 229, 185, 0.3)); */
+    /* border-top: #000000 solid 1px;
+    border-bottom: #000000 solid 1px; */
     font-size: 30px;
     font-family: latoreg;
     font-weight: 600;
-    padding-top: 40px; 
-    padding-bottom: 20px;
-    
+    /* padding-top: 40px; 
+    padding-bottom: 20px; */
+    padding: 5px;
+    margin: 40px 0 20px 0;
 }
 
 
 .img-equipo {
     align-items: center;
     display: flex;
-    /* align-content: center; */
+    opacity: 0;
     margin-top: 2% 0%;
-    /* margin-bottom: 2%; */
-    /* box-shadow: 0px 0px 5px;     */
-    background:rgba(27, 169, 176, 0.3);
-
-    /* border: rgba(27, 169, 176); */
+    /* background:rgba(27, 169, 176, 0.3); */
     
 }
 .img-equipo:nth-child(odd){
     margin-right: 15%;
-    background: linear-gradient(to right, rgba(27, 169, 176, 0.5), transparent);
+    background: linear-gradient(to right, rgba(63, 137, 174, 0.5), transparent);
 
 }
 .img-equipo:nth-child(even){
     margin-left: 15%;
-    background: linear-gradient(to left, rgba(27, 169, 176, 0.5), transparent);
+    background: linear-gradient(to left, rgba(63, 137, 174, 0.5), transparent);
 
 }
 /* .img-equipo:nth-child(3){
@@ -471,7 +483,7 @@ p.animate__animated.animate__fadeIn:nth-child(4){
 }
 
 .fila1 .imagen-servicios:nth-child(1) .container-img:hover{
-    background: url("imagenes/BLANQ2.jpg") no-repeat;
+    background: url("imagenes/BLANQ2-min.jpg") no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -481,7 +493,7 @@ p.animate__animated.animate__fadeIn:nth-child(4){
     background-position: center;
 }
 .fila1 .imagen-servicios:nth-child(2) .container-img:hover{
-    background: url("imagenes/implantes.jpg") no-repeat;
+    background: url("imagenes/implantes-min.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     cursor: pointer;
@@ -492,7 +504,7 @@ p.animate__animated.animate__fadeIn:nth-child(4){
     background-position: center;
 }
 .fila1 .imagen-servicios:nth-child(3) .container-img:hover{
-    background: url("imagenes/ortodoncia2.jpg") no-repeat;
+    background: url("imagenes/ortodoncia2-min.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     cursor: pointer;
@@ -506,7 +518,7 @@ p.animate__animated.animate__fadeIn:nth-child(4){
     background-position: center;
 }
 .fila2 .imagen-servicios:nth-child(1) .container-img:hover{
-    background: url("imagenes/antesdespues.png") no-repeat;
+    background: url("imagenes/antesdespues-min.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     cursor: pointer;
@@ -517,7 +529,7 @@ p.animate__animated.animate__fadeIn:nth-child(4){
     background-position: center;
 }
 .fila2 .imagen-servicios:nth-child(2) .container-img:hover{
-    background: url("imagenes/endodoncia1.jpg") no-repeat;
+    background: url("imagenes/endodoncia1-min.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     cursor: pointer;
@@ -528,28 +540,14 @@ p.animate__animated.animate__fadeIn:nth-child(4){
     background-position: center;
 }
 .fila2 .imagen-servicios:nth-child(3) .container-img:hover{
-    background: url("imagenes/radiografia-dental.jpg") no-repeat;
+    background: url("imagenes/radiografia-dental-min.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     cursor: pointer;
 }
 
-.formulario {
-    width: 100%;
-}
 
-.formulario h2 {
-    text-transform: uppercase;
-    font-size: 30px;
-    font-family: latoreg;
-    font-weight: 600;
-    padding-top: 30px;
-    align-items: center;
-    text-align: center;
-    margin: 0;
-}
-
-
+/* -----SUCURSALES----- */
 .sucursales {  
     width: 100%;
     margin: auto;
@@ -700,56 +698,8 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
 
     }
 }
-/* .slider-frame {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
 
-}
-
-.slider-frame ul {
-    display: flex;
-    padding: 0;
-    width: 400%;
-    animation: slide 16s infinite alternate linear;
-    margin-bottom: 2%;
-    
-}
-
-@keyframes slide {
-
-    0% {
-        margin-left: 0%;
-    }
-
-    20% {
-        margin-left: 0%;
-    }
-
-    25% {
-        margin-left: -100%;
-    }
-
-    45% {
-        margin-left: -100%;
-    }
-
-    50% {
-        margin-left: -200%;
-    }
-
-    70% {
-        margin-left: -200%;
-    }
-
-    75% {
-        margin-left: -300%;
-    }
-
-    100% {
-        margin-left: -300%;
-    }
-} */
+/* ------FIN SUCURSALES------ */
 
 .mapa {
     width: 100%;
@@ -785,8 +735,8 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
 
 
 .parrafo-protesis {
-    margin: auto;
-    padding: 50px 5px 50px 5px;
+    margin: 60px 10px 70px 10px;
+    padding: 0 5px 0 5px;
     
 }
 
@@ -800,16 +750,29 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
     text-align: center;
     padding-bottom: 10px;
 }
+
  /* --------FORMULARIO-------- */
+
+ .formulario {
+    width: 100%;
+}
+
+.formulario h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: latoreg;
+    font-weight: 600;
+    padding-top: 30px;
+    text-align: center;    
+    margin-bottom: 30px;
+}
+
  form{
     width: 450px;
     border-top: #246d8c solid 5px;
     padding-top: 40px;
  }
  
-.formulario H2{
-    margin-bottom: 50px;
-}
 .form_container{
     justify-content: center;
     display: flex;
@@ -862,29 +825,37 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
     cursor: pointer;
 }
 
-
-
 /* --------FIN FORMULARIO------- */
-.redes {
-    font-weight: 600;
-    padding: 5%;
-    align-items: center;
-    text-align: center;
-}
+
 
 .redes h2 {
-    padding-bottom: 50px;
-
+    margin: 0;
+    padding: 0;
 }
 
+
 .redes a {
-    margin: 15px;    
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    display: flex;    
+    margin: 50px 20px 70px 20px;
 } 
-.redes a img {
+.containerA{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+.redes a img{
+    text-align: center;
+    align-items: center;
+    justify-items: center;
     height: 50px;
     border-radius: 9.5px;
-
-} 
+    
+}
 
 .pie-pagina {
     width: 100%;
@@ -900,30 +871,48 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
     padding: 10px;
 
 }
+@media (max-width: 1485px){
+    span.animate__animated.animate__fadeIn:nth-child(1){
+        margin-right: 0;
+    }
+    span{
+        justify-content: right;
+        display: flex;
+    }
+    .texto-principal{
+        margin-top: 15%;
+        
+    }
+}
+@media (max-width: 1300px){
+    
+    .texto-principal{
+        margin-top: 15%;
+        
+    }
+}
 
 @media (max-width: 1200px) {
     .logo, .texto-principal{
         margin-left: 20px;
     }
-    .logo{
-        width: 140px;
-    }
+    
     nav ul{
         margin-right: 10px;
     }
-    /* .container-fondo{
-        height: 100vh;
+    /* .container-fondo {
+        justify-content: right;
+        margin-right: 0;
     } */
+    .texto-principal{
+        margin-top: 20%;
+        
+    }
+    
 }
 
 @media (max-width: 1050px) {
-    .container-fondo {
-        background-position: right;
-        /* height: 100vh; */
-    }
-    .logo{
-        width: 120px;
-    }
+   
     
     .logo, .texto-principal{
         margin-left: 60px;
@@ -933,9 +922,10 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
         z-index: 1;
     }
     .texto-principal{
-        margin-top: 300px;
+        margin-top: 25%;
         
     }
+    
     .texto-principal span{
         font-size: 47px;
 
@@ -1047,6 +1037,7 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
         width: 180px;
         height: 160px;
     }
+    
 }  
 
 @media (max-width: 795px) {
@@ -1116,30 +1107,32 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
         font-size: 17px;
 
     }
+    .texto-principal {
+        margin-top: 30%;
+    }
 }
 @media (max-width:619px){
+    .texto-principal {
+        margin-top: 40%;
+    }
     .img-equipo{
         flex-direction: column;
     }
     
     .img-equipo:nth-child(odd){
-        /* margin-right: 15%; */
         margin-right: 0
-        
-        /* background: linear-gradient(to right, rgba(27, 169, 176, 0.5), transparent); */
-    
     }
     .img-equipo:nth-child(even){
-        /* margin-left: 15%; */
         margin-left: 0;
-        /* background: linear-gradient(to left, rgba(27, 169, 176, 0.5), transparent); */
-    
     }
 }
 @media (max-width:476px) {
-    span:nth-child(2)::after{
-        content: " ";
+    .texto-principal {
+        margin-top: 50%;
     }
+    /* span:nth-child(2)::after{
+        content: " ";
+    } */
     form, .form_control{
         width: 400px;
     }
@@ -1203,7 +1196,16 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
 }
 @media (max-width: 300px) {
     form, .form_control{
-        width: 250px;
+        width: 180px;
         
     }
+    .container-img{
+        width: 100px;
+        height: 100px ;
+    }
+    .imagen-servicios{
+        width: 150px;
+        height: 170px;
+    }
+    
 }
