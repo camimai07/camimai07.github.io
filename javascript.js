@@ -7,16 +7,16 @@ window.addEventListener("scroll", function(){
   var flecha = document.getElementById("stick");
   flecha.classList.toggle("sticky", this.window.scrollY>0);
   
-  
+  var animacion = document.getElementById("caja-1");
+  animacion.classList.toggle("animate__fadeInRight", this.window.scrollY>0);
   var animacion = document.getElementById("caja-2");
-  animacion.classList.toggle("animate__fadeInLeft", this.window.scrollY>400);
+  animacion.classList.toggle("animate__fadeInLeft", this.window.scrollY>200);
   var animacion = document.getElementById("caja-3");
-  animacion.classList.toggle("animate__fadeInRight", this.window.scrollY>700);
+  animacion.classList.toggle("animate__fadeInRight", this.window.scrollY>400);
   var animacion = document.getElementById("caja-4");
-  animacion.classList.toggle("animate__fadeInLeft", this.window.scrollY>1000);
+  animacion.classList.toggle("animate__fadeInLeft", this.window.scrollY>600);
 })
-var animacion = document.getElementById("caja-1");
-  animacion.classList.toggle("animate__fadeInRight");
+
 
 //----ACTIVO CLASE MESSAGE1
 setTimeout(()=>{
@@ -31,7 +31,7 @@ function clicked(){
   document.getElementById("div").classList.remove("message1")
 }
 
-//----ANIMACION CON CLICK EN NAV
+//----ANIMACION SERVICIOS CON CLICK EN NAV
 
 var quienessomos = document.getElementById("service");
 quienessomos.addEventListener("click", click);

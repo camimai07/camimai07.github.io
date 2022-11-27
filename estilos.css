@@ -145,13 +145,14 @@ nav {
     z-index: 50;
     /* box-shadow: 0 0 5px; */
 }
-nav.abajo .logo{
-    width: 108px;
-    transition: linear 0.3s;
 
-}
 nav.abajo{
     background:rgba(255, 255, 255, 0.9);
+
+}
+.abajo .logo{
+    width: 108px;
+    transition: linear 0.3s;
 
 }
 nav .menu{
@@ -169,6 +170,7 @@ nav .menu{
     display: none;
     
 }
+
 .logo {
     width: 120px;
     margin-left: 50px;
@@ -935,7 +937,7 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
 
     }
     nav{
-        position: fixed;
+        /* position: fixed; */
         /* height: 150px; */
         background: rgb(255, 255, 255,0.5);
         box-shadow: 0 0 5px;
@@ -956,7 +958,7 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
         background-color:rgba(27, 169, 176, 0.8);
         overflow-y:scroll; 
         height: 100vh; 
-        width: 55%;
+        /* width: 50%; */
         /* border-right: solid 1px #14e6f1; */
         animation-name: moveIn;
         -webkit-animation-name: moveIn;
