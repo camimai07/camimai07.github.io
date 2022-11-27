@@ -316,7 +316,7 @@ span.animate__animated.animate__fadeIn:nth-child(3){
 }
 
 .somosDentalCare h2 {
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
     /* background: linear-gradient(rgba(11, 229, 185, 0.3), rgba(11, 229, 185, 0.3)); */
     /* border-top: #000000 solid 1px;
     border-bottom: #000000 solid 1px; */
@@ -1192,6 +1192,10 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
     form, .form_control{
         width: 300px;
         
+    }
+    .imagen-fondo{
+        background-position: calc(40%);
+        padding-top: 120px;
     }
 }
 @media (max-width: 300px) {
