@@ -7,7 +7,7 @@ window.addEventListener("scroll", function(){
   var flecha = document.getElementById("stick");
   flecha.classList.toggle("sticky", this.window.scrollY>0);
   
-  var animacion = document.getElementById("caja-1");
+  /*var animacion = document.getElementById("caja-1");
   animacion.classList.toggle("animate__fadeInRight", this.window.scrollY>0);
   var animacion = document.getElementById("caja-2");
   animacion.classList.toggle("animate__fadeInLeft", this.window.scrollY>200);
@@ -15,7 +15,16 @@ window.addEventListener("scroll", function(){
   animacion.classList.toggle("animate__fadeInRight", this.window.scrollY>400);
   var animacion = document.getElementById("caja-4");
   animacion.classList.toggle("animate__fadeInLeft", this.window.scrollY>600);
+*/
 })
+
+
+var menu_close = document.querySelector('.menu');
+menu_close.addEventListener('click', ()=>{
+  menu_close.classList.toggle('close');
+})
+
+
 
 
 //----ACTIVO CLASE MESSAGE1
@@ -30,6 +39,8 @@ ventana.addEventListener("click", clicked)
 function clicked(){
   document.getElementById("div").classList.remove("message1")
 }
+
+
 
 //----ANIMACION SERVICIOS CON CLICK EN NAV
 
