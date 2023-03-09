@@ -14,12 +14,12 @@ body{
 }
 
 .oka{
-    background-color:rgba(131, 218, 219, 0.5);
+    background-color:rgba(103, 211, 211, 0.5);
     width: 200px;
     height: 40px;
     margin: auto;
     cursor: pointer;
-    border: 1px solid rgb(19, 216, 219);
+    border: 1px solid rgb(19, 185, 188);
     border-radius: 20px;
     justify-content: center;
     padding: 6px;
@@ -223,7 +223,7 @@ nav .items ul li a{
     /* color: #ebf7f7e2; */
     text-transform: uppercase;
     font-family: nunitoreg;
-    font-size:15px;
+    font-size:14px;
     /* text-shadow: 0px 0px 5px #cbcfcf; */
     padding: 20px;
     text-align: center;
@@ -335,7 +335,7 @@ span.animate__animated.animate__fadeIn:nth-child(3){
     /* background: linear-gradient(rgba(11, 229, 185, 0.3), rgba(11, 229, 185, 0.3)); */
     /* border-top: #000000 solid 1px;
     border-bottom: #000000 solid 1px; */
-    font-size: 30px;
+    font-size: 20px;
     font-family: latoreg;
     font-weight: 600;
     /* padding-top: 40px; 
@@ -388,10 +388,10 @@ span.animate__animated.animate__fadeIn:nth-child(3){
 }
     
     
-.texto p { 
+/* .texto p { 
     font-family: monsereg;
     font-size: 20px;
-}
+} */
 
 .pagina-2{
     text-align: center;
@@ -400,7 +400,7 @@ span.animate__animated.animate__fadeIn:nth-child(3){
 }
 .pagina-2 h2 {
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 20px;
     font-family: latoreg;
     font-weight: 600;
     padding-top: 2%;
@@ -420,7 +420,7 @@ span.animate__animated.animate__fadeIn:nth-child(3){
     text-transform: uppercase;
 }
 .parrafo-protesis h3{
-    font-size: 20px;
+    font-size: 15px;
     padding-bottom: 20px;
 }
 
@@ -572,7 +572,7 @@ span.animate__animated.animate__fadeIn:nth-child(3){
     padding-top: 20px;
     margin-bottom: 30px;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 20px;
     font-family: latoreg;
     font-weight: 600;
 }
@@ -723,7 +723,7 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
 
 .mapa h2 {
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 20px;
     font-family: latoreg;
     color: #0b097c;
     font-weight: 600;
@@ -757,13 +757,17 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
 
 .parrafo-protesis h3 {
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 14px;
     font-family: ralereg;
     color: #0b097c;
     font-weight: 600;
     align-items: center;
     text-align: center;
     padding-bottom: 10px;
+}
+.parrafo-protesis p{
+    font-size: 14px;
+
 }
 
  /* --------FORMULARIO-------- */
@@ -774,7 +778,7 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
 
 .formulario h2 {
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 20px;
     font-family: latoreg;
     font-weight: 600;
     padding-top: 30px;
@@ -879,7 +883,7 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
 }
 .derechos p{
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 15px;
     color: white;
     font-family: ralereg;
     font-weight: 600;
@@ -942,7 +946,7 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
     }
     
     .texto-principal span{
-        font-size: 47px;
+        font-size: 40px;
 
     }
     .texto-principal p{
@@ -1022,10 +1026,10 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
         margin-top: 20px;
     }
     #contacto h2, #sucursales h2,#servicios h2,#quienessomos h2{
-        font-size: 24px
+        font-size: 20px
     }
     .parrafo-protesis h3 {
-        font-size: 18px;
+        font-size: 15px;
 
     }
     .quienessomos a{
@@ -1062,7 +1066,7 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
         margin-bottom: 10px;  
     }
     .texto-principal span{
-        font-size: 45px;
+        font-size: 40px;
 
     }
     .texto-principal p{
@@ -1095,7 +1099,7 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
         height: 160px;
     }
     .texto p{
-        font-size: 15px;
+        font-size: 14px;
         padding: 2px;
         margin-top: 20px;
     }
@@ -1103,12 +1107,13 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
         width: 60px;
     }
     #contacto h2, #sucursales h2,#servicios h2,#quienessomos h2{
-        font-size: 22px
+        font-size: 18px
     }
-    .parrafo-protesis h3 {
-        font-size: 17px;
+    .parrafo-protesis h3, .parrafo-protesis p{
+        font-size: 14px;
 
     }
+   
     .texto-principal {
         margin-top: 30%;
     }
@@ -1152,7 +1157,7 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
         height: 130px;
     }
     .texto-principal span{
-        font-size: 42px;
+        font-size: 40px;
 
     }
     .texto-principal p{
@@ -1160,7 +1165,7 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
     
     }
     #contacto h2, #sucursales h2,#servicios h2,#quienessomos h2{
-        font-size: 20px
+        font-size: 17px
     }
     .parrafo-protesis{
         padding-top: 0;
