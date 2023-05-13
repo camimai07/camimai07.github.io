@@ -486,7 +486,7 @@ body.white #Me.transicion::after{
 }
 .descripcionPersonal h1{
     padding: 50px 0;
-    font-size: 30px;
+    font-size: var(--size-h1);
     
 }
 .descripcionPersonal p{
@@ -586,7 +586,7 @@ body.white #Me.transicion::after{
     padding: 50px 0;
     color: var(--color-texto);
     font-family: var(--font-gral);
-    font-size: 30px;
+    font-size: var(--size-h1);
     
 }
 
