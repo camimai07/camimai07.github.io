@@ -604,7 +604,7 @@ body.white #Me.transicion::after{
     text-decoration: none;
     color: #f1f1f1;
     gap: 10px;
-    line-height: 35px;
+    line-height: 40px;
     font-family: var(--font-gral);
     font-size: 20px;
     color: var(--color-font-nav);
