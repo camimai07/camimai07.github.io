@@ -486,8 +486,8 @@ body.white #Me.transicion::after{
     margin: 0 100px 0 100px;
 }
 .descripcionPersonal h1{
-    padding-bottom: 50px;
-    font-size: 30px;
+    padding: 50px 0;
+    font-size: 25px;
     
 }
 .descripcionPersonal p{
