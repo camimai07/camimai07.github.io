@@ -110,28 +110,7 @@ body::-webkit-scrollbar {
     border-radius: 20px;       /* roundness of the scroll thumb */
   }
 
-@keyframes img-move {
-    /* HACIA LOS COSTADOS */
 
-    /* 0%{
-        background-position: 0% 50%;
-    }    
-    50%{
-        background-position: 100% 50%;
-    }
-    100%{
-        background-position: 0% 50%;
-    } */
-
-    /* DE ESQUINA A ESQUINA */
-
-
-    from{
-        background-position: bottom left;
-    }to{
-        background-position: top right;
-    }
-}
 /* 
 .cursor{
     width: 50px;
@@ -223,12 +202,18 @@ nav ul li a:hover::before{
     display: flex;
     /* cursor: none; */
     background:  linear-gradient( rgba(0,0,0,0.7), rgba(0,0,0, 0.7)) , url('./imagen//blake-connally-IKUYGCFmfw4-unsplash.jpg') no-repeat;
-    background-size: 105%;
+    background-size: cover;
     background-position: center;
     animation: img-move 30s linear infinite alternate;
     cursor: context-menu;
 }
-
+@keyframes img-move {
+    from{
+        background-position: bottom left;
+    }to{
+        background-position: top right;
+    }
+}
 .containerHome{
     display: flex;
     width: 100%;
@@ -304,43 +289,6 @@ nav ul li a:hover::before{
    
 }
 
-#uno{
-    background: url('/imagen/1681006899659.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
-    transform: translateZ(75px);
-}
-
-#dos{
-    background: url('/imagen/2.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
-    transform: translateX(75px) rotateY(90deg);
-}
-#tres{
-    background: url('/imagen//3.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
-    transform: translateZ(-75px);
-}
-#cuatro{
-    background: url('/imagen/4.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
-    transform: translateX(-75px) rotateY(90deg);
-}
-#cinco{
-    background: #000;
-    transform: translateY(-75px) rotateX(90deg);
-}
-#seis{
-    background: #000;
-    transform: translateY(75px) rotateX(90deg);
-}
-/* .img:hover{
-    transform: perspective(1500px) rotateX(-20deg) rotateY(-10deg);
-
-} */
 
 .borde-left, .borde-right{
     display: flex;
@@ -373,13 +321,8 @@ nav ul li a:hover::before{
     position: relative;
    
 }
-#Me .navscroll{
-    background-color: #65517c;
-    height: 80px;
-    width: 100%;
-    position: sticky;
-}
-.btn{
+
+/*.btn{
     color: #000;
     margin-top: 100px;
     width: 210px;
@@ -395,11 +338,10 @@ nav ul li a:hover::before{
 
 }
 
-.btn::before{
+ .btn::before{
     content: "";
     position: absolute;
     width: 100%;
-    /* height: 0; */
     height: 100%;
     top: 0;
     left: 0;
@@ -411,11 +353,10 @@ nav ul li a:hover::before{
     transform-origin: 0 0;
     transition: 0.5s;
     transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
-}
+} 
 
 .btn:hover::before{
     transform: scaleY(1);
-    /* height: 100%; */
     opacity: 1;
 }
 
@@ -423,7 +364,7 @@ nav ul li a:hover::before{
     position: absolute;
     opacity: 1;
 }
-
+*/
 .btn2 {
     /* margin-top: 20px; */
     border: solid 1px #fff;
@@ -539,14 +480,19 @@ body.white #Me.transicion::after{
 .descripcionPersonal {
     color: var(--color-texto);
     font-family: var(--font-gral);
-    font-size: large;
+    /* font-size: large; */
     line-height: 35px;
     /* padding: 0 100px 0 100px; */
     margin: 0 100px 0 100px;
 }
 .descripcionPersonal h1{
     padding-bottom: 50px;
+    font-size: 35px;
     
+}
+.descripcionPersonal p{
+    font-size: 24px;
+
 }
 .container-iconsT {
     margin-top: 5% ;
