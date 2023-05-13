@@ -487,11 +487,11 @@ body.white #Me.transicion::after{
 }
 .descripcionPersonal h1{
     padding-bottom: 50px;
-    font-size: 1.8rem;
+    font-size: 30px;
     
 }
 .descripcionPersonal p{
-    font-size: 1.2rem;
+    font-size: 22px;
 
 }
 .container-iconsT {
