@@ -314,7 +314,6 @@ nav ul li a:hover::before{
     width: 100%;
     height: 100vh;
     /* background-color: #000; */
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -572,30 +571,44 @@ body.white #Me.transicion::after{
 }
 
 /* ---------- CONTACTO ----------- */
-
 .containerContact{
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* background-color: #736584; */
     background-color: #65517c;
-    color: var(--color-texto);
-    font-family: var(--font-gral);
-    font-size: large;
 
 }
 
-
 .containerContact h1{
-    padding: 20px;
+    padding: 50px 0;
+    color: var(--color-texto);
+    font-family: var(--font-gral);
+    font-size: 30px;
     
 }
 
 .containerContact .icons{
     display: flex;
-    padding: 20px 0;
+    /* padding: 20px 0; */
+    padding-bottom: 50px;
     gap: 100px;
-    
+    justify-content: center;
+    text-align: center;
+    /* width: 200px; */
 
 }    
+.containerContact .icons a{
+    text-decoration: none;
+    color: #f1f1f1;
+    gap: 10px;
+    line-height: 35px;
+    font-family: var(--font-gral);
+    font-size: 20px;
+    color: var(--color-font-nav);
+}
+.containerContact .icons a:hover{
+    color: var(--color-lineas);
+}
