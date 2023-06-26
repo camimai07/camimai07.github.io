@@ -534,14 +534,6 @@ nav ul li a:hover::before{
         padding-right: 50px;
     
     }
-    nav::-webkit-scrollbar-thumb{
-        background: transparent;
-    }
-    nav::-webkit-scrollbar-track {
-        background:transparent;     
-    
-    }
-    
     
    
     nav ul li a {
