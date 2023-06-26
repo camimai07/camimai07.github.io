@@ -532,7 +532,7 @@ nav ul li a:hover::before{
         overflow-y:scroll; 
         /* overflow: hidden; */
         padding-right: 50px;
-    
+        
     }
    
     nav ul li a {
@@ -542,6 +542,9 @@ nav ul li a:hover::before{
     .texto{
         font-size: x-large;
 
+    }
+    .texto h2{
+        font-size: 47px;
     }
 }
 
