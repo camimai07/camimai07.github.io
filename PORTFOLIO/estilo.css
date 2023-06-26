@@ -524,7 +524,7 @@ nav ul li a:hover::before{
 @media (max-width:1197px) {
   
     nav .logo p {
-        
+        font-size: xx-large;
         padding-left: 50px;
         
     }
