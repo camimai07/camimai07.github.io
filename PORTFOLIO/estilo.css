@@ -235,6 +235,7 @@ nav ul li a:hover::before{
 }
 .texto {
     /* padding-left: 100px; */
+    top: 80px;
     margin: auto;
     color: var(--color-texto);
     font-family: var(--font-gral);
