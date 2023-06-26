@@ -540,12 +540,13 @@ nav ul li a:hover::before{
         
         font-size: x-large;
     }
-    .texto{
-        font-size: x-large;
+    .texto h1{
+        /* font-size: x-large; */
+        font-size: 45px;
 
     }
     .texto h2{
-        font-size: 47px;
+        font-size: 45px;
     }
 }
 
