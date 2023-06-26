@@ -530,7 +530,7 @@ nav ul li a:hover::before{
         
     }
     nav ul{
-        
+        scroll-snap-stop: always;
         padding-right: 50px;
     
     }
@@ -553,7 +553,7 @@ nav ul li a:hover::before{
 @media (max-width:985px){
     nav ul{
         display: none;
-        /* opacity: 0; */
+        padding-right: 0;
     }
     nav .logo{
         margin-left: 50px;
