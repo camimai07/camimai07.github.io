@@ -523,17 +523,26 @@ nav ul li a:hover::before{
 
 @media (max-width:1197px) {
   
-    
     nav .logo p {
         
         padding-left: 50px;
         
     }
     nav ul{
-        scroll-snap-stop: always;
+        overflow-y:scroll; 
+        /* overflow: hidden; */
         padding-right: 50px;
     
     }
+    nav::-webkit-scrollbar-thumb{
+        background: transparent;
+    }
+    nav::-webkit-scrollbar-track {
+        background:transparent;     
+    
+    }
+    
+    
     nav ul li{
         display: inline-block;
         position: relative;
