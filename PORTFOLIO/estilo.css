@@ -339,14 +339,14 @@ nav ul li a:hover::before{
     transition: .3s ease all;
     box-shadow: 0 0 2px 2px rgba(0,0,0, 0.2) ;
 }
-/* .active{
+.active{
     background: var(--color-lineas);
     color: #000;
 }
 .active::after{
     left: unset;
     right: 0;  
-} */
+}
 
 @keyframes temaI {
     
@@ -567,7 +567,6 @@ nav ul li a:hover::before{
         height: 30px;
         cursor: pointer;
         z-index: 11;
-
     }
 
     nav .menu span{
@@ -616,4 +615,17 @@ nav ul li a:hover::before{
             top: 80px;
         }
     }
+}
+
+@media (max-width:300px){
+    nav .logo{
+        margin-left: 20px;
+    }
+    nav .logo p{
+        font-size: large;
+    }
+    nav .menu{
+        margin-right: 20px;
+    }
+   
 }
