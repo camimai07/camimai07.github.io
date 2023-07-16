@@ -46,3 +46,8 @@ btn.addEventListener('click', () =>{
     let me = document.querySelector('#Me');
     me.classList.toggle('transicion')
 });
+
+window.addEventListener('scroll', ()=>{
+    let nav = document.querySelector('nav');
+    nav.classList.toggle('colorNav',this.window.scrollY>0);
+})
