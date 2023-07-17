@@ -569,6 +569,9 @@ nav ul li a:hover::before{
     }
 } */
 @media (max-width:1090px){
+    nav{
+        background-color: rgb(51, 43, 60);
+    }
     nav ul{
         display: none;
         padding-right: 0;
@@ -609,17 +612,17 @@ nav ul li a:hover::before{
     .activeline3__menu{
         transform: rotate(-45deg) translate(-4px,2px);
     }
-
+  
     .items_menu{
         width: 100%;
-        /* height: 100%; */
+        height: auto;
         justify-content: center;
         align-items: center;
         display: flex;
         flex-direction: column;
         top: 80px;
         position: absolute;
-        background-color: var(--color-nav);
+        background-color: rgb(51, 43, 60);
         padding-bottom: 70px;
         padding-top: 20px;
         animation: desplazamiento 500ms;
