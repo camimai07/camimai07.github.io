@@ -315,8 +315,8 @@ nav ul li a:hover::before{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
-   
+    /* position: relative; */
+   /* margin-top: 200px; */
 }
 
 .btn2 {
@@ -386,13 +386,13 @@ nav ul li a:hover::before{
     }
 }
 .containerMe{
-    width: 100%;
-    height: 100vh;
+    max-width: 100%;
+    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* border: rgb(245, 52, 255) solid 1px; */
 
 }
