@@ -548,7 +548,7 @@ nav ul li a:hover::before{
     display: flex;
     justify-content: space-between;
     padding-bottom: 50px;
-    width: 500px;
+    max-width: 500px;
 
 }
 .contenedor-a{
@@ -558,7 +558,6 @@ nav ul li a:hover::before{
     align-items: center;
     width: 120px;
     height: 120px;
-
 }    
 .containerContact .icons a{
     text-decoration: none;
