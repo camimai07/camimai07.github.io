@@ -398,7 +398,9 @@ nav ul li a:hover::before{
 
 }
 .containerMe h1{
-    padding: 60px 0;
+    /* padding: 60px 0; */
+    padding-top: 40px;
+    padding-bottom: 60px;
     font-size: var(--size-h1);
     text-align: center;
     color: var(--color-texto);
