@@ -213,6 +213,7 @@ nav ul li a:hover::before{
     background-position: center;
     animation: img-move 30s linear infinite alternate;
     cursor: context-menu;
+    height: 100vh;
 }
 @keyframes img-move {
     from{
@@ -235,7 +236,7 @@ nav ul li a:hover::before{
     
 
 }
-.texto .guion{
+.containerHome .texto .guion{
     animation: guion ease-in-out 0.8s infinite;
 }
 @keyframes guion {
@@ -246,7 +247,7 @@ nav ul li a:hover::before{
         opacity: 1;
     }
 }
-.texto {
+.containerHome .texto {
     /* padding-left: 100px; */
     top: 80px;
     margin: auto;
@@ -254,7 +255,7 @@ nav ul li a:hover::before{
     font-family: var(--font-gral);
     font-size: large;
 }
-.texto h2{
+.containerHome .texto h2{
     color: var(--color-ppal);
     font-family: var(--font-gral);
     font-size: 50px ;
@@ -310,7 +311,8 @@ nav ul li a:hover::before{
 #Me{
     display: flex;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
+    padding-top: 80px;
     /* background-color: #000; */
     flex-direction: column;
     justify-content: center;
@@ -396,26 +398,58 @@ nav ul li a:hover::before{
     /* border: rgb(245, 52, 255) solid 1px; */
 
 }
+.avatar_movil{
+    display: none;
 
+
+}
+.avatar_movil img{
+    border-radius: 50%;
+    border: solid 6px rgb(236, 88, 234);
+    overflow: hidden;
+}
+.avatar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-left: 50px;
+    border: solid 1px yellow;
+    /* padding-left: 50px; */
+}
+.avatar img{
+    border-radius: 50%;
+    border: solid 6px rgb(236, 88, 234);
+    overflow: hidden;
+}
 .descripcionPersonal {
-    color: var(--color-texto);
-    font-family: var(--font-gral);
-    /* font-size: large; */
-    line-height: 35px;
-    /* padding: 0 100px 0 100px; */
+    /* border: solid 1px yellow; */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
     margin: 0 100px 0 100px;
 }
+.descripcionPersonal .texto{
+    color: var(--color-texto);
+    font-family: var(--font-gral);
+    line-height: 35px;
+    max-width: 700px;
+}
 .descripcionPersonal h1{
+    /* border: 2px solid yellow; */
     padding: 50px 0;
     font-size: var(--size-h1);
-    
+    text-align: center;
+
 }
 .descripcionPersonal p{
     font-size: 24px;
 
 }
 .container-iconsT {
-    margin-top: 5% ;
+    padding-top: 150px ;
+    padding-bottom: 150px;
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -423,11 +457,11 @@ nav ul li a:hover::before{
     align-items: center;
     /* margin: auto; */
 }
-.container-iconsT h3{
-    padding-bottom: 20px;
+.container-iconsT h1{
+    padding-bottom: 100px;
     font-family: var(--font-gral);
     color: var(--color-texto);
-    font-size: large;
+    /* font-size: large; */
 }
 .container-icons{
 
@@ -513,21 +547,23 @@ nav ul li a:hover::before{
 
 .containerContact .icons{
     display: flex;
-    /* padding: 20px 0; */
+    justify-content: space-between;
     padding-bottom: 50px;
-    margin: 0 30px;
-    gap: 100px;
-    justify-content: center;
+    width: 500px;
+
+}
+.contenedor-a{
+    display: flex;
     text-align: center;
-    /* width: 200px; */
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
 
 }    
 .containerContact .icons a{
     text-decoration: none;
     color: #f1f1f1;
-    width: 50px;
-   
-    gap: 10px;
     line-height: 40px;
     font-family: var(--font-gral);
     font-size: 20px;
@@ -568,7 +604,40 @@ nav ul li a:hover::before{
 
     }
 } */
+
 @media (max-width:1090px){
+    #Me{
+        margin-top: 250px;
+    }
+    .avatar_movil{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+        /* border: solid 2px yellow; */
+    }
+    .avatar_movil img{
+        border-radius: 50%;
+        border: solid 6px rgb(236, 88, 234);
+        overflow: hidden;
+        /* margin: 0 0 50px 0; */
+        
+    }
+    .avatar{
+        display: none;
+    }
+    .descripcionPersonal{
+        position: relative;
+        margin: 0;
+        padding: 0 30px;
+        flex-direction: column;
+    }
+    .descripcionPersonal h1 {
+        font-size: xx-large;
+        /* border: solid 2px yellow; */
+    }
+  
+    /* ----------------------------------------------- */
     nav{
         background-color: rgb(51, 43, 60);
     }

@@ -1,6 +1,7 @@
 //variables
 
 $color-fondo: linear-gradient(rgba(255,255,255,0.7),rgba(14, 113, 143, 0.7));
+// $color-fondo: linear-gradient(rgba(255,255,255,0.7),rgba(190, 190, 190, 0.7));
 //$color-nav:rgb(126, 174, 194);
 $color-nav:rgb(12, 126, 174);
 $color-nav-secundario: white;
@@ -79,7 +80,7 @@ nav{
     z-index: 1;
     box-shadow: 0 0 10px black;
     ul{
-        @include caja-flex($justify-content: space-around);
+        @include caja-flex(space-around);
         height: 100%;        
         width: 100%;
         li{
@@ -89,7 +90,7 @@ nav{
             a{
                 font-size: $size-fuente-nav;
                 height: 100%;
-                @include caja-flex($justify-content: none);
+                @include caja-flex(none);
                 font-family: $fuente-ppal;
                 color: $color-fuente-nav;
                
@@ -173,7 +174,34 @@ nav{
 .container-fondoZN{
     @include caja-flex();
     margin-top: 190px;
+    .flecha{
+        width: 90px;
+        height: 90px;
+        border-radius: 3px;
+        margin: 7px;
+        @include caja-flex();
+        background: rgba(255, 255, 255, 0.2);
+        // border: rgb(255, 249, 249) solid 1px;
+        // box-shadow: 0 0 2px white;
+        cursor: pointer;
+        .material-symbols-outlined{
+            color: black;
+        }
+            
+        &:hover{
+            background: rgba(59, 50, 50, 0.2);
+            transition: linear 90ms;
+            .material-symbols-outlined {
+                color: rgb(255, 255, 255);
+                transition: linear 90ms;
+    
+                }
+        }      
+            
+        }
 }
+
+
 
 /*------------------------------- slider */
 

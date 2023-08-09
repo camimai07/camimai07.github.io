@@ -162,6 +162,28 @@ nav ul li a::before {
   align-items: center;
   margin-top: 190px;
 }
+.container-fondoZN .flecha {
+  width: 90px;
+  height: 90px;
+  border-radius: 3px;
+  margin: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+.container-fondoZN .flecha .material-symbols-outlined {
+  color: black;
+}
+.container-fondoZN .flecha:hover {
+  background: rgba(59, 50, 50, 0.2);
+  transition: linear 90ms;
+}
+.container-fondoZN .flecha:hover .material-symbols-outlined {
+  color: rgb(255, 255, 255);
+  transition: linear 90ms;
+}
 
 /*------------------------------- slider */
 .container-all {
