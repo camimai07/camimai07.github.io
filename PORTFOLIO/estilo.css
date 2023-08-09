@@ -699,6 +699,9 @@ nav ul li a:hover::before{
         animation: desplazamiento 500ms;
         /* overflow-y: scroll; */
     }
+    .items_menu a{
+        font-size: xx-large;
+    }
     @keyframes desplazamiento {
         from{
             top: -80px;
