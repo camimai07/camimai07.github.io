@@ -546,9 +546,10 @@ nav ul li a:hover::before{
 
 .containerContact .icons{
     display: flex;
+    gap: 50px;
     justify-content: space-between;
     padding-bottom: 50px;
-    max-width: 500px;
+    /* max-width: 800px; */
 
 }
 .contenedor-a{
@@ -709,9 +710,14 @@ nav ul li a:hover::before{
             top: 80px;
         }
     }
+    .containerContact .icons{
+        /* border: solid 2px yellow; */
+        gap: 0;
+    }
 }
 
 @media (max-width:300px){
+    
     nav .logo{
         margin-left: 20px;
     }
