@@ -607,6 +607,10 @@ nav ul li a:hover::before{
 } */
 
 @media (max-width:1090px){
+    #Home{
+        padding-top: 50px;
+
+    }
     #Me{
         margin-top: 250px;
     }
@@ -652,6 +656,7 @@ nav ul li a:hover::before{
     }
     nav .logo p{
         padding-left: 0;
+        font-size: 36px;
     }
     nav .menu{
         margin-right: 50px;
@@ -722,13 +727,13 @@ nav ul li a:hover::before{
 }
 
 @media (max-width:300px){
-    
+
     nav .logo{
         margin-left: 20px;
     }
-    nav .logo p{
+    /* nav .logo p{
         font-size: large;
-    }
+    } */
     nav .menu{
         margin-right: 20px;
     }
