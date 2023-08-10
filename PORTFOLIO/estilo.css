@@ -16,7 +16,7 @@
     --color-nav:transparent;
     --color-font-nav:rgb(169, 165, 169);
     --color-borde-avatar: none;
-    --borde-avatar: solid 8px rgb(188, 41, 196);
+    --borde-avatar: solid 8px rgb(165, 29, 173);
     /* --color-borde-avatar: rgb(188, 41, 196); */
     --color_dark:rgb(51, 43, 60);
     --color_white: #f7f1f6;
@@ -578,7 +578,7 @@ nav ul li a:hover::before{
 @media (max-width:1197px) {
   
     nav .logo p {
-        font-size: xx-large;
+        font-size: 45px;
         padding-left: 50px;
         
     }
