@@ -211,7 +211,7 @@ nav ul li a:hover::before{
     background-position: center;
     background-attachment: fixed;
     animation: img-move 30s linear infinite alternate;
-    cursor: context-menu;
+    cursor: default;
     height: 100vh;
 }
 @keyframes img-move {
