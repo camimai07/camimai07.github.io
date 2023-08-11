@@ -49,5 +49,5 @@ btn.addEventListener('click', () =>{
 
 window.addEventListener('scroll', ()=>{
     let nav = document.querySelector('nav');
-    nav.classList.toggle('colorNav',this.window.scrollY>0);
+    nav.classList.toggle('colorNav',this.window.scrollY>225);
 })
