@@ -753,6 +753,7 @@ nav ul li a:hover::before{
         /* border: solid 2px yellow; */
         gap: 0;
     }
+
 }
 
 @media (max-width:300px){
@@ -764,6 +765,12 @@ nav ul li a:hover::before{
     nav .menu{
         margin-right: 20px;
     }
+    .containerMe h1 {
+        font-size: x-large;
 
-
+    }
+    .containerContact .icons{
+        flex-direction: column;
+    
+    }
 }
