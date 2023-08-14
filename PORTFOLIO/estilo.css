@@ -245,7 +245,7 @@ nav ul li a:hover::before{
     
 }
 
-.contenedorflecha::before{
+/* .contenedorflecha::before{
     content: "";
     display: block;
     border-top: 50px solid transparent;
@@ -254,7 +254,7 @@ nav ul li a:hover::before{
     border-bottom: 50px solid var(--color-lineas);
     position: absolute;
     transform: translateY(170%);
-}
+} */
 
 .flecha{
     width: 100%;
@@ -288,16 +288,21 @@ nav ul li a:hover::before{
 }
 .containerHome .texto {
     /* padding-left: 100px; */
-    top: 80px;
+    /* top: 80px; */
     margin: auto;
+    font-size: large ;
+ 
+}
+.containerHome .texto h1{
     color: var(--color-texto);
     font-family: var(--font-gral);
-    font-size: large;
+    font-size: 40px ;
+
 }
-.containerHome .texto h2{
+.containerHome .texto h1:nth-of-type(2){
     color: var(--color-ppal);
-    font-family: var(--font-gral);
-    font-size: 50px ;
+    /* font-weight: 900; */
+    /* font-style: italic; */
 
 }
 
@@ -609,19 +614,21 @@ nav ul li a:hover::before{
         
         font-size: x-large;
     }
+    .containerHome .texto{
+        /* top: 0; */
+        /* display: none; */
+    }
     .descripcionPersonal .texto{
         max-width: 600px;
     }
     .avatar{
         margin-left: 30px;
     }
-    .texto h1{
+    /* .texto h1{
         font-size: 45px;
 
-    }
-    .texto h2{
-        font-size: 45px;
-    }
+    } */
+    
 }
 /* @media (max-width:1090px){
     nav{
@@ -632,7 +639,8 @@ nav ul li a:hover::before{
 
 @media (max-width:1090px){
     #Home{
-        padding-top: 50px;
+        padding-top: 35px;
+        text-align: center;
 
     }
     #Me{
@@ -659,10 +667,12 @@ nav ul li a:hover::before{
         margin: 0;
         flex-direction: column;
         align-items: center;
+
     }
     .descripcionPersonal .texto{
         padding: 0;
         margin: 0 20px;
+        
     }
 
     .containerMe h1 {
