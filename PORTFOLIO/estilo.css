@@ -614,10 +614,7 @@ nav ul li a:hover::before{
         
         font-size: x-large;
     }
-    .containerHome .texto{
-        /* top: 0; */
-        /* display: none; */
-    }
+
     .descripcionPersonal .texto{
         max-width: 600px;
     }
@@ -639,7 +636,7 @@ nav ul li a:hover::before{
 
 @media (max-width:1090px){
     #Home{
-        padding-top: 30px;
+        padding-top: 25px;
         text-align: center;
 
     }
