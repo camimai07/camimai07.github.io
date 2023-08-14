@@ -741,7 +741,7 @@ nav ul li a:hover::before{
         position: absolute;
         background-color: rgb(51, 43, 60);
         padding-bottom: 70px;
-        padding-top: 20px;
+        padding-top: 40px;
         animation: desplazamiento 500ms;
         /* overflow-y: scroll; */
     }

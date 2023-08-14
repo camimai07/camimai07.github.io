@@ -19,7 +19,6 @@ function animation_menu(){
 
 
 
-
 // const cursor = document.querySelector('.cursor');
 // const seccion_home = document.querySelector('#Home');
 
