@@ -639,7 +639,7 @@ nav ul li a:hover::before{
 
 @media (max-width:1090px){
     #Home{
-        padding-top: 35px;
+        padding-top: 30px;
         text-align: center;
 
     }
