@@ -15,8 +15,8 @@
     --color-texto: rgb(255, 251, 254);
     --color-nav:transparent;
     --color-font-nav:rgb(169, 165, 169);
-    --color-borde-avatar: none;
-    --borde-avatar: solid 8px rgb(165, 29, 173);
+    /* --color-borde-avatar: none; */
+    --borde-avatar: solid 8px rgb(222, 168, 226);
     --color_dark:#2c2533;
 
     /* --color_dark: radial-gradient(circle at 3.33% 17.32%, #915285 0, #814382 12.5%, #6d337f 25%, #54247b 37.5%, #301678 50%, #000e75 62.5%, #000a73 75%, #000070 87.5%, #00006e 100%); */
