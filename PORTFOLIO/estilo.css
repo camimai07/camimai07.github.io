@@ -17,8 +17,10 @@
     --color-font-nav:rgb(169, 165, 169);
     --color-borde-avatar: none;
     --borde-avatar: solid 8px rgb(165, 29, 173);
-    --color_dark:rgb(51, 43, 60);
-    /* --color_dark:rgb(49, 36, 60); */
+    --color_dark:#2c2533;
+
+    /* --color_dark: radial-gradient(circle at 3.33% 17.32%, #915285 0, #814382 12.5%, #6d337f 25%, #54247b 37.5%, #301678 50%, #000e75 62.5%, #000a73 75%, #000070 87.5%, #00006e 100%); */
+    /* background-image: ; */
     --color_white: #f7f1f6;
     --color-nav-white:rgb(104, 44, 84);
     --color-nav-white-a: rgb(252, 215, 246);
@@ -30,10 +32,19 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--color_dark);
-    /* background-color: rgb(26, 26, 26); */
+    /* background-color: var(--color_dark); */
+    
     transition: 0.3s ease all;
-    /* transition-delay: 1s; */
+    
+    background-image: radial-gradient(circle at 50% -12.54%, #2c2533 0, #2c2533 16.67%, #2c2533 33.33%, #2c2533 66.5%, #1b1623 67%, #000021 83.33%, #00001d 100%);
+    
+    /* background-image: linear-gradient(180deg, #332b3c 0, #332b3c 16.67%, #2d1e3f 33.33%, #130c38 50%, #000032 66.67%, #00002e 83.33%, #00002a 100%);     */
+    
+    
+    background-attachment: fixed;
+
+
+    
 }
 
 /* --------------------------  body white  ---------------------------------*/
@@ -201,8 +212,9 @@ nav ul li a:hover::before{
 }
 
 .colorNav{
-    background-color: rgb(51, 43, 60) ;
-    transition: linear 300ms;
+    background-color: var(--color_dark) ;
+    /* background-color: #282134; */
+    transition: linear all 400ms;
 }
 
 #Home{
@@ -214,6 +226,8 @@ nav ul li a:hover::before{
     animation: img-move 30s linear infinite alternate;
     cursor: default;
     height: 100vh;
+
+
 }
 @keyframes img-move {
     from{
@@ -341,6 +355,7 @@ nav ul li a:hover::before{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* background-image: var(--color_dark); */
     /* position: relative; */
    /* margin-top: 200px; */
 }
@@ -679,7 +694,9 @@ nav ul li a:hover::before{
   
     /* ----------------------------------------------- */
     nav{
-        background-color: rgb(51, 43, 60);
+        background-color: var(--color_dark);
+        /* background-image: radial-gradient(circle at -7.92% 9.44%, #644d68 0, #563d62 16.67%, #442e5c 33.33%, #2d1f57 50%, #061352 66.67%, #00054e 83.33%, #00004a 100%); */
+
     }
     nav ul{
         display: none;
@@ -736,7 +753,10 @@ nav ul li a:hover::before{
         flex-direction: column;
         top: 80px;
         position: absolute;
-        background-color: rgb(51, 43, 60);
+        background-color: var(--color_dark);
+        /* background-image: radial-gradient(circle at 14.64% -11.24%, #aa69d0 0, #764fa5 25%, #443374 50%, #191845 75%, #00001e 100%); */
+        /* background-image: radial-gradient(circle at -7.92% 9.44%, #644d68 0, #563d62 16.67%, #442e5c 33.33%, #2d1f57 50%, #061352 66.67%, #00054e 83.33%, #00004a 100%); */
+
         padding-bottom: 70px;
         padding-top: 40px;
         animation: desplazamiento 500ms;
