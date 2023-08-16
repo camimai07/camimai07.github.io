@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    
 }
 /* VARIABLES */
 :root{
@@ -428,6 +427,9 @@ nav ul li a:hover::before{
     }
 }
 .containerMe{
+    border: var(--borde-avatar);
+    border-radius: 100px;
+    background: rgba(214, 14, 228, 0.1);
     max-width: 100%;
     /* height: 100vh; */
     display: flex;
@@ -453,16 +455,15 @@ nav ul li a:hover::before{
 }
 
 .avatar{
-    width: 250px;
-    height: 250px;
+    width: 220px;
+    height: 220px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: 120px;
-    /* background-color: rgb(220, 24, 255); */
-    background-image: radial-gradient(circle at 0% 0%, #003a30 0, #003a40 3.33%, #003a50 6.67%, #003a5f 10%, #003a6d 13.33%, #003a7a 16.67%, #003a86 20%, #003a8f 23.33%, #003997 26.67%, #00379c 30%, #00359f 33.33%, #00319f 36.67%, #002c9d 40%, #002598 43.33%, #001b91 46.67%, #040988 50%, #3b007d 53.33%, #520070 56.67%, #620063 60%, #6e0054 63.33%, #760045 66.67%, #7b0036 70%, #7e0028 73.33%, #7e001a 76.67%, #7d0007 80%, #7a0000 83.33%, #760000 86.67%, #710000 90%, #6a0000 93.33%, #630000 96.67%, #5b0100 100%);
+    background-image: radial-gradient(circle at 8.22% 38.81%, #ff24fe 0, #ff28f6 12.5%, #d628e7 25%, #a425d2 37.5%, #6f1db7 50%, #38159a 62.5%, #000f7f 75%, #000766 87.5%, #000051 100%);
     transform: rotate(45deg);
-    border: var(--borde-avatar) ;
+    /* border: var(--borde-avatar) ; */
     border-radius: 50px;
     overflow: hidden;
     
@@ -480,10 +481,9 @@ nav ul li a:hover::before{
     background-size: cover;
     background-position: center;
     transform: rotate(-45deg);
-
+    border: var(--borde-avatar);
 }
 .descripcionPersonal {
-    /* border: var(--borde-avatar); */
 
     display: flex;
     justify-content: center;
@@ -667,6 +667,7 @@ nav ul li a:hover::before{
         font-size: 45px;
 
     } */
+
     
 }
 /* @media (max-width:1090px){
@@ -686,16 +687,17 @@ nav ul li a:hover::before{
         margin-top: 250px;
     }
     .avatar_movil{
-        width: 200px;
-        height: 200px;
+        width: 190px;
+        height: 190px;
         display: flex;
         align-items: center;
         justify-content: center;
-        background-image: radial-gradient(circle at 0% 0%, #003a30 0, #003a40 3.33%, #003a50 6.67%, #003a5f 10%, #003a6d 13.33%, #003a7a 16.67%, #003a86 20%, #003a8f 23.33%, #003997 26.67%, #00379c 30%, #00359f 33.33%, #00319f 36.67%, #002c9d 40%, #002598 43.33%, #001b91 46.67%, #040988 50%, #3b007d 53.33%, #520070 56.67%, #620063 60%, #6e0054 63.33%, #760045 66.67%, #7b0036 70%, #7e0028 73.33%, #7e001a 76.67%, #7d0007 80%, #7a0000 83.33%, #760000 86.67%, #710000 90%, #6a0000 93.33%, #630000 96.67%, #5b0100 100%);
+        background-image: radial-gradient(circle at 8.22% 38.81%, #ff24fe 0, #ff28f6 12.5%, #d628e7 25%, #a425d2 37.5%, #6f1db7 50%, #38159a 62.5%, #000f7f 75%, #000766 87.5%, #000051 100%);
         transform: rotate(45deg);
-        border: var(--borde-avatar) ;
+        /* border: var(--borde-avatar) ; */
         border-radius: 50px;
-        margin: 30px 0 90px 0;
+        overflow: hidden;
+        border-radius: 50px;
     }
  
     .avatar_movil::before{
@@ -711,7 +713,7 @@ nav ul li a:hover::before{
         background-position: center;
         transform: rotate(-45deg);
         overflow: hidden;
-    
+        border: var(--borde-avatar) ;
     }
     .avatar{
         display: none;
@@ -724,14 +726,15 @@ nav ul li a:hover::before{
 
     }
     .descripcionPersonal .texto{
-        padding: 0;
+        padding: 80px 0;
         margin: 0 20px;
         
     }
+  
 
     .containerMe h1 {
         font-size: xx-large;
-
+        margin-bottom: 30px;
     }
   
     /* ----------------------------------------------- */
@@ -822,7 +825,12 @@ nav ul li a:hover::before{
         /* border: solid 2px yellow; */
         gap: 0;
     }
+    /* .contenedor-a{
 
+        width: 110px;
+        height: 110px;
+    } 
+     */
 }
 
 @media (max-width:300px){
@@ -840,6 +848,6 @@ nav ul li a:hover::before{
     }
     .containerContact .icons{
         flex-direction: column;
-    
+        
     }
 }
