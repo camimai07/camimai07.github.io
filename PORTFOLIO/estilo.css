@@ -427,11 +427,11 @@ nav ul li a:hover::before{
     }
 }
 .containerMe{
-    border: var(--borde-avatar);
-    border-radius: 100px;
+
+    box-shadow: 0 0 10px #fb08ff;
+    border-radius: 50px;
     background: rgba(214, 14, 228, 0.1);
     max-width: 100%;
-    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
