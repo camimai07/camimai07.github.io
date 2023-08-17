@@ -228,6 +228,16 @@ nav ul li a:hover::before{
 
 
 }
+#Home::before{
+    content: "";
+    position: absolute;
+    /* left: 0; */
+    display: flex;
+    bottom: 0px;
+    width: 100%;
+    height: 10px;
+    background: radial-gradient(circle, var(--color-lineas)  0%, transparent 100%);
+}
 @keyframes img-move {
     from{
         background-position: bottom left;
@@ -243,52 +253,7 @@ nav ul li a:hover::before{
    
     
 }
-.containerHome::before{
-    content: "";
-    position: absolute;
-    /* left: 0; */
-    display: flex;
-    bottom: 0px;
-    width: 100%;
-    height: 10px;
-    background: radial-gradient(circle, var(--color-lineas)  0%, transparent 100%);
-}
 
-/* ///////////////////////////////////////////////////////////////////////////////////////////////////////// 
-*/
-.contenedorflecha{
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    /* border: solid 2px  yellow; */
-    transform: translateY(50%);
-    
-}
-
-/* .contenedorflecha::before{
-    content: "";
-    display: block;
-    border-top: 50px solid transparent;
-    border-left: 40px solid transparent;
-    border-right: 40px solid transparent;
-    border-bottom: 50px solid var(--color-lineas);
-    position: absolute;
-    transform: translateY(170%);
-} */
-
-.flecha{
-    width: 100%;
-    /*height: 1px; */
-    /* transform: translateY(50%); */
-    border-top: solid 250px transparent;
-    border-bottom: solid 250px var(--color_dark);
-    border-left: solid 600px var(--color_dark);
-    border-right: solid 600px var(--color_dark);
-
-}
 
 
 .img-texto{
@@ -328,11 +293,6 @@ nav ul li a:hover::before{
     /* font-style: italic; */
 
 }
-
-/* .container_3d{
-    perspective: 1000px;
-    perspective-origin: 0px -150px;
-} */
 
 
 .borde-left, .borde-right{
@@ -522,8 +482,6 @@ nav ul li a:hover::before{
 
 
 .container-iconsT {
-    border: #6f1db7 solid 2px;
-
     /* padding-top: 100px ; */
     padding-bottom: 150px;
     display: flex;
@@ -531,6 +489,8 @@ nav ul li a:hover::before{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    /* border: var(--borde-avatar); */
     /* margin: auto; */
 }
 .container-iconsT h1{
@@ -575,12 +535,19 @@ nav ul li a:hover::before{
     height: 100%;
     border-radius: 10px;
 }
+.elevador{
+    transform: translateY(80px);
+    position: absolute;
+    border: 2px solid yellow;
+    width: 200px;
+    height: 150px;
 
-.container-icons .icon img:hover{
+}
+/* .container-icons .icon img:hover{
     transition: 0.3s  linear;
     transform: translateY(-15px);
-    /* animation: hover 0.2s linear alternate; */
-}
+
+} */
 
 @keyframes scroll {
     0%{
@@ -624,7 +591,7 @@ nav ul li a:hover::before{
     gap: 50px;
     justify-content: space-between;
     padding-bottom: 50px;
-    /* max-width: 800px; */
+    /* overflow: hidden; */
 
 }
 .contenedor-a{
@@ -692,6 +659,7 @@ nav ul li a:hover::before{
 } */
 
 @media (max-width:1090px){
+    
     #Home{
         padding-top: 25px;
         text-align: center;
@@ -849,7 +817,28 @@ nav ul li a:hover::before{
     } 
      */
 }
-
+@media (max-width:600px){
+    
+    .container-icons{
+        width: 350px;
+    }
+}
+@media (max-width:400px){
+    
+    .container-icons{
+        width: 200px;
+    }
+}
+@media (max-width:367px){
+    
+    .container-icons{
+        width: 200px;
+    }
+    .containerContact .icons{
+        flex-direction: column;
+        
+    }
+}
 @media (max-width:300px){
 
     nav .logo{
@@ -863,8 +852,6 @@ nav ul li a:hover::before{
         font-size: x-large;
 
     }
-    .containerContact .icons{
-        flex-direction: column;
-        
-    }
+   
+    
 }
