@@ -243,6 +243,16 @@ nav ul li a:hover::before{
    
     
 }
+.containerHome::before{
+    content: "";
+    position: absolute;
+    /* left: 0; */
+    display: flex;
+    bottom: 0px;
+    width: 100%;
+    height: 10px;
+    background: radial-gradient(circle, var(--color-lineas)  0%, transparent 100%);
+}
 
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////////// 
 */
@@ -427,7 +437,6 @@ nav ul li a:hover::before{
     }
 }
 .containerMe{
-
     box-shadow: 0 0 10px #fb08ff;
     border-radius: 50px;
     background: rgba(214, 14, 228, 0.1);
@@ -441,7 +450,7 @@ nav ul li a:hover::before{
 .containerMe h1{
     /* padding: 60px 0; */
     padding-top: 40px;
-    padding-bottom: 60px;
+    /* padding-bottom: 60px; */
     font-size: var(--size-h1);
     text-align: center;
     color: var(--color-texto);
@@ -484,7 +493,8 @@ nav ul li a:hover::before{
     border: var(--borde-avatar);
 }
 .descripcionPersonal {
-
+    /* border: solid 2px yellow; */
+    padding: 60px;
     display: flex;
     justify-content: center;
     /* align-items: center; */
@@ -502,8 +512,19 @@ nav ul li a:hover::before{
     font-size: 23px;
 
 }
+
+/* -----------------CAROUSEL---------------- */
+
+
+
+
+
+
+
 .container-iconsT {
-    padding-top: 150px ;
+    border: #6f1db7 solid 2px;
+
+    /* padding-top: 100px ; */
     padding-bottom: 150px;
     display: flex;
     width: 100%;
@@ -520,22 +541,23 @@ nav ul li a:hover::before{
     /* font-size: large; */
 }
 .container-icons{
-
-    width: 60%;
+    
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 500px;
     padding-top: 20px;
     padding-bottom: 20px;
-    display: flex;
+    overflow-y: hidden;
+    overflow-x:scroll;
     gap: 40px;
     align-items: center;
-    overflow: hidden;
     position: relative;
-    /* border: solid 1px white; */
 }
 
 .container-icons::before{
     content: "";
     position: absolute;
-    left: 0;
+    /* left: 0; */
     display: flex;
     bottom: -5px;
     width: 100%;
@@ -544,22 +566,14 @@ nav ul li a:hover::before{
 }
 
 .container-icons .icon {
-    height: 70px;
-    /* width: 100px; */
-    animation: scroll 5s ease-in-out infinite alternate;
-    -webkit-animation: scroll 5s ease-in-out infinite alternate;
-
+    flex: 1 0 auto;
+    height: 150px;
+    
 }
 
 .icon img{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    /* width: 100%; */
-    /* height: 80px; */
     height: 100%;
     border-radius: 10px;
-
 }
 
 .container-icons .icon img:hover{
@@ -694,12 +708,15 @@ nav ul li a:hover::before{
         justify-content: center;
         background-image: radial-gradient(circle at 8.22% 38.81%, #ff24fe 0, #ff28f6 12.5%, #d628e7 25%, #a425d2 37.5%, #6f1db7 50%, #38159a 62.5%, #000f7f 75%, #000766 87.5%, #000051 100%);
         transform: rotate(45deg);
-        /* border: var(--borde-avatar) ; */
         border-radius: 50px;
         overflow: hidden;
-        border-radius: 50px;
+        /* margin-bottom: 40px ; */
+        /* border: var(--borde-avatar); */
     }
- 
+    .containerMe h1{
+        margin-top: 20px;
+        /* padding: 20px; */
+    }
     .avatar_movil::before{
         content: "";
         display: block;
@@ -721,20 +738,20 @@ nav ul li a:hover::before{
     .descripcionPersonal{
         text-align: center;
         margin: 0;
+        padding: 70px 0;
         flex-direction: column;
         align-items: center;
 
+
     }
     .descripcionPersonal .texto{
-        padding: 80px 0;
-        margin: 0 20px;
+        padding: 60px 20px 0 20px;
         
     }
   
 
     .containerMe h1 {
         font-size: xx-large;
-        margin-bottom: 30px;
     }
   
     /* ----------------------------------------------- */
