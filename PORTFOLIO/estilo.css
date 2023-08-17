@@ -50,14 +50,14 @@ body.white .colorNav{
     /* transition-delay: 1s; */
 
 } 
-body.white nav{
+/* body.white nav{
     background: var(--color-nav-white);
 
 }
 body.white nav ul{
     background: var(--color-nav-white);
 
-}
+} */
 body.white nav ul li a {
     color: var(--color-nav-white-a);
 
@@ -781,8 +781,16 @@ input[type=radio]{
     /* ----------------------------------------------- */
     nav{
         background-color: var(--color_dark);
-        /* background-image: radial-gradient(circle at -7.92% 9.44%, #644d68 0, #563d62 16.67%, #442e5c 33.33%, #2d1f57 50%, #061352 66.67%, #00054e 83.33%, #00004a 100%); */
 
+    }
+
+    body.white nav{
+        background: var(--color-nav-white);
+    
+    }
+    body.white nav ul{
+        background: var(--color-nav-white);
+    
     }
     nav ul{
         display: none;
