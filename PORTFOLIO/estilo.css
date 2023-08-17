@@ -228,16 +228,15 @@ nav ul li a:hover::before{
 
 
 }
-#Home::before{
+/* #Home::before{
     content: "";
     position: absolute;
-    /* left: 0; */
     display: flex;
     bottom: 0;
     width: 100%;
     height: 10px;
     background: radial-gradient(circle, var(--color-lineas)  0%, transparent 100%);
-}
+} */
 @keyframes img-move {
     from{
         background-position: bottom left;
@@ -722,7 +721,7 @@ input[type=radio]{
 
     }
     #Me{
-        margin-top: 250px;
+        margin-top: 50px;
     }
     .avatar_movil{
         width: 190px;
