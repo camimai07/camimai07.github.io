@@ -233,7 +233,7 @@ nav ul li a:hover::before{
     position: absolute;
     /* left: 0; */
     display: flex;
-    bottom: 0px;
+    bottom: 0;
     width: 100%;
     height: 10px;
     background: radial-gradient(circle, var(--color-lineas)  0%, transparent 100%);
@@ -477,10 +477,6 @@ nav ul li a:hover::before{
 
 
 
-
-
-
-
 .container-iconsT {
     /* padding-top: 100px ; */
     padding-bottom: 150px;
@@ -549,6 +545,13 @@ nav ul li a:hover::before{
 
 } */
 
+.container-iconsT .container{
+    margin-top: 100px;
+    width: 500px;
+    height: 500px;
+    border: var(--borde-avatar);
+}
+
 @keyframes scroll {
     0%{
         transform: translatex(0);
@@ -563,10 +566,7 @@ nav ul li a:hover::before{
 }
 
 /* ---------- CONTACTO ----------- */
-#Contact{
-    /* background-image: radial-gradient(circle at 50% -12.54%, #2c2533 0, #2c2533 16.67%, #2c2533 33.33%, #2c2533 66.5%, #1b1623 67%, #000021 83.33%, #00001d 100% );
-    background-attachment: fixed; */
-}
+
 .containerContact{
     width: 100%;
     display: flex;
@@ -826,13 +826,13 @@ nav ul li a:hover::before{
 @media (max-width:400px){
     
     .container-icons{
-        width: 200px;
+        width: 250px;
     }
 }
 @media (max-width:367px){
     
     .container-icons{
-        width: 200px;
+        width: 240px;
     }
     .containerContact .icons{
         flex-direction: column;
