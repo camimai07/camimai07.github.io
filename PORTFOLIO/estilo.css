@@ -12,18 +12,23 @@
     --color-lineas:rgb(220, 24, 255);
     --color-ppal:rgb(245, 52, 255);
     --color-texto: rgb(255, 251, 254);
+    --color-texto-white: rgb(117, 18, 97);
     --color-nav:transparent;
     --color-font-nav:rgb(169, 165, 169);
-    /* --color-borde-avatar: none; */
     --borde-avatar: solid 2px rgb(255, 17, 235);
+    --borde-avatar-white: solid 2px rgb(229, 159, 223);
     --color_dark:#2c2533;
-
-    /* --color_dark: radial-gradient(circle at 3.33% 17.32%, #915285 0, #814382 12.5%, #6d337f 25%, #54247b 37.5%, #301678 50%, #000e75 62.5%, #000a73 75%, #000070 87.5%, #00006e 100%); */
-    /* background-image: ; */
     --color_white: #f7f1f6;
-    --color-nav-white:rgb(104, 44, 84);
-    --color-nav-white-a: rgb(252, 215, 246);
+    /* --color-nav-white:rgb(104, 44, 84); */
+    --color-nav-white-a: rgb(194, 194, 194);
+    --color-nav-white: rgb(100, 72, 95);
     --size-h1: 35px;
+    --color-background:radial-gradient(circle at 50% -12.54%, #2c2533 0, #2c2533 16.67%, #2c2533 33.33%, #2b2334 50.5%, #000021 67%, #000021 83.33%, #00001d 100% );
+    --color-background-avatar:radial-gradient(circle at 8.22% 38.81%, #ff24fe 0, #ff28f6 12.5%, #d628e7 25%, #a425d2 37.5%, #6f1db7 50%, #38159a 62.5%, #000f7f 75%, #000766 87.5%, #000051 100%);
+
+    --color-background-avatar-white:radial-gradient(circle at 46.48% 9.75%, #ff999c 0, #ff929f 8.33%, #f88aa0 16.67%, #e4819e 25%, #cd7698 33.33%, #b26b8e 41.67%, #955e80 50%, #795170 58.33%, #624661 66.67%, #4f3d54 75%, #403548 83.33%, #342e3f 91.67%, #2c2a37 100%);
+
+    --color-background-white: radial-gradient(circle at 46.48% 9.75%, #b39d96 0, #b39893 6.25%, #b29390 12.5%, #b08c8c 18.75%, #aa7c86 25%, #aa7c86 31.25%, #a57284 37.5%, #9e6881 43.75%, #955e80 50%, #8a5480 56.25%, #7e4d81 62.5%, #704782 68.75%, #604485 75%, #4d4287 81.25%, #344189 87.5%, #02428b 93.75%, #00428c 100%);
 
 }
 
@@ -31,40 +36,55 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: var(--color_dark); */
 
-    /* overflow: hidden; */
-
-
-
-    
 }
 
 /* --------------------------  body white  ---------------------------------*/
 .white{
-    background-color: var(--color_white);
+    /* background-color: var(--color_white); */
     transition: 0.3s ease all;
-    /* transition-delay: 1s; */
 }
 
-body.white nav{
+body.white .colorNav{
     background-color: var(--color-nav-white);
     /* transition-delay: 1s; */
 
 } 
+body.white nav{
+    background: var(--color-nav-white);
+
+}
+body.white nav ul{
+    background: var(--color-nav-white);
+
+}
 body.white nav ul li a {
     color: var(--color-nav-white-a);
-    /* transition-delay: 1s; */
 
-}
-
-body.white nav ul li a:hover{
-    color: rgb(255, 255, 255);
-    transition: linear 0.3s;
 }
 body.white nav ul li a:before{
-    background: linear-gradient(to right, var(--color_white), transparent);
-    height: 2px;
+    background-color: rgb(255, 185, 243);
+}
+body.white .avatar{
+    /* border-color:#fda1ff ; */
+    /* background: var(--color-background-white); */
+    background-image: var(--color-background-avatar-white);
+}
+body.white .avatar_movil{
+    /* border:#fda1ff ; */
+    /* background: var(--color-background-white); */
+    background-image: var(--color-background-avatar-white);
+}
+body.white .avatar_movil::before{
+    border: var(--borde-avatar-white);
+
+}
+body.white .avatar::before{
+    border: var(--borde-avatar-white);
+
+}
+body.white #Total{
+    background-image: var(--color-background-white);
 
 }
 
@@ -77,24 +97,14 @@ body.white::-webkit-scrollbar-thumb {
     background-color: var(--color-nav-white);    /* color of the scroll thumb */
 }
 
-body.white .descripcionPersonal {
-    color: var(--color-nav-white);
-    font-family: var(--font-gral);
-    padding: 0 50px 0 50px;
-    /* transition-delay: 1s; */
+body.white .containerMe {
+    box-shadow: 0 0 10px #fda1ff;
+    background: rgba(213, 174, 213, 0.5);
 
 }
 
-body.white .btn{
-    color: var(--color-nav-white);
-    border: solid 1px var(--color-lineas);
-    /* transition-delay: 1s; */
 
-}
-body.white .btn:hover{
-    color: #fff;
 
-}
 body.white .btn::before{
     background: var(--color-nav-white);
     /* transition-delay: 1s; */
@@ -127,8 +137,8 @@ body::-webkit-scrollbar {
 
 }
 #Total{
-    background-image: radial-gradient(circle at 50% -12.54%, #2c2533 0, #2c2533 16.67%, #2c2533 33.33%, #2b2334 50.5%, #000021 67%, #000021 83.33%, #00001d 100% );
-    /* background-image: radial-gradient(circle at 50% -20.71%, #2c2533 0, #2c2533 12.5%, #2c2533 25%, #2c2533 37.5%, #2c2533 50%, #1c1035 62.5%, #00003a 75%, #000038 87.5%, #000036 100%); */
+    background-image: var(--color-background);
+
     
 }
 
@@ -193,8 +203,6 @@ nav ul li a:hover{
 
 nav ul li a:before{
     content: '';
-    /* background-color: white; */
-    /* background-color: var(--color-lineas); */
     background-color: var(--color-ppal);
     width: 100%;
     height: 0px;
@@ -318,15 +326,11 @@ nav ul li a:hover::before{
     z-index: 1;
     display: flex;
     width: 100%;
-    /* height: 100vh; */
     padding-top: 80px;
-    /* background-color: #000; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-image: var(--color_dark); */
-    /* position: relative; */
-   /* margin-top: 200px; */
+
 }
 
 .btn2 {
@@ -418,8 +422,6 @@ nav ul li a:hover::before{
 }
 .avatar_movil{
     display: none;
-
-
 }
 
 .avatar{
@@ -429,7 +431,7 @@ nav ul li a:hover::before{
     align-items: center;
     justify-content: center;
     margin-left: 120px;
-    background-image: radial-gradient(circle at 8.22% 38.81%, #ff24fe 0, #ff28f6 12.5%, #d628e7 25%, #a425d2 37.5%, #6f1db7 50%, #38159a 62.5%, #000f7f 75%, #000766 87.5%, #000051 100%);
+    background-image: var(--color-background-avatar);
     transform: rotate(45deg);
     /* border: var(--borde-avatar) ; */
     border-radius: 50px;
@@ -452,12 +454,11 @@ nav ul li a:hover::before{
     border: var(--borde-avatar);
 }
 .descripcionPersonal {
-    /* border: solid 2px yellow; */
+
     padding: 60px;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
-    /* margin: 0 100px ; */
+
 }
 .descripcionPersonal .texto{
     max-width: 700px;
@@ -729,7 +730,7 @@ input[type=radio]{
         display: flex;
         align-items: center;
         justify-content: center;
-        background-image: radial-gradient(circle at 8.22% 38.81%, #ff24fe 0, #ff28f6 12.5%, #d628e7 25%, #a425d2 37.5%, #6f1db7 50%, #38159a 62.5%, #000f7f 75%, #000766 87.5%, #000051 100%);
+        background-image: var(--color-background-avatar);
         transform: rotate(45deg);
         border-radius: 50px;
         overflow: hidden;
