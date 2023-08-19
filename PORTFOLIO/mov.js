@@ -16,18 +16,6 @@ function animation_menu(){
 //-------------------CAROUSEL-----------------------//
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 const btn = document.querySelector('.btn2');
 
 btn.addEventListener('click', () =>{
