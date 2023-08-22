@@ -1,0 +1,230 @@
+@media (max-width:1197px) {
+    nav{
+        ul{
+            padding-right: 50px;
+            li a{
+                font-size: x-large;
+            }
+        }
+        .logo p{
+            font-size: 45px;
+            padding-left: 50px;    
+        }
+    }
+
+    .descripcionPersonal .texto{
+        max-width: 600px;
+    }
+    .avatar{
+        margin-left: 80px;
+        width: 220px;
+        height: 220px;
+        &::before{
+            width: 190px;
+            height: 190px;
+        }
+    }
+    
+}
+
+@media (max-width:1090px){
+    
+    nav{
+        background-color: $color_dark;
+        ul{
+            display: none;
+            padding-right: 0;
+            overflow-y:scroll; 
+            li a:before{
+                bottom: -20px;
+            }
+        }
+        .logo{
+            margin-left: 50px;
+            p {
+                padding-left: 0;
+                font-size: 36px;
+            }
+        }
+        .menu{
+            margin-right: 50px;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            z-index: 11;
+            span{
+                display: block;
+                width: 100%;
+                height: 2px;
+                background-color: $color-font-nav;
+                margin-top: 6px;
+                transform-origin: 0px 100%;
+                transition: all 300ms;
+            }        
+        }
+    }
+
+    body.white nav{
+        background: $color-nav-white;
+        ul{
+            background: $color-nav-white;
+
+        }
+    
+    }
+    .activeline1__menu{
+        transform: rotate(45deg) translate(-2px,1px);
+    }
+    .activeline2__menu{
+        opacity: 0;
+        margin-left: -30px;
+    }
+    .activeline3__menu{
+        transform: rotate(-45deg) translate(-4px,2px);
+    }
+
+      
+    .items_menu{
+        width: 100%;
+        height: auto;
+        @include mixinsfunc.flex-box;
+        flex-direction: column;
+        top: 80px;
+        position: absolute;
+        background-color: $color_dark;
+        padding-bottom: 70px;
+        padding-top: 40px;
+        animation: desplazamiento 500ms;
+        /* overflow-y: scroll; */
+        a{
+            font-size: xx-large;
+        }
+    }
+
+    #Home{
+        padding-top: 25px;
+        text-align: center;
+
+    }
+    #Me{
+        margin-top: 50px;
+    }
+    .avatar{
+        display: none;
+    }
+    .avatar_movil{
+        width: 190px;
+        height: 190px;
+        @include mixinsfunc.flex-box;
+        background-image: $color-background-avatar;
+        transform: rotate(45deg);
+        border-radius: 50px;
+        overflow: hidden;
+        &::before{
+            content: "";
+            display: block;
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            position: absolute;
+            background: url('../imagen/Mi_Avatar.png') no-repeat;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            transform: rotate(-45deg);
+            overflow: hidden;
+            border: $borde-avatar;
+        }
+    }
+    .containerMe h1{
+        margin-top: 20px;
+    }
+    
+    .descripcionPersonal{
+        text-align: center;
+        margin: 0;
+        padding: 70px 0;
+        flex-direction: column;
+        align-items: center;
+        .texto{
+            padding: 60px 20px 0 20px;
+
+        }
+
+    }  
+  
+
+ 
+    @keyframes desplazamiento {
+        from{
+            top: -80px;
+            /* opacity: 0; */
+        }
+        
+        to{
+            /* opacity: 1; */
+            top: 80px;
+        }
+    }
+    .containerContact .icons{
+        gap: 0;
+    }
+
+    .container-slider{
+        width: 250px;
+        height: 250px;
+       
+    }
+}
+@media (max-width:600px){
+    
+    .container-icons{
+        width: 350px;
+    }
+    .container-slider{
+        width: 220px;
+        height: 220px;
+       
+    }
+}
+@media (max-width:400px){
+    .container-slider{
+        width: 200px;
+        height: 200px;
+       
+    }
+    #Home::before{
+        bottom: -20px;
+        
+    }
+   
+}
+@media (max-width:367px){
+
+    .containerContact .icons{
+        flex-direction: column;
+        
+    }
+}
+@media (max-width:300px){
+
+    nav {
+        .logo{
+            margin-left: 20px;
+        }
+        .menu{
+            margin-right: 20px;
+        }
+    }
+
+    .containerMe h1 {
+        font-size: x-large;
+
+    }
+    .container-slider{
+        width: 180px;
+        height: 180px;
+       
+    }
+    
+}

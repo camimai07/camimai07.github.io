@@ -1,0 +1,67 @@
+body.white{
+    /* background-color: var(--color_white); */
+    transition: 0.3s ease all;
+    &::-webkit-scrollbar-track {
+        // background: $color-nav-white;        /* color of the tracking area */
+        background: $color-background-white;        /* color of the tracking area */
+    
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $color-nav-white-a;    /* color of the scroll thumb */
+    }
+    
+    #Total{
+        background-image: $color-background-white;
+    
+    }
+    nav ul li a {
+        color: $color-nav-white-a;
+        &:hover{
+            color: white;
+        }
+        &:before{
+            background-color: rgb(255, 185, 243);
+        }
+    
+    }
+    .colorNav{
+        background-color: $color-nav-white;
+
+    }
+    .borde-left{
+        background: linear-gradient(to left, $color-lineas-white, transparent);
+    
+    }
+    .borde-right{
+        background: linear-gradient(to right, $color-lineas-white, transparent);
+    
+    }
+    .avatar{
+        background-image: $color-background-avatar-white;
+        &::before{
+            border: $borde-avatar-white;
+        }
+    }
+    .avatar_movil{
+        background-image: $color-background-avatar-white;
+        &::before{
+        border: $borde-avatar-white;
+
+        }
+    }
+    .containerMe {
+        box-shadow:  $box-shadow-white;
+        background: rgba(213, 174, 213, 0.5);
+    
+    }
+    .containerHome .texto h1:nth-of-type(2){
+        color: $color-ppal-white;
+    
+    } 
+    
+    .proyecto{
+        box-shadow: $box-shadow-white;
+    }
+    
+}
+

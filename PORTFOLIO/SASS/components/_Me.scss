@@ -1,0 +1,90 @@
+@import '../layout/slider';
+
+#Me{
+    
+    z-index: 1;
+    width: 100%;
+    padding-top: 80px;
+    @include mixinsfunc.flex-box;
+    flex-direction: column;
+}
+.containerMe{
+    box-shadow: $box-shadow-dark;
+    border-radius: 50px;
+    background: rgba(214, 14, 228, 0.1);
+    max-width: 100%;
+    @include mixinsfunc.flex-box;
+    flex-direction: column;
+    
+    h1{
+    padding-top: 40px;
+    font-size: $size-h1;
+    text-align: center;
+    color: $color-texto;
+    font-family: $font-gral;
+    line-height: 35px;
+
+    }
+
+}
+
+// .avatar_movil{
+//     display: none;
+// }
+
+.avatar{
+    width: 220px;
+    height: 220px;
+    @include mixinsfunc.flex-box;
+    margin-left: 120px;
+    background-image: $color-background-avatar;
+    transform: rotate(45deg);
+    /* border: var(--borde-avatar) ; */
+    border-radius: 50px;
+    overflow: hidden;
+    &::before{
+        content: "";
+        display: block;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        position: absolute;
+        background: url('../imagen/Mi_Avatar.png') no-repeat;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        transform: rotate(-45deg);
+        border: $borde-avatar;
+    }
+    
+}
+
+
+.descripcionPersonal {
+    p{
+        font-size: 23px;
+    }
+    padding: 60px;
+    @include mixinsfunc.flex-box(center,none);
+
+    .texto{
+        max-width: 700px;
+        color: $color-texto;
+        font-family: $font-gral;
+        line-height: 35px;
+    
+    }
+}
+
+.container-skills {
+    padding-bottom: 150px;
+    width: 100%;
+    @include mixinsfunc.flex-box;
+    flex-direction: column;
+    h1{
+        padding-bottom: 50px;
+        font-size: $size-h1;
+        font-family: $font-gral;
+        color: $color-texto;
+    }
+}

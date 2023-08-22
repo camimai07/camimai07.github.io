@@ -1,0 +1,39 @@
+
+.containerContact{
+    width: 100%;
+    @include mixinsfunc.flex-box;
+    flex-direction: column;
+    background-color: transparent;
+    h1{
+        padding: 50px 0;
+        color: $color-texto;
+        font-family: $font-gral;
+        font-size: $size-h1;
+        
+    }
+    .icons{
+        gap: 50px;
+        @include mixinsfunc.flex-box(space-between,none);
+        padding-bottom: 50px;
+        a{
+            text-decoration: none;
+            color: #f1f1f1;
+            line-height: 40px;
+            font-family: $font-gral;
+            font-size: 20px;
+            color: $color-font-nav;
+            &:hover{
+                color: $color-lineas;
+
+            }
+        }
+    
+    }
+}
+
+.contenedor-a{
+    width: 120px;
+    height: 120px;
+    @include mixinsfunc.flex-box;
+    text-align: center;
+}    

@@ -1,0 +1,43 @@
+
+#Proyects{
+    width: 100%;
+}
+
+.container-proyectos{
+    margin: 100px 0;
+    @include mixinsfunc.flex-box;
+    flex-direction: column;
+    
+    h1{
+        font-size: $size-h1;
+        font-family: $font-gral;
+        color: $color-texto;
+    }
+   
+}
+
+.proyectos{
+    margin: 100px 0;
+    width: 100%;
+    @include mixinsfunc.flex-box;
+    gap: 50px;
+}
+.proyecto{
+    width: 300px;
+    height: 200px;
+    box-shadow: 0 0 5px $color-lineas;
+    border-radius: 20px;
+    cursor: pointer;    
+    transition: ease-in-out 0.3s ;
+    overflow: hidden;
+
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    &:hover{
+        transform: scale(1.2);
+
+    }
+}

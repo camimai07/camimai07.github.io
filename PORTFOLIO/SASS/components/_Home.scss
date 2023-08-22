@@ -1,0 +1,88 @@
+
+#Home{
+    display: flex;
+    background:  linear-gradient( rgba(0,0,0,0.7), rgba(0,0,0, 0.7)) , url('../imagen//blake-connally-IKUYGCFmfw4-unsplash.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    animation: img-move 30s linear infinite alternate;
+    cursor: default;
+    height: 100vh;
+
+}
+/* #Home::before{
+    content: "";
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    height: 10px;
+    background: radial-gradient(circle, var(--color-lineas)  0%, transparent 100%);
+} */
+@keyframes img-move {
+    from{
+        background-position: bottom left;
+    }to{
+        background-position: top right;
+    }
+}
+.containerHome{
+    display: flex;
+    /* flex-direction: column; */
+    width: 100%;
+    height: 100vh;
+    .texto {
+        margin: auto;
+        font-size: large ;
+        h1{
+            color: $color-texto;
+            font-family: $font-gral;
+            font-size: 40px ;
+
+            &:nth-of-type(2){
+                color: $color-ppal;
+            
+            }
+        
+        }
+        .guion{
+            animation: guion ease-in-out 0.8s infinite;
+        }
+    }
+    
+    
+}
+
+
+.img-texto{
+    @include mixinsfunc.flex-box(none);
+    margin: 0;
+
+}
+@keyframes guion {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+.borde{
+    display: flex;
+    width: 300px;
+    height: 2px;
+    margin: auto;
+    border-radius: 50%;
+
+    &.left{
+    background: linear-gradient(to left, $color-lineas, transparent);
+        
+    }
+    &.right{
+        background: linear-gradient(to right, $color-lineas, transparent);
+
+    }
+}
+

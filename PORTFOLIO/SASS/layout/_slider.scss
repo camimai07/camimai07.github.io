@@ -1,0 +1,78 @@
+
+.container-slider{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    @include mixinsfunc.flex-box;
+    padding: 30px 10px;
+    position: relative;
+    .container{
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        @include mixinsfunc.flex-box;
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+            object-fit: cover;
+            -o-object-fit: cover;
+        
+        }
+    }
+}
+
+input[type=radio]{
+    display: none;
+}
+
+.slides{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+.slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84,0.44,1);
+    
+}
+
+
+#item-2:checked ~ .slides #selector-1,
+#item-1:checked ~ .slides #selector-6,
+#item-6:checked ~ .slides #selector-5,
+#item-5:checked ~ .slides #selector-4,
+#item-4:checked ~ .slides #selector-3,
+#item-3:checked ~ .slides #selector-2{
+    transform: translateX(-60%) scale(0.6);
+    z-index: 0;
+    opacity: 0.6;
+}
+
+#item-2:checked ~ .slides #selector-3,
+#item-3:checked ~ .slides #selector-4,
+#item-4:checked ~ .slides #selector-5,
+#item-5:checked ~ .slides #selector-6,
+#item-6:checked ~ .slides #selector-1,
+#item-1:checked ~ .slides #selector-2{
+    transform: translateX(60%) scale(0.6);
+    z-index: 0;
+    opacity: 0.6;
+}
+#item-1:checked ~ .slides #selector-1,
+#item-2:checked ~ .slides #selector-2,
+#item-3:checked ~ .slides #selector-3,
+#item-4:checked ~ .slides #selector-4,
+#item-5:checked ~ .slides #selector-5,
+#item-6:checked ~ .slides #selector-6{
+    transform: translateX(0) scale(1);
+    z-index: 1;
+}
+

@@ -1,0 +1,20 @@
+// abstracts
+@use './abstracts/mixinsfunc';
+@import './abstracts/mixinsfunc';
+@import './abstracts/variables';
+
+// base
+@import './base/resets';
+@import './base/base';
+@import './base/base_white';
+@import './base/navbar';
+
+// components
+@import './components/Home';
+@import './components/Me';
+@import './components/Projects';
+@import './components/Contact';
+@import './components/media-queries';
+
+
+
