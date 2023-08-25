@@ -9,15 +9,17 @@
     flex-direction: column;
 }
 .containerMe{
-    box-shadow: $box-shadow-dark;
+    // box-shadow: $box-shadow-dark;
     border-radius: 50px;
-    background: rgba(214, 14, 228, 0.1);
+    // background: rgba(214, 14, 228, 0.1);
     max-width: 100%;
     @include mixinsfunc.flex-box;
     flex-direction: column;
     
     h1{
     padding-top: 40px;
+    padding-bottom: 60px;
+    // margin-bottom: 40px;
     font-size: $size-h1;
     text-align: center;
     color: $color-texto;
@@ -33,36 +35,51 @@
 // }
 
 .avatar{
-    width: 220px;
-    height: 220px;
+    width: 170px;
+    height: 170px;
+    // filter: drop-shadow(0 0 50px $color-lineas);
+    animation: flotar 6s ease-in-out infinite;
     @include mixinsfunc.flex-box;
-    margin-left: 120px;
+    // margin-top: 45px;
+    // margin-left: 120px;
     background-image: $color-background-avatar;
     transform: rotate(45deg);
-    /* border: var(--borde-avatar) ; */
-    border-radius: 50px;
+    border-radius: 50%;
     overflow: hidden;
     &::before{
         content: "";
         display: block;
-        width: 200px;
-        height: 200px;
+        width: 160px;
+        height: 160px;
         border-radius: 50%;
         position: absolute;
         background: url('../imagen/Mi_Avatar.png') no-repeat;
         overflow: hidden;
         background-size: cover;
         background-position: center;
-        transform: rotate(-45deg);
-        border: $borde-avatar;
+        // transform: rotate(-45deg);
+        // border: $borde-avatar;
     }
     
 }
-
+@keyframes flotar {
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+        transform: translatey(0px);
+    }
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+        transform: translatey(-20px);
+    }
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+        transform: translatey(0px);
+    }
+}
 
 .descripcionPersonal {
     p{
-        font-size: 23px;
+        font-size: 20px;
     }
     padding: 60px;
     @include mixinsfunc.flex-box(center,none);
@@ -72,6 +89,7 @@
         color: $color-texto;
         font-family: $font-gral;
         line-height: 35px;
+        text-align: center;
     
     }
 }

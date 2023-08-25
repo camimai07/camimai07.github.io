@@ -58,10 +58,10 @@ body.white nav ul li a:before {
 body.white .colorNav {
   background-color: rgb(100, 72, 95);
 }
-body.white .borde-left {
+body.white .left {
   background: linear-gradient(to left, #fda1ff, transparent);
 }
-body.white .borde-right {
+body.white .right {
   background: linear-gradient(to right, #fda1ff, transparent);
 }
 body.white .avatar {
@@ -373,9 +373,7 @@ input[type=radio] {
 }
 
 .containerMe {
-  box-shadow: 0 0 10px #fb08ff;
   border-radius: 50px;
-  background: rgba(214, 14, 228, 0.1);
   max-width: 100%;
   display: flex;
   justify-content: center;
@@ -384,6 +382,7 @@ input[type=radio] {
 }
 .containerMe h1 {
   padding-top: 40px;
+  padding-bottom: 60px;
   font-size: 35px;
   text-align: center;
   color: rgb(255, 251, 254);
@@ -392,33 +391,44 @@ input[type=radio] {
 }
 
 .avatar {
-  width: 220px;
-  height: 220px;
+  width: 170px;
+  height: 170px;
+  animation: flotar 6s ease-in-out infinite;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 120px;
   background-image: radial-gradient(circle at 8.22% 38.81%, #ff24fe 0, #ff28f6 12.5%, #d628e7 25%, #a425d2 37.5%, #6f1db7 50%, #38159a 62.5%, #000f7f 75%, #000766 87.5%, #000051 100%);
   transform: rotate(45deg);
-  /* border: var(--borde-avatar) ; */
-  border-radius: 50px;
+  border-radius: 50%;
   overflow: hidden;
 }
 .avatar::before {
   content: "";
   display: block;
-  width: 200px;
-  height: 200px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   position: absolute;
   background: url("../imagen/Mi_Avatar.png") no-repeat;
   overflow: hidden;
   background-size: cover;
   background-position: center;
-  transform: rotate(-45deg);
-  border: solid 2px rgb(255, 17, 235);
 }
 
+@keyframes flotar {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+}
 .descripcionPersonal {
   padding: 60px;
   display: flex;
@@ -426,13 +436,14 @@ input[type=radio] {
   align-items: none;
 }
 .descripcionPersonal p {
-  font-size: 23px;
+  font-size: 20px;
 }
 .descripcionPersonal .texto {
   max-width: 700px;
   color: rgb(255, 251, 254);
   font-family: "Josefin Sans", sans-serif;
   line-height: 35px;
+  text-align: center;
 }
 
 .container-skills {
@@ -551,13 +562,12 @@ input[type=radio] {
     max-width: 600px;
   }
   .avatar {
-    margin-left: 80px;
-    width: 220px;
-    height: 220px;
-  }
-  .avatar::before {
-    width: 190px;
+    /*width: 190px;
     height: 190px;
+    &::before{
+        width: 180px;
+        height: 180px;
+    }*/
   }
 }
 @media (max-width: 1090px) {
@@ -640,14 +650,15 @@ input[type=radio] {
     display: none;
   }
   .avatar_movil {
-    width: 190px;
-    height: 190px;
+    width: 180px;
+    height: 180px;
+    animation: flotar 6s ease-in-out infinite;
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: radial-gradient(circle at 8.22% 38.81%, #ff24fe 0, #ff28f6 12.5%, #d628e7 25%, #a425d2 37.5%, #6f1db7 50%, #38159a 62.5%, #000f7f 75%, #000766 87.5%, #000051 100%);
     transform: rotate(45deg);
-    border-radius: 50px;
+    border-radius: 50%;
     overflow: hidden;
   }
   .avatar_movil::before {
@@ -661,12 +672,11 @@ input[type=radio] {
     overflow: hidden;
     background-size: cover;
     background-position: center;
-    transform: rotate(-45deg);
     overflow: hidden;
-    border: solid 2px rgb(255, 17, 235);
   }
   .containerMe h1 {
     margin-top: 20px;
+    padding-bottom: 0;
   }
   .descripcionPersonal {
     text-align: center;
