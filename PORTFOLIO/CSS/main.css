@@ -76,10 +76,6 @@ body.white .avatar_movil {
 body.white .avatar_movil::before {
   border: solid 2px rgb(229, 159, 223);
 }
-body.white .containerMe {
-  box-shadow: 0 0 10px #fda1ff;
-  background: rgba(213, 174, 213, 0.5);
-}
 body.white .containerHome .texto h1:nth-of-type(2) {
   color: rgb(180, 125, 170);
 }
@@ -417,16 +413,16 @@ input[type=radio] {
 
 @keyframes flotar {
   0% {
-    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-    transform: translatey(0px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+    transform: translatey(0);
   }
   50% {
-    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 25px 15px rgba(0, 0, 0, 0.2);
     transform: translatey(-20px);
   }
   100% {
-    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-    transform: translatey(0px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+    transform: translatey(0);
   }
 }
 .descripcionPersonal {

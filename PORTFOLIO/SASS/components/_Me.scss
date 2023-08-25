@@ -9,8 +9,8 @@
     flex-direction: column;
 }
 .containerMe{
-    // box-shadow: $box-shadow-dark;
     border-radius: 50px;
+    // box-shadow: $box-shadow-dark;
     // background: rgba(214, 14, 228, 0.1);
     max-width: 100%;
     @include mixinsfunc.flex-box;
@@ -64,16 +64,16 @@
 }
 @keyframes flotar {
     0% {
-        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-        transform: translatey(0px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.7);
+        transform: translatey(0);
     }
     50% {
-        box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+        box-shadow: 0 25px 15px rgba(0,0,0,0.2);
         transform: translatey(-20px);
     }
     100% {
-        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-        transform: translatey(0px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.7);
+        transform: translatey(0);
     }
 }
 
