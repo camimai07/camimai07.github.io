@@ -34,6 +34,7 @@
     .texto {
         margin: auto;
         font-size: large ;
+        position: relative;
         h1{
             color: $color-texto;
             font-family: $font-gral;
@@ -47,12 +48,17 @@
             
             
         }
-        .nombre{
-
-            
-        }
+       
         .guion{
             animation: guion ease-in-out 0.8s infinite;
+        }
+        .contacto-icons-home{
+           margin-top: 20px;
+           position: absolute;
+            a{
+                margin: 0 20px;
+                text-decoration: none;
+            }
         }
     }
     

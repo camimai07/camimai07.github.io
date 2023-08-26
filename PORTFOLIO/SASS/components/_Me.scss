@@ -1,7 +1,7 @@
 @import '../layout/slider';
 
 #Me{
-    
+    overflow: hidden;
     z-index: 1;
     width: 100%;
     padding-top: 80px;
@@ -9,16 +9,19 @@
     flex-direction: column;
 }
 .containerMe{
-    border-radius: 50px;
-    // box-shadow: $box-shadow-dark;
-    // background: rgba(214, 14, 228, 0.1);
+    // border-radius: 50px;
+    margin: 20px;
+
+    box-shadow: $box-shadow-dark;
+    background: rgba(214, 14, 228, 0.1);
     max-width: 100%;
     @include mixinsfunc.flex-box;
     flex-direction: column;
-    
+    position: relative;
+            
     h1{
     padding-top: 40px;
-    padding-bottom: 60px;
+    // padding-bottom: 60px;
     // margin-bottom: 40px;
     font-size: $size-h1;
     text-align: center;
@@ -27,21 +30,41 @@
     line-height: 35px;
 
     }
+    &::before,&::after{
+        content: "";
+        width: 10px;
+        height: 10px;
+        position: absolute;
+    }
+    &::before{
+        left: -10px;
+        bottom : -10px;
+        border-bottom: solid 10px rgb(141, 0, 151) ;
+        border-left: solid 10px $color-lineas;
+        // animation: nombreI 0.45s ease-in-out ;
+        box-shadow: 0 0 20px $color-lineas;
+
+    }
+    &::after{
+        top: -10px;
+        right: -10px;
+        border-top: solid 10px $color-lineas;
+        border-right:solid 10px rgb(141, 0, 151);
+        // animation: nombreD 0.45s ease-in-out ;
+        box-shadow: 0 0 20px $color-lineas;
+
+    }
+   
 
 }
 
-// .avatar_movil{
-//     display: none;
-// }
 
 .avatar{
     width: 170px;
     height: 170px;
-    // filter: drop-shadow(0 0 50px $color-lineas);
     animation: flotar 6s ease-in-out infinite;
     @include mixinsfunc.flex-box;
-    // margin-top: 45px;
-    // margin-left: 120px;
+    margin-top: 60px;
     background-image: $color-background-avatar;
     transform: rotate(45deg);
     border-radius: 50%;
@@ -62,6 +85,7 @@
     }
     
 }
+
 @keyframes flotar {
     0% {
         box-shadow: 0 5px 15px rgba(0,0,0,0.7);
@@ -78,6 +102,7 @@
 }
 
 .descripcionPersonal {
+    
     p{
         font-size: 20px;
     }
@@ -90,6 +115,7 @@
         font-family: $font-gral;
         line-height: 35px;
         text-align: center;
+        
     
     }
 }

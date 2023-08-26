@@ -50,8 +50,18 @@ body.white{
         }
     }
     .containerMe {
-        // box-shadow:  $box-shadow-white;
-        // background: rgba(213, 174, 213, 0.5);
+        box-shadow:  $box-shadow-white;
+        background: rgba(213, 174, 213, 0.5);
+        &::before{
+            border-bottom: solid 10px rgb(140, 95, 143) ;
+            border-left: solid 10px rgb(237, 167, 243);
+            box-shadow: 0 0 20px $color-lineas-white;
+        }
+        &::after{
+            border-top: solid 10px rgb(237, 167, 243);
+            border-right:solid 10px rgb(140, 95, 143);
+            box-shadow: 0 0 20px $color-lineas-white;
+        }
     
     }
     .containerHome .texto h1:nth-of-type(2){

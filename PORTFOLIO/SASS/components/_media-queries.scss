@@ -14,16 +14,10 @@
 
     .descripcionPersonal .texto{
         max-width: 600px;
-    }
-    .avatar{
-        // margin-left: 80px;
-        /*width: 190px;
-        height: 190px;
-        &::before{
-            width: 180px;
-            height: 180px;
-        }*/
-    }
+        
+    } 
+    
+   
     
 }
 
@@ -100,66 +94,6 @@
             font-size: xx-large;
         }
     }
-
-    #Home{
-        padding-top: 25px;
-        text-align: center;
-
-    }
-    #Me{
-        margin-top: 50px;
-    }
-    .avatar{
-        display: none;
-    }
-    .avatar_movil{
-        width: 180px;
-        height: 180px;
-        // filter: drop-shadow(0 0 50px $color-lineas);
-        animation: flotar 6s ease-in-out infinite;
-        @include mixinsfunc.flex-box;
-        background-image: $color-background-avatar;
-        transform: rotate(45deg);
-        border-radius: 50%;
-        overflow: hidden;
-        
-        &::before{
-            content: "";
-            display: block;
-            width: 170px;
-            height: 170px;
-            border-radius: 50%;
-            position: absolute;
-            background: url('../imagen/Mi_Avatar.png') no-repeat;
-            overflow: hidden;
-            background-size: cover;
-            background-position: center;
-            // transform: rotate(-45deg);
-            overflow: hidden;
-            // border: $borde-avatar;
-        }
-    }
-    .containerMe h1{
-        margin-top: 20px;
-        padding-bottom: 0;
-
-    }
-    
-    .descripcionPersonal{
-        text-align: center;
-        margin: 0;
-        padding: 70px 0;
-        flex-direction: column;
-        align-items: center;
-        .texto{
-            padding: 60px 20px 0 20px;
-
-        }
-
-    }  
-  
-
- 
     @keyframes desplazamiento {
         from{
             top: -80px;
@@ -171,33 +105,102 @@
             top: 80px;
         }
     }
+
+    #Home{
+        padding-top: 25px;
+        text-align: center;
+        .contacto-icons-home{
+            margin-top: 20px;
+            position: relative;
+
+         }
+
+    }
+    #Me{
+        margin-top: 50px;
+    }
+    .avatar{
+        display: none;
+    }
+    .avatar_movil{
+        width: 170px;
+        height: 170px;
+        // filter: drop-shadow(0 0 50px $color-lineas);
+        animation: flotar 6s ease-in-out infinite;
+        @include mixinsfunc.flex-box;
+        background-image: $color-background-avatar;
+        transform: rotate(45deg);
+        border-radius: 50%;
+        overflow: hidden;
+        
+        &::before{
+            content: "";
+            display: block;
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            position: absolute;
+            background: url('../imagen/Mi_Avatar.png') no-repeat;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            // transform: rotate(-45deg);
+            overflow: hidden;
+            // border: $borde-avatar;
+        }
+    }
+
+       
+
+    
+    
+    .descripcionPersonal{
+        text-align: center;
+        margin: 0;
+        padding: 70px 0;
+        flex-direction: column;
+        align-items: center;
+        .texto{
+            padding: 60px 20px 0 20px;
+
+        }
+        
+
+    }  
+  
+    
+ 
+
     .containerContact .icons{
         gap: 0;
     }
 
-    .container-slider{
-        width: 250px;
-        height: 250px;
+    // .container-slider{
+    //     width: 250px;
+    //     height: 250px;
        
-    }
+    // }
 }
 @media (max-width:600px){
     
     .container-icons{
         width: 350px;
     }
-    .container-slider{
-        width: 220px;
-        height: 220px;
+    // .container-slider{
+    //     width: 220px;
+    //     height: 220px;
        
+    // }
+    .slider{
+        gap: 60px;
     }
 }
 @media (max-width:400px){
-    .container-slider{
-        width: 200px;
-        height: 200px;
+    // .container-slider{
+    //     width: 200px;
+    //     height: 200px;
        
-    }
+    // }
     #Home::before{
         bottom: -20px;
         
@@ -210,6 +213,7 @@
         flex-direction: column;
         
     }
+    
 }
 @media (max-width:300px){
 

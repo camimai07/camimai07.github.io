@@ -76,6 +76,20 @@ body.white .avatar_movil {
 body.white .avatar_movil::before {
   border: solid 2px rgb(229, 159, 223);
 }
+body.white .containerMe {
+  box-shadow: 0 0 10px #fda1ff;
+  background: rgba(213, 174, 213, 0.5);
+}
+body.white .containerMe::before {
+  border-bottom: solid 10px rgb(140, 95, 143);
+  border-left: solid 10px rgb(237, 167, 243);
+  box-shadow: 0 0 20px #fda1ff;
+}
+body.white .containerMe::after {
+  border-top: solid 10px rgb(237, 167, 243);
+  border-right: solid 10px rgb(140, 95, 143);
+  box-shadow: 0 0 20px #fda1ff;
+}
 body.white .containerHome .texto h1:nth-of-type(2) {
   color: rgb(180, 125, 170);
 }
@@ -237,6 +251,7 @@ nav .logo p {
 .containerHome .texto {
   margin: auto;
   font-size: large;
+  position: relative;
 }
 .containerHome .texto h1 {
   color: rgb(255, 251, 254);
@@ -248,6 +263,14 @@ nav .logo p {
 }
 .containerHome .texto .guion {
   animation: guion ease-in-out 0.8s infinite;
+}
+.containerHome .texto .contacto-icons-home {
+  margin-top: 20px;
+  position: absolute;
+}
+.containerHome .texto .contacto-icons-home a {
+  margin: 0 20px;
+  text-decoration: none;
 }
 
 .img-texto {
@@ -280,39 +303,71 @@ nav .logo p {
 }
 
 .container-slider {
-  width: 300px;
-  height: 300px;
+  max-width: 800px;
   margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 30px 10px;
-  position: relative;
 }
 .container-slider .container {
   width: 100%;
   height: 100%;
-  transform-style: preserve-3d;
+}
+
+.slider {
+  gap: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 30px;
+}
+.slider .img {
+  width: 70px;
+  transition: linear 0.3s;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.container-slider .container img {
+.slider .img:hover {
+  animation: vibrar 2s ease-in-out;
+  filter: drop-shadow(0 0 10px rgb(220, 24, 255));
+}
+.slider .img img {
   width: 100%;
-  height: 100%;
-  border-radius: 30px;
-  object-fit: cover;
-  -o-object-fit: cover;
+  border-radius: 10px;
 }
 
+@keyframes vibrar {
+  7% {
+    transform: rotateZ(0) translateY(-20px);
+  }
+  15% {
+    transform: rotateZ(15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
 input[type=radio] {
   display: none;
 }
 
 .slides {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 150px;
+  height: 150px;
 }
 
 .slide {
@@ -327,10 +382,7 @@ input[type=radio] {
 }
 
 #item-2:checked ~ .slides #selector-1,
-#item-1:checked ~ .slides #selector-6,
-#item-6:checked ~ .slides #selector-5,
-#item-5:checked ~ .slides #selector-4,
-#item-4:checked ~ .slides #selector-3,
+#item-1:checked ~ .slides #selector-3,
 #item-3:checked ~ .slides #selector-2 {
   transform: translateX(-60%) scale(0.6);
   z-index: 0;
@@ -338,10 +390,7 @@ input[type=radio] {
 }
 
 #item-2:checked ~ .slides #selector-3,
-#item-3:checked ~ .slides #selector-4,
-#item-4:checked ~ .slides #selector-5,
-#item-5:checked ~ .slides #selector-6,
-#item-6:checked ~ .slides #selector-1,
+#item-3:checked ~ .slides #selector-1,
 #item-1:checked ~ .slides #selector-2 {
   transform: translateX(60%) scale(0.6);
   z-index: 0;
@@ -350,15 +399,13 @@ input[type=radio] {
 
 #item-1:checked ~ .slides #selector-1,
 #item-2:checked ~ .slides #selector-2,
-#item-3:checked ~ .slides #selector-3,
-#item-4:checked ~ .slides #selector-4,
-#item-5:checked ~ .slides #selector-5,
-#item-6:checked ~ .slides #selector-6 {
+#item-3:checked ~ .slides #selector-3 {
   transform: translateX(0) scale(1);
   z-index: 1;
 }
 
 #Me {
+  overflow: hidden;
   z-index: 1;
   width: 100%;
   padding-top: 80px;
@@ -369,21 +416,43 @@ input[type=radio] {
 }
 
 .containerMe {
-  border-radius: 50px;
+  margin: 20px;
+  box-shadow: 0 0 10px #fb08ff;
+  background: rgba(214, 14, 228, 0.1);
   max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 .containerMe h1 {
   padding-top: 40px;
-  padding-bottom: 60px;
   font-size: 35px;
   text-align: center;
   color: rgb(255, 251, 254);
   font-family: "Josefin Sans", sans-serif;
   line-height: 35px;
+}
+.containerMe::before, .containerMe::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+}
+.containerMe::before {
+  left: -10px;
+  bottom: -10px;
+  border-bottom: solid 10px rgb(141, 0, 151);
+  border-left: solid 10px rgb(220, 24, 255);
+  box-shadow: 0 0 20px rgb(220, 24, 255);
+}
+.containerMe::after {
+  top: -10px;
+  right: -10px;
+  border-top: solid 10px rgb(220, 24, 255);
+  border-right: solid 10px rgb(141, 0, 151);
+  box-shadow: 0 0 20px rgb(220, 24, 255);
 }
 
 .avatar {
@@ -393,6 +462,7 @@ input[type=radio] {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 60px;
   background-image: radial-gradient(circle at 8.22% 38.81%, #ff24fe 0, #ff28f6 12.5%, #d628e7 25%, #a425d2 37.5%, #6f1db7 50%, #38159a 62.5%, #000f7f 75%, #000766 87.5%, #000051 100%);
   transform: rotate(45deg);
   border-radius: 50%;
@@ -459,46 +529,34 @@ input[type=radio] {
 
 #Proyects {
   width: 100%;
+  padding-top: 80px;
 }
 
 .container-proyectos {
-  margin: 100px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 .container-proyectos h1 {
+  padding-top: 40px;
   font-size: 35px;
   font-family: "Josefin Sans", sans-serif;
   color: rgb(255, 251, 254);
 }
 
 .proyectos {
-  margin: 100px 0;
-  width: 100%;
+  margin-top: 50px;
+  transform-style: preserve-3d;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
 }
-
-.proyecto {
-  width: 300px;
-  height: 200px;
-  box-shadow: 0 0 5px rgb(220, 24, 255);
-  border-radius: 20px;
-  cursor: pointer;
-  transition: ease-in-out 0.3s;
-  overflow: hidden;
-}
-.proyecto img {
-  height: 100%;
+.proyectos img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
-}
-.proyecto:hover {
-  transform: scale(1.2);
+  -o-object-fit: cover;
 }
 
 .containerContact {
@@ -556,14 +614,6 @@ input[type=radio] {
   }
   .descripcionPersonal .texto {
     max-width: 600px;
-  }
-  .avatar {
-    /*width: 190px;
-    height: 190px;
-    &::before{
-        width: 180px;
-        height: 180px;
-    }*/
   }
 }
 @media (max-width: 1090px) {
@@ -635,9 +685,23 @@ input[type=radio] {
   .items_menu a {
     font-size: xx-large;
   }
+  @keyframes desplazamiento {
+    from {
+      top: -80px;
+      /* opacity: 0; */
+    }
+    to {
+      /* opacity: 1; */
+      top: 80px;
+    }
+  }
   #Home {
     padding-top: 25px;
     text-align: center;
+  }
+  #Home .contacto-icons-home {
+    margin-top: 20px;
+    position: relative;
   }
   #Me {
     margin-top: 50px;
@@ -646,8 +710,8 @@ input[type=radio] {
     display: none;
   }
   .avatar_movil {
-    width: 180px;
-    height: 180px;
+    width: 170px;
+    height: 170px;
     animation: flotar 6s ease-in-out infinite;
     display: flex;
     justify-content: center;
@@ -660,8 +724,8 @@ input[type=radio] {
   .avatar_movil::before {
     content: "";
     display: block;
-    width: 170px;
-    height: 170px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     position: absolute;
     background: url("../imagen/Mi_Avatar.png") no-repeat;
@@ -669,10 +733,6 @@ input[type=radio] {
     background-size: cover;
     background-position: center;
     overflow: hidden;
-  }
-  .containerMe h1 {
-    margin-top: 20px;
-    padding-bottom: 0;
   }
   .descripcionPersonal {
     text-align: center;
@@ -684,38 +744,19 @@ input[type=radio] {
   .descripcionPersonal .texto {
     padding: 60px 20px 0 20px;
   }
-  @keyframes desplazamiento {
-    from {
-      top: -80px;
-      /* opacity: 0; */
-    }
-    to {
-      /* opacity: 1; */
-      top: 80px;
-    }
-  }
   .containerContact .icons {
     gap: 0;
-  }
-  .container-slider {
-    width: 250px;
-    height: 250px;
   }
 }
 @media (max-width: 600px) {
   .container-icons {
     width: 350px;
   }
-  .container-slider {
-    width: 220px;
-    height: 220px;
+  .slider {
+    gap: 60px;
   }
 }
 @media (max-width: 400px) {
-  .container-slider {
-    width: 200px;
-    height: 200px;
-  }
   #Home::before {
     bottom: -20px;
   }

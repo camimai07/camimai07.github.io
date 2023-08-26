@@ -1,35 +1,82 @@
 
 .container-slider{
-    width: 300px;
-    height: 300px;
+    max-width: 800px;
+    // height: 1000px;
+    // border: 2px solid white;
     margin: auto;
-    @include mixinsfunc.flex-box;
+    // @include mixinsfunc.flex-box;
     padding: 30px 10px;
-    position: relative;
+    // overflow-x: scroll;
+
     .container{
         width: 100%;
         height: 100%;
-        transform-style: preserve-3d;
+
+        
+    }
+}
+.slider {
+    // position: absolute;
+    gap: 100px;
+    @include mixinsfunc.flex-box;
+    flex-wrap: wrap;
+    padding: 0 30px;
+    .img{
+        width: 70px;
+        transition: linear 0.3s;
+        cursor: pointer;
+
         @include mixinsfunc.flex-box;
+        &:hover{
+            // position: absolute;
+            animation: vibrar 2s ease-in-out;
+            filter: drop-shadow(0 0 10px $color-lineas);
+        }
         img{
             width: 100%;
-            height: 100%;
-            border-radius: 30px;
-            object-fit: cover;
-            -o-object-fit: cover;
-        
+            // height: 100%;
+            border-radius: 10px;
+
         }
     }
 }
+@keyframes vibrar {
 
+    0%{
+        // transform: ;
+    } 
+    7%{
+         transform: rotateZ(0) translateY(-20px);
+
+    }
+    15% {
+      transform: rotateZ(15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+         transform: rotateZ(0);
+    }
+        
+}
 input[type=radio]{
     display: none;
 }
 
 .slides{
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 150px;
+    height: 150px;
 
 }
 .slide{
@@ -46,10 +93,7 @@ input[type=radio]{
 
 
 #item-2:checked ~ .slides #selector-1,
-#item-1:checked ~ .slides #selector-6,
-#item-6:checked ~ .slides #selector-5,
-#item-5:checked ~ .slides #selector-4,
-#item-4:checked ~ .slides #selector-3,
+#item-1:checked ~ .slides #selector-3,
 #item-3:checked ~ .slides #selector-2{
     transform: translateX(-60%) scale(0.6);
     z-index: 0;
@@ -57,10 +101,7 @@ input[type=radio]{
 }
 
 #item-2:checked ~ .slides #selector-3,
-#item-3:checked ~ .slides #selector-4,
-#item-4:checked ~ .slides #selector-5,
-#item-5:checked ~ .slides #selector-6,
-#item-6:checked ~ .slides #selector-1,
+#item-3:checked ~ .slides #selector-1,
 #item-1:checked ~ .slides #selector-2{
     transform: translateX(60%) scale(0.6);
     z-index: 0;
@@ -68,10 +109,7 @@ input[type=radio]{
 }
 #item-1:checked ~ .slides #selector-1,
 #item-2:checked ~ .slides #selector-2,
-#item-3:checked ~ .slides #selector-3,
-#item-4:checked ~ .slides #selector-4,
-#item-5:checked ~ .slides #selector-5,
-#item-6:checked ~ .slides #selector-6{
+#item-3:checked ~ .slides #selector-3{
     transform: translateX(0) scale(1);
     z-index: 1;
 }
