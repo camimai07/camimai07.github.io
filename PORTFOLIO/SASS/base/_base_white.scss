@@ -64,10 +64,17 @@ body.white{
         }
     
     }
-    .containerHome .texto h1:nth-of-type(2){
-        color: $color-ppal-white;
-    
-    } 
+    .containerHome {
+        .texto .contacto-icons-home_a{
+            background-color: $color-nav-white;
+            box-shadow: 0 0 10px $color-lineas-white;
+
+        }
+        .texto h1:nth-of-type(2){
+            color: $color-ppal-white;
+        
+        } 
+    }
     
     .proyecto{
         box-shadow: $box-shadow-white;

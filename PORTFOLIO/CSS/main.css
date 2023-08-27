@@ -90,6 +90,10 @@ body.white .containerMe::after {
   border-right: solid 10px rgb(140, 95, 143);
   box-shadow: 0 0 20px #fda1ff;
 }
+body.white .containerHome .texto .contacto-icons-home_a {
+  background-color: rgb(100, 72, 95);
+  box-shadow: 0 0 10px #fda1ff;
+}
 body.white .containerHome .texto h1:nth-of-type(2) {
   color: rgb(180, 125, 170);
 }
@@ -278,7 +282,6 @@ nav .logo p {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  box-shadow: 0 0 10px rgb(220, 24, 255);
   text-decoration: none;
   background-color: #2c2533;
 }

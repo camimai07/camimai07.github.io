@@ -63,7 +63,7 @@
                 cursor: pointer;
                 @include mixinsfunc.flex-box;
                 border-radius: 50%;
-                box-shadow: 0 0 10px $color-lineas;
+                // box-shadow: 0 0 10px $color-lineas;
                 text-decoration: none;
                 background-color: $color_dark ;
             }
