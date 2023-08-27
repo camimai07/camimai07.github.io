@@ -59,10 +59,12 @@
     }
 
     body.white nav{
-        background: $color-nav-white;
+        background: $color-nav-white;   
+        transition: 300ms ease all;
+        
         ul{
             background: $color-nav-white;
-
+            
         }
     
     }
@@ -89,6 +91,7 @@
         padding-bottom: 70px;
         padding-top: 40px;
         animation: desplazamiento 500ms;
+
         /* overflow-y: scroll; */
         a{
             font-size: xx-large;

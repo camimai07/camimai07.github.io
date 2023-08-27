@@ -7,6 +7,7 @@
 }
 
 body {
+  transition: 300ms ease all;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,7 +36,6 @@ body::-webkit-scrollbar-thumb {
 
 body.white {
   /* background-color: var(--color_white); */
-  transition: 0.3s ease all;
 }
 body.white::-webkit-scrollbar-track {
   background: radial-gradient(circle at 46.48% 9.75%, #aa7c86 0, #aa7c86 6.25%, #aa7c86 12.5%, #aa7c86 18.75%, #aa7c86 25%, #aa7c86 31.25%, #a57284 37.5%, #9e6881 43.75%, #955e80 50%, #8a5480 56.25%, #7e4d81 62.5%, #704782 68.75%, #604485 75%, #604485 81.25%, #553f93 87.5%, #261553 93.75%, #1c103d 100%); /* color of the tracking area */
@@ -103,6 +103,7 @@ body.white .proyecto {
 nav {
   height: 80px;
   width: 100%;
+  transition: 300ms ease all;
   /* flex-direction: baseline; */
   display: flex;
   justify-content: space-between;
@@ -119,6 +120,7 @@ nav ul {
   gap: 60px;
   padding-right: 150px;
   height: 100%;
+  transition: 300ms ease all;
 }
 nav ul li {
   display: inline-block;
@@ -170,8 +172,7 @@ nav .logo p {
 
 .colorNav {
   background-color: #2c2533;
-  /* background-color: #282134; */
-  transition: linear all 400ms;
+  transition: linear all 300ms;
 }
 
 .btn2 {
@@ -665,6 +666,7 @@ input[type=radio] {
   }
   body.white nav {
     background: rgb(100, 72, 95);
+    transition: 300ms ease all;
   }
   body.white nav ul {
     background: rgb(100, 72, 95);
