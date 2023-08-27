@@ -200,9 +200,7 @@
     //     height: 200px;
        
     // }
-    .slider{
-        gap: 30px;
-    }
+    
     #Home::before{
         bottom: -20px;
         
@@ -214,6 +212,9 @@
     .containerContact .icons{
         flex-direction: column;
         
+    }
+    .slider{
+        gap: 30px;
     }
     
 }

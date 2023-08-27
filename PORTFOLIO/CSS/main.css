@@ -271,13 +271,14 @@ nav .logo p {
 }
 .containerHome .texto .contacto-icons-home .contacto-icons-home_a {
   margin: 0 20px;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  box-shadow: 0 0 10px rgb(220, 24, 255);
   text-decoration: none;
   background-color: #2c2533;
 }
@@ -766,9 +767,6 @@ input[type=radio] {
   }
 }
 @media (max-width: 400px) {
-  .slider {
-    gap: 30px;
-  }
   #Home::before {
     bottom: -20px;
   }
@@ -776,6 +774,9 @@ input[type=radio] {
 @media (max-width: 367px) {
   .containerContact .icons {
     flex-direction: column;
+  }
+  .slider {
+    gap: 30px;
   }
 }
 @media (max-width: 300px) {
