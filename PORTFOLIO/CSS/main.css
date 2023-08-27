@@ -92,7 +92,6 @@ body.white .containerMe::after {
 }
 body.white .containerHome .texto .contacto-icons-home_a {
   background-color: rgb(100, 72, 95);
-  box-shadow: 0 0 10px #fda1ff;
 }
 body.white .containerHome .texto h1:nth-of-type(2) {
   color: rgb(180, 125, 170);
