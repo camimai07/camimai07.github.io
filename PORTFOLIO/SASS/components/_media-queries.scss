@@ -110,10 +110,9 @@
         padding-top: 25px;
         text-align: center;
         .contacto-icons-home{
-            margin-top: 20px;
+            justify-content: center;
             position: relative;
-
-         }
+        }
 
     }
     #Me{
@@ -201,6 +200,9 @@
     //     height: 200px;
        
     // }
+    .slider{
+        gap: 30px;
+    }
     #Home::before{
         bottom: -20px;
         

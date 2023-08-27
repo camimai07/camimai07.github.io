@@ -266,11 +266,20 @@ nav .logo p {
 }
 .containerHome .texto .contacto-icons-home {
   margin-top: 20px;
+  display: flex;
   position: absolute;
 }
-.containerHome .texto .contacto-icons-home a {
+.containerHome .texto .contacto-icons-home .contacto-icons-home_a {
   margin: 0 20px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
   text-decoration: none;
+  background-color: #2c2533;
 }
 
 .img-texto {
@@ -700,7 +709,7 @@ input[type=radio] {
     text-align: center;
   }
   #Home .contacto-icons-home {
-    margin-top: 20px;
+    justify-content: center;
     position: relative;
   }
   #Me {
@@ -757,6 +766,9 @@ input[type=radio] {
   }
 }
 @media (max-width: 400px) {
+  .slider {
+    gap: 30px;
+  }
   #Home::before {
     bottom: -20px;
   }
