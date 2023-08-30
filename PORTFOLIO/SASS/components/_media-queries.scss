@@ -121,45 +121,11 @@
     #Me{
         margin-top: 50px;
     }
-    .avatar{
-        display: none;
-    }
-    .avatar_movil{
-        width: 170px;
-        height: 170px;
-        // filter: drop-shadow(0 0 50px $color-lineas);
-        animation: flotar 6s ease-in-out infinite;
-        @include mixinsfunc.flex-box;
-        background-image: $color-background-avatar;
-        transform: rotate(45deg);
-        border-radius: 50%;
-        overflow: hidden;
-        
-        &::before{
-            content: "";
-            display: block;
-            width: 160px;
-            height: 160px;
-            border-radius: 50%;
-            position: absolute;
-            background: url('../imagen/Mi_Avatar.png') no-repeat;
-            overflow: hidden;
-            background-size: cover;
-            background-position: center;
-            // transform: rotate(-45deg);
-            overflow: hidden;
-            // border: $borde-avatar;
-        }
-    }
-
-       
-
-    
     
     .descripcionPersonal{
         text-align: center;
-        margin: 0;
-        padding: 70px 0;
+        margin: 0 0 50px 0;
+        padding: 0;
         flex-direction: column;
         align-items: center;
         .texto{

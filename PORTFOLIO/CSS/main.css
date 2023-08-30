@@ -180,7 +180,7 @@ nav .logo p {
   border: solid 1px #fff;
   position: relative;
   display: flex;
-  /* width: 20px; */
+  transition: linear 200ms;
   border-radius: 50px;
   background: #333333;
   outline: none;
@@ -211,7 +211,6 @@ nav .logo p {
 
 .active {
   background: rgb(220, 24, 255);
-  color: #000;
 }
 .active::after {
   left: unset;
@@ -720,38 +719,10 @@ input[type=radio] {
   #Me {
     margin-top: 50px;
   }
-  .avatar {
-    display: none;
-  }
-  .avatar_movil {
-    width: 170px;
-    height: 170px;
-    animation: flotar 6s ease-in-out infinite;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: radial-gradient(circle at 8.22% 38.81%, #ff24fe 0, #ff28f6 12.5%, #d628e7 25%, #a425d2 37.5%, #6f1db7 50%, #38159a 62.5%, #000f7f 75%, #000766 87.5%, #000051 100%);
-    transform: rotate(45deg);
-    border-radius: 50%;
-    overflow: hidden;
-  }
-  .avatar_movil::before {
-    content: "";
-    display: block;
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    position: absolute;
-    background: url("../imagen/Mi_Avatar.png") no-repeat;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-  }
   .descripcionPersonal {
     text-align: center;
-    margin: 0;
-    padding: 70px 0;
+    margin: 0 0 50px 0;
+    padding: 0;
     flex-direction: column;
     align-items: center;
   }

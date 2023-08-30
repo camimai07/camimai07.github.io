@@ -41,13 +41,8 @@
     }
 }
 @keyframes vibrar {
-
-    0%{
-        // transform: ;
-    } 
     7%{
          transform: rotateZ(0) translateY(-20px);
-
     }
     15% {
       transform: rotateZ(15deg);
@@ -69,6 +64,11 @@
     }
         
 }
+
+
+// PROYECTOS..................................--------------------------------------------------------
+
+
 input[type=radio]{
     display: none;
 }
