@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <script src="https://kit.fontawesome.com/c85c2c472a.js" crossorigin="anonymous"></script>
+
+    <title>iMovies</title>
+</head>
+<body>
+
+    <div class="contenedor-ppal">
+        <nav>
+            <div class="logo">
+                <h1>iMovies</h1>
+            </div>
+
+            <ul>
+                <li><i class="fa-solid fa-house fa-2xs"></i></li>
+                <!-- <li><span class="material-symbols-outlined">home</span></li> -->
+                <li><a href="#">Películas</a></li>
+                <li><a href="#">Series</a></li>
+                <li><a href="#">Infantil</a></li>
+                <li><a href="#">Mi lista</a></li>
+
+            </ul>
+            <div class="buscar">
+                <!-- <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i> -->
+                <span class="material-symbols-outlined">Search</span><p>Buscar</p>
+            </div>
+        </nav>       
+        <div class="texto">
+            <div class="texto-peli the-little-mermaid">
+                <img src="./imagenes/the-little-mermaid-title.png" class="movie-title" alt="">
+                <h2>+info</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae optio tenetur eveniet amet veniam corporis incidunt pariatur repellendus provident facilis, numquam sit? Nam nihil dignissimos est blanditiis cupiditate beatae officia?</p>
+                <div class="trailer">
+            
+                    <h3><i class="fa-solid fa-circle-play"></i> Ver trailer</h3>
+                </div>
+            </div>
+            <div class="texto-peli the-black-demon">
+                <img src="./imagenes/the-black-demon-title.png" class="movie-title" alt="">
+
+                <h1>+info</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae optio tenetur eveniet amet veniam corporis incidunt pariatur repellendus provident facilis, numquam sit? Nam nihil dignissimos est blanditiis cupiditate beatae officia?</p>
+                <div class="trailer">
+            
+                    <h3><i class="fa-solid fa-circle-play"></i> Ver trailer</h3>
+                </div>
+            </div>
+            <div class="texto-peli the-covenant active">
+                <img src="./imagenes/Avengers-Endgame-titlle_1.png" class="movie-title" alt="">
+
+                <h1>+info</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae optio tenetur eveniet amet veniam corporis incidunt pariatur repellendus provident facilis, numquam sit? Nam nihil dignissimos est blanditiis cupiditate beatae officia?</p>
+                <div class="trailer">
+            
+                    <h3><i class="fa-solid fa-circle-play"></i> Ver trailer</h3>
+                </div>
+            </div>
+            <div class="texto-peli the-tank">
+                <img src="./imagenes/the-tank-title.png" class="movie-title" alt="">
+
+                <h1>+info</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae optio tenetur eveniet amet veniam corporis incidunt pariatur repellendus provident facilis, numquam sit? Nam nihil dignissimos est blanditiis cupiditate beatae officia?</p>
+                <div class="trailer">
+            
+                    <h3><i class="fa-solid fa-circle-play"></i> Ver trailer</h3>
+                </div>
+            </div>
+            <div class="texto-peli bg-65">
+                <img src="./imagenes/the-65-title.png" class="movie-title" alt="">
+
+                <h1>+info</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae optio tenetur eveniet amet veniam corporis incidunt pariatur repellendus provident facilis, numquam sit? Nam nihil dignissimos est blanditiis cupiditate beatae officia?</p>
+                <div class="trailer">
+            
+                    <h3><i class="fa-solid fa-circle-play"></i> Ver trailer</h3>
+                </div>
+            </div>
+            
+            
+        </div>
+        <div class="contenedor-slider">
+            <div class="contenedor">
+                <input type="radio" name="slider" id="item-1">
+                <input type="radio" name="slider" id="item-2">
+                <input type="radio" name="slider" id="item-3" checked>
+                <input type="radio" name="slider" id="item-4">
+                <input type="radio" name="slider" id="item-5">   
+                <div class="imagenes">
+                    <label class="imagen" onClick="mostrar('bg-little-mermaid.jpg', 'the-little-mermaid');" for="item-1" id="selector-1">
+                        <img src="./imagenes/the-little-mermaid.jpeg" alt=""></label>
+                    <label class="imagen" onClick="mostrar('bg-the-black-demon.jpeg','the-black-demon');" for="item-2" id="selector-2">
+                        <img src="./imagenes/the-black-demon.jpg" alt=""></label>
+                    <label class="imagen" onClick="mostrar('bg_Avenger_Endgame1.jpg','the-covenant');" for="item-3" id="selector-3">
+                        <img src="./imagenes/mini-avengers-endgame.jpeg" alt=""></label>
+                    <label class="imagen" onClick="mostrar('bg-the-tank.jpeg','the-tank');" for="item-4" id="selector-4">
+                        <img src="./imagenes/the-tank.jpeg" alt=""></label>
+                    <label class="imagen" onClick="mostrar('bg-65.jpeg','bg-65');" for="item-5" id="selector-5">
+                        <img src="./imagenes/65.jpg" alt=""></label>
+                </div>
+            </div>
+        </div>
+        
+    </div> 
+    <script src="./js.js"></script>   
+</body>
+</html>

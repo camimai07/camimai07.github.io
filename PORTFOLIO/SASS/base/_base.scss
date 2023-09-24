@@ -14,7 +14,14 @@ body{
     background-color: $color-font-nav;    /* color of the scroll thumb */
     border-radius: 20px;       /* roundness of the scroll thumb */
   }
-
+  h1{
+    font-size: $size-h1;
+    font-family: $font-gral;
+    color: $color-texto;
+  }
+  p{
+    font-size: $size-p;
+  }
 }
 
 .div{

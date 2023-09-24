@@ -1,0 +1,1253 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+body{
+    width: 100%;
+    /* background-color: #f6f6f6; */
+    background-color: #ccecec;
+    
+}
+
+.oka{
+    background-color:rgba(103, 211, 211, 0.5);
+    width: 200px;
+    height: 40px;
+    margin: auto;
+    cursor: pointer;
+    border: 1px solid rgb(19, 185, 188);
+    border-radius: 20px;
+    justify-content: center;
+    padding: 6px;
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 3px 4px 0px rgb(73, 73, 73);
+}
+
+.oka:hover {
+    background-color: #d8eef1;
+    font-style: italic;
+    box-shadow: 0 0 0;
+
+}
+.message1_input {
+    display: none;
+}
+.message_content{  
+    padding-top: 20px;
+    width: 400px;
+    height: 320px;
+    border: solid 2px rgba(255, 255, 255, 0.5);
+    /* box-shadow: 0px 0px 10px rgb(255, 255, 255); */
+    background-color: rgba(255, 255, 255, 0.8);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* letter-spacing: 1px;   */
+}
+
+
+.message{
+    display: none;
+}
+.message1{
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    /* border: 1px solid black; */
+    /* border-radius: 10px; */
+}
+.message_content img{
+    width: 80px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px;
+    transition: linear 0.5s;
+
+}
+.message_content img:hover:nth-of-type(1){
+    box-shadow: 0px 0px 10px rgb(220, 122, 25);
+}
+.message_content img:hover:nth-of-type(2){
+    box-shadow: 0px 0px 10px rgb(57, 190, 211);
+}
+.message_content img:hover:nth-of-type(3){
+    box-shadow: 0px 0px 10px rgb(226, 233, 25);
+}
+.message_content img:nth-of-type(1){
+    background-color: rgb(220, 122, 25);
+}
+.message_content img:nth-of-type(2){
+    background-color: rgb(57, 190, 211);
+}
+.message_content img:nth-of-type(3){
+    background-color: rgb(226, 233, 25);
+}
+h2{
+    /* color: #ffffff; */
+    /* color: #200400; */
+    color: #0b097c;
+   
+}
+
+p{
+    color: #200400;
+}
+
+@font-face {
+    font-family: ralereg;
+    src: url('fuentes/Raleway-Regular.ttf');
+}
+
+@font-face {
+    font-family: bellezareg;
+    src: url('fuentes/Belleza-Regular.ttf');
+}
+
+@font-face {
+    font-family: rudareg;
+    src: url('fuentes/Ruda-Regular.ttf');
+}
+
+@font-face {
+    font-family: nunitoreg;
+    src: url('fuentes/Nunito-Regular.ttf');
+}
+
+@font-face {
+    font-family: monsereg;
+    src: url('fuentes/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: latoreg;
+    src: url('fuentes/Lato-Regular.ttf');
+}
+
+nav {
+    /* background:rgba(39, 195, 203,0.8); */
+    /* background:rgba(255, 255, 255, 0.6); */
+    box-shadow: 0px 4px 10px rgba(1, 1, 1, 0.3);
+    background:rgba(255, 255, 255, 0.9);
+
+    width: 100%;
+    display: flex;
+    height: 105px;
+    justify-content: space-between; /*ubica las cajas del nav separadas de punta a punta!!!!*/
+    align-items: center;
+    position: fixed;
+    z-index: 50;
+    /* box-shadow: 0 0 5px; */
+}
+
+nav.scroll{
+    height: 80px;
+}
+nav.scroll ul li:before{
+    bottom: 11px;
+}
+.scroll .logo{
+    width: 80px;
+    transition: linear 0.3s;
+
+}
+
+nav .menu{
+    display: none;
+    z-index: 10;
+}
+
+
+.nav_input{
+    display: none;
+    
+}
+
+.logo {
+    width: 120px;
+    margin-left: 50px;
+    
+}
+
+nav ul {
+    margin: 0 6px 0 0;
+    align-items: center;
+    display: flex;
+    height: 100px;
+    
+}
+nav ul li {
+    display: inline-block;
+    position: relative;
+    display: flex;
+    height: 105px;
+}
+nav ul li::before{
+    content: "";
+    width: 100%;
+    height: 0;
+    background-color:#097a7c;
+    /* border-radius: 2px; */
+    position: absolute;
+    bottom: 0px;
+    transition: 300ms linear;
+
+}
+nav ul li:hover::before{
+    height: 4px ;
+}
+nav ul li a{
+    font-weight: bold;
+    color: #200400;
+    /* height: 100%; */
+    display: flex;
+    text-transform: uppercase;
+    font-family: nunitoreg;
+    font-size:14px;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    transition: linear 300ms;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    /* color: rgb(68, 213, 220); */
+    
+    color: rgb(200, 239, 238);
+    transform: scale(1.1);
+}
+.imagen-fondo{
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url("imagenes/smile2-min.jpg") no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 400px;
+    /* margin: 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 100px;
+}
+.container-fondo {
+
+    box-shadow: 0px 0px 15px rgb(164, 170, 170);
+    transition: 0.5s;
+    overflow: hidden;
+
+}
+
+.texto-principal {
+    margin: 20% 1%;
+}
+.texto-principal span{ 
+    font-size: 57px;
+    font-family: nunitoreg;
+    /* color: #0b097c; */
+    color: #200400;
+    font-weight: 600;
+    
+}
+
+span.animate__animated.animate__fadeIn:nth-child(1){
+    animation-delay: 0.5s;
+    margin-right: 490px;
+}
+span.animate__animated.animate__fadeIn:nth-child(2){
+    animation-delay: 1.3s;
+}
+span.animate__animated.animate__fadeIn:nth-child(3){
+    animation-delay: 1.3s;
+}
+/* p.animate__animated.animate__fadeIn:nth-child(4){
+    animation-delay: 1s;
+} */
+.quienessomos{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    /* position: relative; */
+    /* padding-top: 20px; */
+}
+
+
+.sticky {
+    background: url("imagenes/flecha2.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #a2e2e2;
+    border-radius: 3px;
+    box-shadow: 0 0 3px #07d6f6;
+    margin-left: 85%;
+    position: fixed;
+    margin: 40px;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    z-index: 60;
+}
+.sticky:hover{
+    box-shadow: 0 0 3px #000000;
+
+}
+
+.somosDentalCare h2 {
+    text-transform: uppercase;
+    /* background: linear-gradient(rgba(11, 229, 185, 0.3), rgba(11, 229, 185, 0.3)); */
+    /* border-top: #000000 solid 1px;
+    border-bottom: #000000 solid 1px; */
+    font-size: 20px;
+    font-family: latoreg;
+    font-weight: 600;
+    /* padding-top: 40px; 
+    padding-bottom: 20px; */
+    padding: 5px;
+    margin: 40px 0 20px 0;
+}
+
+
+.img-equipo {
+    align-items: center;
+    display: flex;
+    /* opacity: 0; */
+    margin-top: 2% 0%;
+    /* background:rgba(27, 169, 176, 0.3); */
+    
+}
+.img-equipo:nth-child(odd){
+    margin-right: 15%;
+    background: linear-gradient(to right, rgba(63, 137, 174, 0.5), transparent);
+
+}
+.img-equipo:nth-child(even){
+    margin-left: 15%;
+    background: linear-gradient(to left, rgba(63, 137, 174, 0.5), transparent);
+
+}
+/* .img-equipo:nth-child(3){
+    margin-right: 15%;
+    background: linear-gradient(to right, rgba(27, 169, 176, 0.5), transparent);
+
+} */
+/* .img-equipo:nth-child(4){
+    margin-left: 15%;
+    background: linear-gradient(to left, rgba(27, 169, 176, 0.5), transparent);
+
+} */
+
+.img-equipo img {
+    width: 35%;
+    box-shadow: 0px 0px 10px ;  
+    margin: 30px; 
+}
+
+.texto {
+    margin-left: 10%;
+    text-align: left;
+    margin-right: 5%;    
+
+}
+    
+    
+/* .texto p { 
+    font-family: monsereg;
+    font-size: 20px;
+} */
+
+.pagina-2{
+    text-align: center;
+    width: 100%;
+    
+}
+.pagina-2 h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: latoreg;
+    font-weight: 600;
+    padding-top: 2%;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+
+}
+
+.parrafo-protesis{
+    font-family: ralereg;
+    color: #0b097c;
+    font-weight: 600;
+    align-items: center;
+    text-align:center;
+    text-transform: uppercase;
+}
+.parrafo-protesis h3{
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+.parrafo-protesis p{
+    font-size: 15px;
+    margin-bottom: 0px;
+    color: #0b097c;
+}
+.contenedor-columnas{
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: auto;
+}
+.fila1, .fila2{
+    justify-content: space-around; 
+    display: flex;    
+    margin-top: 30px;
+}
+.imagen-servicios{
+    width: 250px;
+    height: 220px;
+    margin: 10px;
+}
+
+.imagen-servicios p{
+    font-family: latoreg;
+    color: #0b097c;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 5px;
+    margin: 0;
+}
+.container-img{
+    margin: auto;
+    width: 180px;
+    height: 170px;
+    border-radius: 10%;
+    box-shadow: 0 0 15px#165dc9;
+    transition: linear 0.5s;
+    position: relative;
+    overflow: hidden;
+}
+.container-img::before{ 
+    content: "";
+    height: 0;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.6);
+    bottom: 0;
+    left: 0;
+    transition: linear 0.5s;
+}
+.container-img:hover::before{
+    height: 40%;
+    content: "+info";
+    padding-top: 10px;
+    font-weight: 600;
+    overflow: hidden;
+}
+.container-img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    margin-bottom: 10px;
+} 
+
+/* SERVICIOS FILA 1 */
+
+.fila1 .imagen-servicios:nth-child(1) .container-img{
+    background: url("iconos_servicios/sonrisa.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.fila1 .imagen-servicios:nth-child(1) .container-img:hover{
+    background: url("imagenes/BLANQ2-min.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.fila1 .imagen-servicios:nth-child(2) .container-img{
+    background: url("iconos_servicios/implantologia.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.fila1 .imagen-servicios:nth-child(2) .container-img:hover{
+    background: url("imagenes/implantes-min.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.fila1 .imagen-servicios:nth-child(3) .container-img{
+    background: url("iconos_servicios/ortodoncia.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.fila1 .imagen-servicios:nth-child(3) .container-img:hover{
+    background: url("imagenes/ortodoncia2-min.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+/* SERVICIOS FILA 2 */
+
+.fila2 .imagen-servicios:nth-child(1) .container-img{
+    background: url("iconos_servicios/blanqueamiento.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.fila2 .imagen-servicios:nth-child(1) .container-img:hover{
+    background: url("imagenes/antesdespues-min.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.fila2 .imagen-servicios:nth-child(2) .container-img{
+    background: url("iconos_servicios/endodoncia.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.fila2 .imagen-servicios:nth-child(2) .container-img:hover{
+    background: url("imagenes/endodoncia1-min.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.fila2 .imagen-servicios:nth-child(3) .container-img{
+    background: url("iconos_servicios/ortopantomografia.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.fila2 .imagen-servicios:nth-child(3) .container-img:hover{
+    background: url("imagenes/radiografia-dental-min.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+/* -------------CASOS------------------- */
+.pagina-3 {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.pagina-3 h2{
+    /* margin: auto; */
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: latoreg;
+    font-weight: 600;
+    padding-bottom: 50px;
+}
+
+
+.img-comp-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* gap: 10px; */
+    margin-bottom: 50px;
+
+
+}
+.img-comp-container h3{
+    color: #0b097c;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: latoreg;
+    font-weight: 600;
+    padding-bottom: 20px;
+    
+}
+.img-comp-img{
+    /* overflow: hidden; */
+    display: flex;
+    box-shadow: 0 0 5px #246d8c ;
+
+}
+
+/* -----SUCURSALES----- */
+.sucursales {  
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.sucursales h2{
+    padding-top: 20px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: latoreg;
+    font-weight: 600;
+}
+
+.container-all{
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+    margin: auto;
+
+}
+.container-all img{
+    max-width: 100%;
+
+}
+.slide{
+    display: flex;
+    transform: translate3d(0,0,0);
+    transition: all 600ms;
+    animation-name: autoplay;
+    animation-duration: 10s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.item-slide{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 100%;
+
+}
+
+.pagination{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.pagination-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid white;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 0 10px;
+    text-align: center;
+    transition: all 300ms;
+
+}
+
+.pagination-item:hover{
+    transform: scale(2);
+}
+.pagination-item img{
+    display: inline-block;
+    max-width: none;
+    height: 100%;
+    transform: scale(1);
+    opacity: 0;
+    transition: all 300ms;
+
+}
+.pagination-item:hover img{
+    opacity: 1;
+    transform: scale(1);
+}
+
+input[id="1"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(0, 0, 0);
+
+}
+input[id="1"]:checked ~ .pagination .pagination-item[for="1"]{
+    background: #fff;
+}
+
+input[id="2"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 1), 0, 0);
+
+}
+input[id="2"]:checked ~ .pagination .pagination-item[for="2"]{
+    background: #fff;
+}
+
+input[id="3"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 2), 0, 0);
+
+}
+input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
+    background: #fff;
+}
+
+input[id="4"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 3), 0, 0);
+
+}
+input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
+    background: #fff;
+}
+
+
+@keyframes autoplay {
+    25%{
+        transform: translate3d(calc(-100% * 0), 0, 0);
+    }
+
+    50%{
+        transform: translate3d(calc(-100% * 1), 0, 0);
+    }
+    
+    75%{
+        transform: translate3d(calc(-100% * 2), 0, 0);
+    
+    }
+
+    100%{
+        transform: translate3d(calc(-100% * 3), 0, 0);
+
+    }
+}
+
+/* ------FIN SUCURSALES------ */
+
+.mapa {
+    width: 100%;
+
+}
+
+.mapa h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: latoreg;
+    color: #0b097c;
+    font-weight: 600;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    align-items: center;
+    text-align: center;
+}
+.mapa iframe {
+    width: 100%;
+    padding: 40px 0;
+
+}
+
+.slider-frame li {
+    list-style: none;
+    width: 100%;
+}
+
+.slider-frame img {
+    width: 100%;
+
+}
+
+
+.parrafo-protesis {
+    margin: 60px 10px 70px 10px;
+    padding: 0 5px 0 5px;
+    
+}
+
+.parrafo-protesis h3 {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: ralereg;
+    color: #0b097c;
+    font-weight: 600;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.parrafo-protesis p{
+    font-size: 14px;
+
+}
+
+ /* --------FORMULARIO-------- */
+
+ .formulario {
+    width: 100%;
+}
+
+.formulario h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: latoreg;
+    font-weight: 600;
+    padding-top: 30px;
+    text-align: center;    
+    margin-bottom: 30px;
+}
+
+ form{
+    width: 450px;
+    border-top: #246d8c solid 5px;
+    padding-top: 40px;
+ }
+ 
+.form_container{
+    justify-content: center;
+    display: flex;
+    margin: auto;
+}
+
+.form_container .p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 21px;
+}
+
+.form_container .p:nth-of-type(2),.casillas .p {
+    color: red;
+    font-size: smaller;
+}
+.casillas .p{
+    padding-left: 20px;
+}
+.form_label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.form_control{
+    height: 50px;
+    width: 450px;
+    border: solid 1px black;
+    border-radius: 5px;
+    margin: 10px 0 25px 0;
+    padding-left: 10px;
+}
+.form_control:nth-of-type(3){
+    height: 110px;
+    
+}
+
+.input_check{
+    width: 20px;
+}
+.check_form{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.btn_form{
+    padding: 13px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: #33b0ac solid 1px;
+    background-color: #33b0ac;
+    cursor: pointer;
+}
+
+/* --------FIN FORMULARIO------- */
+
+
+.redes h2 {
+    margin: 0;
+    padding: 0;
+}
+
+
+.redes a {
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    display: flex;    
+    margin: 50px 20px 70px 20px;
+} 
+.containerA{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+.redes a img{
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    height: 50px;
+    border-radius: 9.5px;
+    
+}
+
+.pie-pagina {
+    width: 100%;
+    text-align: left;
+    background:#246d8c;
+}
+.derechos p{
+    text-transform: uppercase;
+    font-size: 15px;
+    color: white;
+    font-family: ralereg;
+    font-weight: 600;
+    padding: 10px;
+
+}
+@media (max-width: 1485px){
+    .imagen-fondo{
+        align-items: baseline;
+        /* justify-content: bottom; */
+    }
+    span.animate__animated.animate__fadeIn:nth-child(1){
+        margin-right: 0;
+    }
+    
+    .texto-principal{
+        margin-top: 15%;
+        
+    }
+}
+@media (max-width: 1300px){
+    
+    .texto-principal{
+        margin-top: 15%;
+        
+    }
+}
+
+@media (max-width: 1200px) {
+    .logo, .texto-principal{
+        margin-left: 20px;
+    }
+    
+    nav ul{
+        margin-right: 10px;
+    }
+    /* .container-fondo {
+        justify-content: right;
+        margin-right: 0;
+    } */
+    .texto-principal{
+        margin-top: 20%;
+        
+    }
+    
+}
+
+@media (max-width: 1050px) {
+   
+    
+    .logo, .texto-principal{
+        margin-left: 60px;
+    }
+   
+    .container{
+        z-index: 1;
+    }
+    .texto-principal{
+        margin-top: 25%;
+        
+    }
+    
+    .texto-principal span{
+        font-size: 40px;
+
+    }
+    .texto-principal p{
+        font-size: 17px;
+
+    }
+    nav{
+        background-color: rgb(119, 183, 194);
+        
+    }
+    nav a{
+        z-index: 50;
+
+    }
+    nav ul{
+        display: none;
+    }
+
+    nav .contenedor_menu{
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        /* border: 1px solid black; */
+        margin-right: 50px;
+        z-index: 50;
+    }
+    
+    .activeline1__menu{
+        transform: rotate(45deg) translate(-2px,1px);
+    }
+    .activeline2__menu{
+        opacity: 0;
+        margin-left: -30px;
+    }
+    .activeline3__menu{
+        transform: rotate(-45deg) translate(-4px,2px);
+    }
+    .contenedor_menu span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #097a7c;
+        margin-top: 6px;
+        transform-origin: 0px 100%;
+        transition: all 300ms;
+
+    }
+    
+    .items_menu{
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        top: 100px;
+        position: absolute;
+        background-color: rgb(119, 183, 194);
+        padding-bottom: 50px;
+        padding-top: 20px;
+        animation: desplazamiento 500ms;
+        /* border: #000000 2px solid; */
+        
+        /* z-index: 40; */
+    }
+    nav.scroll{
+        height: 105px;
+    }
+    
+    .scroll .logo{
+        width: 100px;
+    
+    }
+    .items_menu li a{
+        font-size: 20px;
+
+    }
+    
+    @keyframes desplazamiento {
+        from{
+            top: -80px;
+        }
+        
+        to{
+            top: 80px;
+        }
+    }
+  
+    .texto p{
+        font-size: 17px;
+        padding: 2px;
+        margin-top: 20px;
+    }
+    #contacto h2, #sucursales h2,#servicios h2,#quienessomos h2{
+        font-size: 20px
+    }
+    .parrafo-protesis h3 {
+        font-size: 15px;
+
+    }
+    .quienessomos a{
+        display: none;
+    }
+ 
+    .container-img{
+        width: 180px;
+        height: 160px;
+    }
+    
+}  
+
+@media (max-width: 795px) {
+    form, .form_control{
+        width: 400px;
+    }
+    
+    .logo, .texto-principal{
+        margin-left: 25px;
+    }
+    
+    .logo{
+        width: 100px;
+        margin-top: 10px;  
+        margin-bottom: 10px; 
+    }
+    nav.abajo .logo{
+        width: 90px;
+        margin-top: 10px;  
+        margin-bottom: 10px;  
+    }
+    .texto-principal span{
+        font-size: 40px;
+
+    }
+    .texto-principal p{
+        font-size: 15px;
+
+    }
+    /* nav .menu{
+        margin: 25px;
+        padding: 15px;
+        border-radius: 10px;
+        width: 50px;
+        height: 50px;
+        
+    }
+
+
+    nav ul li a{
+        font-size: 15px;
+        text-align: center;
+
+    }
+    */
+    .fila1, .fila2{
+        flex-direction: column;
+        margin: auto;
+    }
+    
+    .container-img{
+        width: 180px;
+        height: 160px;
+    }
+    .texto p{
+        font-size: 14px;
+        padding: 2px;
+        margin-top: 20px;
+    }
+    .quienessomos a img{
+        width: 60px;
+    }
+    #contacto h2, #sucursales h2,#servicios h2,#quienessomos h2{
+        font-size: 18px
+    }
+    .parrafo-protesis h3, .parrafo-protesis p{
+        font-size: 14px;
+
+    }
+   
+    .texto-principal {
+        margin-top: 30%;
+    }
+}
+@media (max-width:619px){
+    .texto-principal {
+        margin-top: 40%;
+    }
+    .img-equipo{
+        flex-direction: column;
+    }
+    
+    .img-equipo:nth-child(odd){
+        margin-right: 0
+    }
+    .img-equipo:nth-child(even){
+        margin-left: 0;
+    }
+    /* nav{
+        left: -100vw;
+        width: 100vw;
+    } */
+}
+@media (max-width:476px) {
+    .texto-principal {
+        margin-top: 50%;
+    }
+    /* span:nth-child(2)::after{
+        content: " ";
+    } */
+    form, .form_control{
+        width: 400px;
+    }
+}
+@media (max-width: 456px) {
+    form, .form_control{
+        width: 350px;
+    }
+    .container-img{
+        width: 140px;
+        height: 130px;
+    }
+    .texto-principal span{
+        font-size: 40px;
+
+    }
+    .texto-principal p{
+        font-size: 15px;
+    
+    }
+    #contacto h2, #sucursales h2,#servicios h2,#quienessomos h2{
+        font-size: 17px
+    }
+    .parrafo-protesis{
+        padding-top: 0;
+        padding-bottom: 80px;
+    }
+    .parrafo-protesis h3 {
+        font-size: 17px;
+
+    }
+    .parrafo-protesis p {
+        font-size: 14px;
+
+    }
+    /* nav .menu {
+        width: 40px;
+        height: 40px;
+        padding: 14px;
+    }
+     */
+    
+    .logo{
+        width: 90px;
+    }
+   
+    nav.abajo .logo{
+        width: 80px;
+        
+    }
+    /* .imagen-servicios img{
+        width: 40%;
+    } */
+}
+
+@media (max-width: 400px) {
+    form, .form_control{
+        width: 300px;
+        
+    }
+    .imagen-fondo{
+        background-position: calc(40%);
+        padding-top: 120px;
+    }
+}
+@media (max-width: 300px) {
+    form, .form_control{
+        width: 180px;
+        
+    }
+    .container-img{
+        width: 100px;
+        height: 100px ;
+    }
+    .imagen-servicios{
+        width: 150px;
+        height: 170px;
+    }
+    
+}

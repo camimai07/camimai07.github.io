@@ -26,3 +26,13 @@ window.addEventListener('scroll', ()=>{
     let nav = document.querySelector('nav');
     nav.classList.toggle('colorNav',this.window.scrollY>225);
 })
+
+function mostrarClick(descripcion){
+    const texto = document.querySelectorAll('.descripcion-proyecto');
+    texto.forEach(content => {
+        content.classList.remove('active');
+        if (content.classList.contains(descripcion)){
+            content.classList.add('active')
+        }
+    })
+}

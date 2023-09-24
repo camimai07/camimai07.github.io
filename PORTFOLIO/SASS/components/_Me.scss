@@ -1,4 +1,3 @@
-@import '../layout/slider';
 
 #Me{
     overflow: hidden;
@@ -103,9 +102,7 @@
 
 .descripcionPersonal {
     
-    p{
-        font-size: 20px;
-    }
+
     padding: 60px;
     @include mixinsfunc.flex-box(center,none);
 
@@ -120,15 +117,3 @@
     }
 }
 
-.container-skills {
-    padding-bottom: 150px;
-    width: 100%;
-    @include mixinsfunc.flex-box;
-    flex-direction: column;
-    h1{
-        padding-bottom: 50px;
-        font-size: $size-h1;
-        font-family: $font-gral;
-        color: $color-texto;
-    }
-}

@@ -31,18 +31,18 @@
     /* flex-direction: column; */
     width: 100%;
     height: 100vh;
+    backdrop-filter: blur(5px);
+
     .texto {
         margin: auto;
         font-size: large ;
         position: relative;
         h1{
-            color: $color-texto;
-            font-family: $font-gral;
-            font-size: 40px ;
 
+            position: relative;
             &:nth-of-type(2){
                 color: $color-ppal;
-            
+    
             }
             
             
@@ -98,10 +98,8 @@
 
     &.left{
         background: linear-gradient(to left, $color-lineas, transparent);
-        
     }
     &.right{
         background: linear-gradient(to right, $color-lineas, transparent);
-
     }
 }
