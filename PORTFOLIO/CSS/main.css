@@ -601,19 +601,31 @@ input[type=radio] {
   line-height: 35px;
   text-align: center;
 }
+.proyectos .descripcion-proyecto .botonesProyectos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  margin: 10px 0;
+}
 .proyectos .descripcion-proyecto .btnProyectos {
+  width: 120px;
   background: none;
-  margin-bottom: 10px;
   border-radius: 5px;
   box-shadow: 0 0 5px rgb(220, 24, 255);
+  padding: 5px;
+}
+.proyectos .descripcion-proyecto .btnProyectos:hover {
+  box-shadow: 0 0 25px rgb(220, 24, 255);
+  cursor: pointer;
 }
 .proyectos .descripcion-proyecto .btnProyectos a {
   color: rgb(220, 24, 255);
   text-decoration: none;
   font-family: "Josefin Sans", sans-serif;
-  width: 120px;
-  padding: 50px;
-  height: 40px;
+  width: 100%;
+  height: 100%;
 }
 .proyectos .descripcion-proyecto p {
   font-size: 20px;
@@ -631,6 +643,7 @@ input[type=radio] {
 }
 .proyectos img {
   height: 100%;
+  width: 100%;
   object-fit: cover;
   -o-object-fit: cover;
   border-radius: 20px;
@@ -821,7 +834,7 @@ input[type=radio] {
 @media (max-width: 700px) {
   .sliders {
     width: 270px;
-    height: 150px;
+    height: 140px;
   }
 }
 @media (max-width: 600px) {
