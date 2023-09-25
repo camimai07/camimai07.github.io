@@ -580,7 +580,7 @@ input[type=radio] {
   overflow: hidden;
   margin-top: 50px;
   padding-top: 50px;
-  width: 80%;
+  width: 90%;
   transform-style: preserve-3d;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../imagen//blake-connally-IKUYGCFmfw4-unsplash.jpg") no-repeat;
   background-size: cover;
@@ -590,6 +590,7 @@ input[type=radio] {
   border: solid 1px rgba(255, 255, 255, 0.1);
 }
 .proyectos .descripcion-proyecto {
+  flex-direction: column;
   background: none;
   display: none;
   margin: 100px 0;
@@ -599,6 +600,20 @@ input[type=radio] {
   font-family: "Josefin Sans", sans-serif;
   line-height: 35px;
   text-align: center;
+}
+.proyectos .descripcion-proyecto .btnProyectos {
+  background: none;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgb(220, 24, 255);
+}
+.proyectos .descripcion-proyecto .btnProyectos a {
+  color: rgb(220, 24, 255);
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+  width: 120px;
+  padding: 50px;
+  height: 40px;
 }
 .proyectos .descripcion-proyecto p {
   font-size: 20px;
@@ -616,7 +631,6 @@ input[type=radio] {
 }
 .proyectos img {
   height: 100%;
-  width: 100%;
   object-fit: cover;
   -o-object-fit: cover;
   border-radius: 20px;
@@ -628,14 +642,6 @@ input[type=radio] {
 }
 .proyectos img:hover::before {
   height: 100px;
-}
-.proyectos img::before {
-  content: "";
-  background-color: rgba(255, 255, 255, 0.5);
-  height: 0;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
 }
 
 .containerContact {
@@ -805,13 +811,15 @@ input[type=radio] {
   .descripcionPersonal .texto {
     padding: 60px 20px 0 20px;
   }
+  .proyectos {
+    width: 95%;
+  }
   .containerContact .icons {
     gap: 0;
   }
 }
 @media (max-width: 700px) {
   .sliders {
-    position: relative;
     width: 270px;
     height: 150px;
   }

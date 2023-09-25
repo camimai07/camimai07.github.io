@@ -26,7 +26,7 @@
     overflow: hidden;
     margin-top: 50px;
     padding-top: 50px;
-    width: 80%;
+    width: 90%;
     transform-style: preserve-3d;
     background:  linear-gradient( rgba(0,0,0,0.8), rgba(0,0,0, 0.8)) , url('../imagen//blake-connally-IKUYGCFmfw4-unsplash.jpg') no-repeat;
     background-size: cover;
@@ -36,6 +36,7 @@
     border: solid 1px rgba(255, 255, 255, 0.1);
     // backdrop-filter: blur(50px);
     .descripcion-proyecto{
+        flex-direction: column;
         background: none;
         display: none;
         margin: 100px 0;
@@ -47,9 +48,26 @@
         font-family: $font-gral;
         line-height: 35px;
         text-align: center;
+        .btnProyectos{
+        //    padding: 10px;
+            background: none;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px $color-lineas;
+            // padding: 5px;
+            a{
+                color: $color-lineas;
+                text-decoration: none;
+                font-family: $font-gral;
+                width: 120px;
+                padding: 50px;
+                height: 40px;
+            }
+        }
         p{
             font-size: $size-p;
         }
+        
         
     }
     .descripcion-proyecto.active{
@@ -63,32 +81,47 @@
         filter: drop-shadow(0 0 10px $color-lineas);
 
     }
-
+    // .miniImg{
+    //     width: 70px;
+    //     height: 120px;
+    //     // margin: auto;
+    //     right: 0;
+    //     transform: translateY(-100%);
+    //     position: absolute;
+    //     img{
+    //         width: 100%;
+    //         height: 100%;
+    //         object-fit: cover;
+    //         -o-object-fit: cover;
+    //         border-radius: 10px;
+    //         box-shadow: 0 0 10px black;
+    //     }
+    // }
     img{
         // width: fit-content;
         height: 100%;
-        width: 100%;
+        // width: 100%;
         object-fit: cover;
         -o-object-fit: cover;
         border-radius: 20px;
         position: relative;
         transition: 300ms linear;
-
+        // position: relative;
         &:hover{
             cursor: pointer;
             &::before{
                 height: 100px;
             }
         }
-        &::before{
-            content: "";
-            background-color: rgba(255, 255, 255, 0.5);
-            height: 0;
-            width: 100%;
-            position: absolute;
-            bottom: 0;
+        // &::before{
+        //     content: "";
+        //     background-color: rgba(255, 255, 255, 0.5);
+        //     height: 0;
+        //     width: 100%;
+        //     position: absolute;
+        //     bottom: 0;
     
-        }
+        // }
        
                 
     }

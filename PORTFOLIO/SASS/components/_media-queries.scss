@@ -148,26 +148,22 @@
 
     }  
   
-    
- 
+    .proyectos{
+        width: 95%;
+    }
 
     .containerContact .icons{
         gap: 0;
     }
-
-    // .container-slider{
-    //     width: 250px;
-    //     height: 250px;
-       
-    // }
+    
 }
 
 @media (max-width:700px){
+    
+    
     .sliders{
-        position: relative;
         width: 270px;
         height: 150px;
-        // height: 230px;
     
     }
     
