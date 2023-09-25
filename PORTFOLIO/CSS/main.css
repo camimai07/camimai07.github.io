@@ -258,7 +258,6 @@ nav .logo p {
   /* flex-direction: column; */
   width: 100%;
   height: 100vh;
-  backdrop-filter: blur(5px);
 }
 .containerHome .texto {
   margin: auto;
@@ -520,7 +519,7 @@ input[type=radio] {
 
 .sliders {
   position: relative;
-  width: 300px;
+  width: 350px;
   height: 250px;
 }
 
@@ -612,6 +611,7 @@ input[type=radio] {
   height: 100%;
   object-fit: cover;
   -o-object-fit: cover;
+  border-radius: 20px;
 }
 
 .containerContact {
