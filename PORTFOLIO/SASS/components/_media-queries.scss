@@ -36,9 +36,14 @@
             display: none;
             padding-right: 0;
             overflow-y:scroll; 
-            li a:before{
+            li{
+                margin-bottom: 15px;
+                // border: solid 2px yellow;
+                a:before{
                 bottom: -20px;
+                }
             }
+            
         }
         .logo{
             margin-left: 50px;
@@ -156,16 +161,24 @@
        
     // }
 }
+
+@media (max-width:700px){
+    .sliders{
+        position: relative;
+        width: 270px;
+        height: 150px;
+        // height: 230px;
+    
+    }
+    
+
+}
 @media (max-width:600px){
     
     .container-icons{
         width: 350px;
     }
-    // .container-slider{
-    //     width: 220px;
-    //     height: 220px;
-       
-    // }
+   
     .slider{
         gap: 60px;
     }

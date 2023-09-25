@@ -20,17 +20,15 @@
    
 }
 .proyectos{
-    @include mixinsfunc.flex-box($justify:none);
+    @include mixinsfunc.flex-box;
     // position: relative;
     flex-direction: column;
     overflow: hidden;
-    // height: 620px;
     margin-top: 50px;
     padding-top: 50px;
-    // padding-bottom: 50px;
     width: 80%;
     transform-style: preserve-3d;
-    background:  linear-gradient( rgba(0,0,0,0.7), rgba(0,0,0, 0.7)) , url('../imagen//blake-connally-IKUYGCFmfw4-unsplash.jpg') no-repeat;
+    background:  linear-gradient( rgba(0,0,0,0.8), rgba(0,0,0, 0.8)) , url('../imagen//blake-connally-IKUYGCFmfw4-unsplash.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -48,6 +46,7 @@
         color: $color-texto;
         font-family: $font-gral;
         line-height: 35px;
+        text-align: center;
         p{
             font-size: $size-p;
         }
@@ -57,14 +56,40 @@
         @include mixinsfunc.flex-box;
     }
 
-    
+    .fa-bookmark{
+        filter: drop-shadow(0 0 10px $color-lineas);
+    }
+    .fa-wand-magic-sparkles{
+        filter: drop-shadow(0 0 10px $color-lineas);
+
+    }
+
     img{
-        width: 100%;
+        // width: fit-content;
         height: 100%;
+        width: 100%;
         object-fit: cover;
         -o-object-fit: cover;
         border-radius: 20px;
+        position: relative;
+        transition: 300ms linear;
 
+        &:hover{
+            cursor: pointer;
+            &::before{
+                height: 100px;
+            }
+        }
+        &::before{
+            content: "";
+            background-color: rgba(255, 255, 255, 0.5);
+            height: 0;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+    
+        }
+       
                 
     }
 }

@@ -1,5 +1,6 @@
 
 .containerContact{
+    margin-top: 100px;
     width: 100%;
     @include mixinsfunc.flex-box;
     flex-direction: column;

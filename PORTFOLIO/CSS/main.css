@@ -519,8 +519,9 @@ input[type=radio] {
 
 .sliders {
   position: relative;
-  width: 350px;
-  height: 250px;
+  width: 450px;
+  height: 230px;
+  border-radius: 20px;
 }
 
 .slide {
@@ -573,7 +574,7 @@ input[type=radio] {
 
 .proyectos {
   display: flex;
-  justify-content: none;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   overflow: hidden;
@@ -581,7 +582,7 @@ input[type=radio] {
   padding-top: 50px;
   width: 80%;
   transform-style: preserve-3d;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../imagen//blake-connally-IKUYGCFmfw4-unsplash.jpg") no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../imagen//blake-connally-IKUYGCFmfw4-unsplash.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -597,6 +598,7 @@ input[type=radio] {
   color: rgb(255, 251, 254);
   font-family: "Josefin Sans", sans-serif;
   line-height: 35px;
+  text-align: center;
 }
 .proyectos .descripcion-proyecto p {
   font-size: 20px;
@@ -606,15 +608,38 @@ input[type=radio] {
   justify-content: center;
   align-items: center;
 }
+.proyectos .fa-bookmark {
+  filter: drop-shadow(0 0 10px rgb(220, 24, 255));
+}
+.proyectos .fa-wand-magic-sparkles {
+  filter: drop-shadow(0 0 10px rgb(220, 24, 255));
+}
 .proyectos img {
-  width: 100%;
   height: 100%;
+  width: 100%;
   object-fit: cover;
   -o-object-fit: cover;
   border-radius: 20px;
+  position: relative;
+  transition: 300ms linear;
+}
+.proyectos img:hover {
+  cursor: pointer;
+}
+.proyectos img:hover::before {
+  height: 100px;
+}
+.proyectos img::before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 0;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 .containerContact {
+  margin-top: 100px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -684,6 +709,9 @@ input[type=radio] {
     display: none;
     padding-right: 0;
     overflow-y: scroll;
+  }
+  nav ul li {
+    margin-bottom: 15px;
   }
   nav ul li a:before {
     bottom: -20px;
@@ -779,6 +807,13 @@ input[type=radio] {
   }
   .containerContact .icons {
     gap: 0;
+  }
+}
+@media (max-width: 700px) {
+  .sliders {
+    position: relative;
+    width: 270px;
+    height: 150px;
   }
 }
 @media (max-width: 600px) {
