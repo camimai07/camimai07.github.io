@@ -137,7 +137,7 @@ nav {
     /* background:rgba(39, 195, 203,0.8); */
     /* background:rgba(255, 255, 255, 0.6); */
     box-shadow: 0px 4px 10px rgba(1, 1, 1, 0.3);
-    background:rgba(255, 255, 255, 0.9);
+    background:rgba(193, 235, 236, 0.9);
 
     width: 100%;
     display: flex;
@@ -207,8 +207,8 @@ nav ul li:hover::before{
 }
 nav ul li a{
     font-weight: bold;
-    color: #200400;
-    /* height: 100%; */
+    color: #080763;
+    /* heigrgb(5, 4, 66)%; */
     display: flex;
     text-transform: uppercase;
     font-family: nunitoreg;
@@ -223,13 +223,10 @@ nav ul li a{
 nav ul li a:hover{
     /* color: rgb(68, 213, 220); */
     
-    color: rgb(200, 239, 238);
+    color: rgb(30, 153, 149);
     transform: scale(1.1);
 }
 .imagen-fondo{
-    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), url("imagenes/smile2-min.jpg") no-repeat;
-    background-size:cover;
-    background-position: center;
     height: 400px;
     /* margin: 0; */
     display: flex;
@@ -237,23 +234,42 @@ nav ul li a:hover{
     align-items: center;
     overflow: hidden;
     margin-top: 100px;
+
+}
+.imagenes_sonrisas{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+}
+.imagenes_sonrisas img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -o-object-fit: cover;
+    filter: opacity(80%);
+    
 }
 .container-fondo {
-
     box-shadow: 0px 0px 15px rgb(164, 170, 170);
     transition: 0.5s;
     overflow: hidden;
+    position: relative;
 
 }
 
 .texto-principal {
     margin: 20% 1%;
+    position: absolute;
 }
 .texto-principal span{ 
     font-size: 57px;
     font-family: nunitoreg;
     /* color: #0b097c; */
     color: #200400;
+    color: white;
+    filter: drop-shadow(0 0 10px rgb(0, 0, 0));
+
     font-weight: 600;
     
 }
@@ -1143,6 +1159,7 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
    
     .texto-principal {
         margin-top: 30%;
+        text-align: center;
     }
 }
 @media (max-width:619px){
