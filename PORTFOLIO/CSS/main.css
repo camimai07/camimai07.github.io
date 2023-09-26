@@ -576,6 +576,7 @@ input[type=radio] {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   flex-direction: column;
   overflow: hidden;
   margin-top: 50px;
@@ -653,10 +654,53 @@ input[type=radio] {
 .proyectos img:hover {
   cursor: pointer;
 }
-.proyectos img:hover::before {
-  height: 100px;
+.proyectos .touch {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.7);
+  top: 170px;
+  border-radius: 50%;
+  animation: parpadeo linear 4s infinite;
+  animation-delay: 20s;
+}
+.proyectos .touch.right {
+  right: 15%;
+}
+.proyectos .touch.left {
+  left: 15%;
+  animation-delay: 50s;
 }
 
+@keyframes parpadeo {
+  0% {
+    opacity: 1;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(0);
+  }
+  60% {
+    opacity: 0;
+    transform: scale(2);
+  }
+  61% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  62% {
+    opacity: 1;
+    transform: scale(0);
+  }
+  72% {
+    opacity: 0;
+    transform: scale(2);
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .containerContact {
   margin-top: 100px;
   width: 100%;
