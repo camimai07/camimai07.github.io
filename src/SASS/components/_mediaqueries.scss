@@ -1,0 +1,149 @@
+@media (max-width:1400px) {
+
+    
+
+    .contenedor-slider{
+        max-width: 600px;
+        .contenedor{
+            max-width: 180px;
+            max-height: 280px;
+        }
+    }
+        
+    
+}
+@media (max-width:1300px) {
+    .contenedor-ppal{
+        .texto{
+            // padding-left: 30px;
+            margin-right: 20px;
+
+
+        }
+    }
+    .contenedor-slider{
+        max-width: 500px;
+    }
+      
+}
+@media (max-width:1200px) {
+
+    .contenedor-ppal{
+        .texto{
+            max-width: 500px ;
+
+        }
+        
+    } 
+}
+@media (max-width:1080px) {
+
+    .contenedor-ppal{
+        .texto{
+            max-width: 400px ;
+        }
+        .contenedor-slider{
+            max-width:500px;
+        }
+    } 
+}
+
+@media (max-width:939px) {
+    nav{
+        position: relative;
+        // margin-bottom: 30px;
+        flex-direction: column;
+        .logo h1{
+            font-size: 35px;
+        }
+        .logo,.buscar{
+            margin: 0;
+        }
+    }
+    .contenedor-ppal{
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        // padding-top: 80px;
+        .texto{
+            max-width: 600px ;
+            // padding: 0;
+            // margin: 20px 20px 20px 40px;
+            p{
+                padding-right: 0;
+                // padding-bottom: 50px;
+            }
+        }
+
+        .contenedor-slider{
+            max-width: 600px;
+            max-height: 400px;
+            margin-top: 50px;
+
+
+        }
+        .trailer{
+            margin-top: 30px;
+            position: relative;
+        }
+        
+    } 
+    .movie-title{
+        margin-top: 50px;
+        max-width: 150px;
+    }
+}
+
+@media (max-width:700px){
+    .contenedor-ppal{
+        .texto{
+            max-width: 500px ;
+            margin: 20px ;
+            p{
+                padding-bottom: 0;
+            }
+        }
+        .contenedor-slider{
+            max-width: 480px;
+            max-height: 500px;
+        }
+        .contenedor{
+            max-width: 160px;
+            max-height: 250px;
+        }
+    }
+    
+    
+}
+@media (max-width:500px){
+    .contenedor-ppal{
+        .texto{
+            max-width: 400px ;
+
+        }
+        .contenedor-slider{
+            // max-width: 400px;
+            max-width: 350px;
+
+            max-height: 400px;
+            .contenedor{
+                max-width: 150px;
+                max-height: 250px;
+            }
+
+        }
+        
+    } 
+
+}
+@media (max-width:400px){
+    .contenedor-ppal{
+        .texto{
+            max-width: 400px ;
+
+        }
+
+    
+    } 
+
+}

@@ -1,0 +1,28 @@
+.contenedor-ppal{
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: rgba(0, 0, 0, 0.6);
+
+    
+}
+.trailer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: linear 200ms;
+    width: fit-content;
+    padding:0 10px;
+    height: 40px;
+    margin-top: 20px;
+    @media (hover: hover){
+        &:hover{
+            background-color: black;
+            box-shadow: 0 0 5px white;
+            cursor: pointer;
+        }       
+    }
+    
+}

@@ -1,0 +1,18 @@
+/*abstracs*/
+@use './SASS/abstracs/variables';
+@use './SASS/abstracs//mixins';
+
+
+
+/*base*/
+@use './SASS/base/resets';
+@use './SASS/base/base';
+
+
+/*components*/
+@use './SASS/components/contenedor-ppal';
+@use './SASS/components/navbar';
+@use './SASS/components/texto';
+@use './SASS/components/slider';
+@use './SASS/components/mediaqueries';
+

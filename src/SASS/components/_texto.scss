@@ -1,0 +1,29 @@
+.texto{
+    margin-right: 40px;
+    margin-left: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 550px;
+    
+    // position: relative;
+
+    p{
+        font-size: 17px;
+    }
+    .texto-peli{
+        display: none;
+    }
+}
+.texto-peli.active{
+    display: block;
+}
+.movie-title{
+    max-width: 250px;
+    
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+}
