@@ -63,7 +63,7 @@ h1{
     padding: 0;
     // background-color: rgba(255, 170, 0, 0.8);
     // color: black;
-    animation: 1s ease-in-out 1s both spacing-letter;
+    animation: 1s ease-in-out 1s both running spacing-letter;
     // transition: ease-out 100ms ;
     // letter-spacing: 4px;
 
@@ -173,7 +173,7 @@ h1{
     padding: 10px;
     margin-left: 30px;
     box-shadow: 0 0 5px white;
-    transition: ease-in-out 100ms;
+    transition: ease-in-out 150ms;
     &:hover{
      background-color: aliceblue;   
      box-shadow: none;
